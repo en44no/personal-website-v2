@@ -2,23 +2,24 @@ import React from 'react';
 import { Flex, Spacer, Box, Text, Center, Container } from '@chakra-ui/react';
 import ColorMode from './ColorMode';
 import Links from './Links';
+import NavbarName from './NavbarName';
 
 const Navbar = () => {
   return (
     <>
-      <Box position='fixed' width='100%' mt='1rem'>
+      <Box
+        position='fixed'
+        width='100%'
+        mt='1rem'
+        _hover={{
+          transition: 'transform .2s',
+          transform: 'scale(1.01)',
+        }}
+      >
         <Container maxW='container.xl'>
-          <Flex borderRadius='9px' boxShadow='base'>
+          <Flex borderRadius='9px' boxShadow='md'>
             <Center>
-              <Box p='4'>
-                <Text
-                  fontWeight='bold'
-                  bgGradient='linear(to-r, cyan.400, blue.500, purple.500)'
-                  bgClip='text'
-                >
-                  Nahuel Márquez
-                </Text>
-              </Box>
+              <NavbarName />
             </Center>
             <Spacer />
             <Center>
