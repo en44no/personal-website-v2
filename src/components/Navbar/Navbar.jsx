@@ -11,7 +11,13 @@ const Navbar = () => {
           <Flex borderRadius='9px' boxShadow='base'>
             <Center>
               <Box p='4'>
-                <Text fontWeight='bold'>Nahuel Márquez</Text>
+                <Text
+                  fontWeight='bold'
+                  bgGradient='linear(to-r, cyan.400, blue.500, purple.500)'
+                  bgClip='text'
+                >
+                  Nahuel Márquez
+                </Text>
               </Box>
             </Center>
             <Spacer />
