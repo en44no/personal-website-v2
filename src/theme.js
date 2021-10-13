@@ -5,6 +5,37 @@ const config = {
   useSystemColorMode: false,
 };
 
-const theme = extendTheme({ config });
+const theme = extendTheme({
+  config,
+  components: {
+    Button: {
+      baseStyle: {
+        _focus: { boxShadow: 'base' },
+        _active: { bg: 'transparent' },
+        _hover: {
+          bg: 'transparent',
+          bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)',
+          borderRadius: '50%',
+          transition: 'transform .2s',
+          transform: 'scale(1.09)',
+        },
+      },
+      variants: {
+        // 'social-button': {
+        //   mr: '1',
+        //   fontSize: '1.5rem',
+        // },
+        //The background of the Button varies depending on the variant used. So we need to override the bg / background property on the variant we are using. The default variant for Button is solid.
+        solid: {
+          bg: 'transparent',
+          _hover: {
+            bg: 'transparent',
+          },
+          _active: { bg: 'transparent' },
+        },
+      },
+    },
+  },
+});
 
 export default theme;
