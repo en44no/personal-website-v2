@@ -1,6 +1,6 @@
 import React from 'react';
 import { useColorMode } from '@chakra-ui/color-mode';
-import { Button } from '@chakra-ui/react';
+import { Button, IconButton } from '@chakra-ui/react';
 import { SunIcon, MoonIcon } from '@chakra-ui/icons';
 
 const ColorMode = () => {
@@ -9,14 +9,21 @@ const ColorMode = () => {
     <>
       <Button
         //boxShadow='base'
-        bg='transparent'
-        aria-label='lightModeButton'
+        aria-label='toggleColorModeButton'
         mr='-3'
         w={'5%'}
-        _focus={{ boxShadow: 'base' }}
         onClick={toggleColorMode}
       >
-        {colorMode === 'light' ? <SunIcon /> : <MoonIcon />}
+        <IconButton
+          bg='transparent'
+          isRound
+          _hover={{
+            bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)',
+          }}
+          _focus={{ boxShadow: 'base' }}
+        >
+          {colorMode === 'light' ? <SunIcon /> : <MoonIcon />}
+        </IconButton>
       </Button>
     </>
   );
