@@ -1,48 +1,43 @@
 import React from 'react';
-import { Link } from '@chakra-ui/react';
+import { Link, Box, Flex } from '@chakra-ui/react';
 
 const Links = () => {
   return (
     <>
-      <Link
-        mr='1rem'
-        fontWeight='semibold'
-        _hover={{
-          bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
-          bgClip: 'text',
-        }}
-      >
-        About
-      </Link>
-      <Link
-        mr='1rem'
-        fontWeight='semibold'
-        _hover={{
-          bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
-          bgClip: 'text',
-        }}
-      >
-        Contact
-      </Link>
-      <Link
-        mr='1rem'
-        fontWeight='semibold'
-        _hover={{
-          bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
-          bgClip: 'text',
-        }}
-      >
-        Skills
-      </Link>
-      <Link
-        fontWeight='semibold'
-        _hover={{
-          bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
-          bgClip: 'text',
-        }}
-      >
-        Projects
-      </Link>
+      <Flex>
+        <Box
+          _hover={{
+            transition: 'transform .2s',
+            transform: 'scale(1.06)',
+          }}
+        >
+          <Link>About</Link>
+        </Box>
+        <Box
+          _hover={{
+            transition: 'transform .2s',
+            transform: 'scale(1.06)',
+          }}
+        >
+          <Link>Contact</Link>
+        </Box>
+        <Box
+          _hover={{
+            transition: 'transform .2s',
+            transform: 'scale(1.06)',
+          }}
+        >
+          <Link>Skills</Link>
+        </Box>
+        <Box
+          _hover={{
+            transition: 'transform .2s',
+            transform: 'scale(1.06)',
+          }}
+        >
+          <Link>Projects</Link>
+        </Box>
+      </Flex>
     </>
   );
 };
