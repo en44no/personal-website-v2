@@ -20,6 +20,7 @@ const NavbarName = () => {
         </Text>
       </Box>
     </>
+    //
   );
 };
 
