@@ -1,13 +1,14 @@
 import React from 'react';
-import { Text, Container } from '@chakra-ui/react';
+import { Container, Box } from '@chakra-ui/react';
 import Social from '../Social';
+import HomeText from './HomeText';
+import HomeImage from './HomeImage';
 
 const Home = () => {
   return (
     <>
       <Container
         maxW='container.xl'
-        textAlign='center'
         display='flex'
         alignItems='center'
         justifyContent='center'
@@ -15,10 +16,12 @@ const Home = () => {
         width='100%'
         flexDirection='column'
       >
-        <Text fontSize='6xl'>Hello, I'm Nahuel</Text>
-        <Text fontSize='3xl'>A Front-end Developer</Text>
+        <Box display='flex'>
+          <HomeText />
+          <HomeImage />
+        </Box>
+        <Social />
       </Container>
-      <Social />
     </>
   );
 };
