@@ -22,7 +22,11 @@ const ColorMode = () => {
           }}
           _focus={{ boxShadow: 'base' }}
         >
-          {colorMode === 'light' ? <SunIcon /> : <MoonIcon />}
+          {colorMode === 'light' ? (
+            <SunIcon color='#000' />
+          ) : (
+            <MoonIcon color='#fff' />
+          )}
         </IconButton>
       </Button>
     </>
