@@ -12,8 +12,7 @@ import Home from './components/Home/Home';
 ReactDOM.render(
   <React.StrictMode>
     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <App />
       <Navbar />
       <Home />
