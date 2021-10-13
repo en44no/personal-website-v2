@@ -11,11 +11,14 @@ const HomeText = () => {
             fontWeight='bold'
             bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
             bgClip='text'
+            mt='-2'
           >
             Nahuel Márquez
           </Text>
         </Text>
-        <Text fontSize='3xl'>A Front-end Developer</Text>
+        <Text fontSize='3xl' fontWeight='semibold'>
+          Front-end Developer
+        </Text>
       </Box>
     </>
   );
