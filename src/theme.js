@@ -1,4 +1,5 @@
 import { extendTheme } from '@chakra-ui/react';
+import { mode } from '@chakra-ui/theme-tools';
 
 const config = {
   initialColorMode: 'light',
@@ -7,6 +8,14 @@ const config = {
 
 const theme = extendTheme({
   config,
+  styles: {
+    global: (props) => ({
+      body: {
+        bg: mode('#e3e3e3', '#232a36')(props),
+        color: mode('black', 'white')(props),
+      },
+    }),
+  },
   components: {
     Button: {
       baseStyle: {
@@ -21,11 +30,6 @@ const theme = extendTheme({
         },
       },
       variants: {
-        // 'social-button': {
-        //   mr: '1',
-        //   fontSize: '1.5rem',
-        // },
-        //The background of the Button varies depending on the variant used. So we need to override the bg / background property on the variant we are using. The default variant for Button is solid.
         solid: {
           bg: 'transparent',
           _hover: {
@@ -35,7 +39,27 @@ const theme = extendTheme({
         },
       },
     },
+    Link: {
+      baseStyle: {
+        mr: '1rem',
+        fontWeight: 'semibold',
+        _hover: {
+          bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
+          bgClip: 'text',
+          transition: 'transform 1s',
+          transform: 'scale(1.09)',
+        },
+      },
+    },
   },
 });
 
 export default theme;
+
+//HOW TO ADD VARIANTS
+//variants: {
+// 'social-button': {
+//   mr: '1',
+//   fontSize: '1.5rem',
+// },
+//The background of the Button varies depending on the variant used. So we need to override the bg / background property on the variant we are using. The default variant for Button is solid.
