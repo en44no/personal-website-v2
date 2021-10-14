@@ -24,7 +24,6 @@ const theme = extendTheme({
         _hover: {
           bg: 'transparent',
           bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)',
-          borderRadius: '50%',
           transition: 'transform .2s',
           transform: 'scale(1.09)',
         },
