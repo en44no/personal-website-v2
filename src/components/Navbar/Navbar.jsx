@@ -1,8 +1,9 @@
 import React from 'react';
-import { Flex, Spacer, Box, Text, Center, Container } from '@chakra-ui/react';
+import { Flex, Spacer, Box, Center, Container } from '@chakra-ui/react';
 import ColorMode from './ColorMode';
 import Links from './Links';
 import NavbarName from './NavbarName';
+import Language from './Language';
 
 const Navbar = () => {
   return (
@@ -27,7 +28,10 @@ const Navbar = () => {
                 <Links />
               </Box>
             </Center>
-            <Box p='4'>
+            <Box pt='4' pl='4' mr='-2'>
+              <Language />
+            </Box>
+            <Box p='4' pl='0' pr='0'>
               <ColorMode />
             </Box>
           </Flex>
