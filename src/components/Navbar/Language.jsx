@@ -1,16 +1,13 @@
 import { Button, IconButton } from '@chakra-ui/button';
-import React, { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaLanguage } from 'react-icons/fa';
 
 const Language = () => {
   const { i18n } = useTranslation();
-  const [language, setLanguage] = useState('en');
 
   const handleClick = (lang) => {
     i18n.changeLanguage(lang);
-    const change = language === 'en' ? 'es' : 'en';
-    setLanguage(change);
   };
 
   return (
@@ -20,7 +17,7 @@ const Language = () => {
         mr='-3'
         w={'5%'}
         onClick={() =>
-          language === 'en' ? handleClick('en') : handleClick('es')
+          i18n.language === 'en' ? handleClick('es') : handleClick('en')
         }
       >
         <IconButton
