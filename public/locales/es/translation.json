@@ -1,0 +1,23 @@
+{
+  "HelloText": {
+    "1": "Hola, soy"
+  },
+  "FrontEndDev": {
+    "1": "Desarrollador Front-end"
+  },
+  "DownloadCV": {
+    "1": "Descargar CV"
+  },
+  "About": {
+    "1": "Sobre mí"
+  },
+  "Contact": {
+    "1": "Contacto"
+  },
+  "Skills": {
+    "1": "Habilidades"
+  },
+  "Projects": {
+    "1": "Proyectos"
+  }
+}
