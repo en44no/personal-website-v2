@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link, Box, Flex } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 
 const Links = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Flex>
@@ -11,7 +13,7 @@ const Links = () => {
             transform: 'scale(1.06)',
           }}
         >
-          <Link>About</Link>
+          <Link>{t('About.1')}</Link>
         </Box>
         <Box
           _hover={{
@@ -19,7 +21,7 @@ const Links = () => {
             transform: 'scale(1.06)',
           }}
         >
-          <Link>Contact</Link>
+          <Link>{t('Contact.1')}</Link>
         </Box>
         <Box
           _hover={{
@@ -27,7 +29,7 @@ const Links = () => {
             transform: 'scale(1.06)',
           }}
         >
-          <Link>Skills</Link>
+          <Link>{t('Skills.1')}</Link>
         </Box>
         <Box
           _hover={{
@@ -35,7 +37,7 @@ const Links = () => {
             transform: 'scale(1.06)',
           }}
         >
-          <Link>Projects</Link>
+          <Link>{t('Projects.1')}</Link>
         </Box>
       </Flex>
     </>
