@@ -9,11 +9,15 @@ const HomeImage = () => {
         <Image
           src={me}
           boxShadow='lg'
-          borderRadius='full'
+          borderRadius='5%'
           objectFit='fill'
           mt='-2'
-          w='210px'
+          w='200px'
           h='280px'
+          _hover={{
+            transition: 'transform .2s',
+            transform: 'scale(1.01)',
+          }}
         />
       </Flex>
     </>
