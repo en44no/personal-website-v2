@@ -13,7 +13,7 @@ const Language = () => {
   return (
     <>
       <Button
-        aria-label='toggleColorModeButton'
+        aria-label='toggleLanguageButton'
         mr='-3'
         w={'5%'}
         onClick={() =>
@@ -21,6 +21,7 @@ const Language = () => {
         }
       >
         <IconButton
+          aria-label='toggleLanguageButton_'
           bg='transparent'
           isRound
           _hover={{

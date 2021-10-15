@@ -15,6 +15,7 @@ const ColorMode = () => {
         onClick={toggleColorMode}
       >
         <IconButton
+          aria-label='toggleColorModeButton_'
           bg='transparent'
           isRound
           _hover={{

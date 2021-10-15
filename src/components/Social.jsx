@@ -40,7 +40,11 @@ const Social = () => {
           rel='noreferrer'
           title='GitHub'
         >
-          <IconButton mr='1' fontSize='1.5rem'>
+          <IconButton
+            mr='1'
+            fontSize='1.5rem'
+            aria-label='RedirectToGitHubButton'
+          >
             <FaGithub />
           </IconButton>
         </a>
@@ -50,13 +54,18 @@ const Social = () => {
           rel='noreferrer'
           title='Linkedin'
         >
-          <IconButton mr='1' fontSize='1.5rem'>
+          <IconButton
+            mr='1'
+            fontSize='1.5rem'
+            aria-label='RedirectToLinkedinButton'
+          >
             <FaLinkedin />
           </IconButton>
         </a>
         <IconButton
           title='Gmail address'
           fontSize='1.5rem'
+          aria-label='GetMyEmailAddressButton'
           onClick={() => notificationAndCopyToClipboard()}
         >
           <FaEnvelope />
