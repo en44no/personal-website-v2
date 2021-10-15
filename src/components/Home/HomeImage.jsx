@@ -9,11 +9,12 @@ const HomeImage = () => {
         <Image
           src={me}
           boxShadow='lg'
+          alt='me, Nahuel Marquez'
           borderRadius='5%'
           objectFit='fill'
           mt='-2'
-          w='200px'
-          h='280px'
+          width='200px'
+          height='280px'
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.01)',
