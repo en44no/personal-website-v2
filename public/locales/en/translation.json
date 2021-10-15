@@ -19,5 +19,11 @@
   },
   "Projects": {
     "1": "Projects"
+  },
+  "EmailCopied": {
+    "1": "Email copied."
+  },
+  "EmailCopiedClipboard": {
+    "1": "Gmail address copied to your clipboard."
   }
 }

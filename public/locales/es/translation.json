@@ -19,5 +19,11 @@
   },
   "Projects": {
     "1": "Proyectos"
+  },
+  "EmailCopied": {
+    "1": "Correo electrónico copiado."
+  },
+  "EmailCopiedClipboard": {
+    "1": "Dirección de Gmail copiada a tu portapapeles."
   }
 }
