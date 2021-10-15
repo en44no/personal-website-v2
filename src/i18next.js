@@ -7,7 +7,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const Languages = ['en', 'es'];
 
 i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
-  debug: true,
+  debug: false,
   whitelist: Languages,
   load: 'currentOnly',
   fallbackLng: 'es',
