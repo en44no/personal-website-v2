@@ -18,7 +18,7 @@ const Navbar = () => {
         }}
       >
         <Container maxW='container.xl'>
-          <Flex borderRadius='9px' boxShadow='md'>
+          <Flex borderRadius='9px' boxShadow='lg'>
             <Center>
               <NavbarName />
             </Center>

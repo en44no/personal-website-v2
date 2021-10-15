@@ -27,7 +27,7 @@ const Social = () => {
         position='absolute'
         bottom='5'
         borderRadius='9px'
-        boxShadow='md'
+        boxShadow='lg'
         p='3'
         _hover={{
           transition: 'transform .2s',

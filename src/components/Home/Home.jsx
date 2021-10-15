@@ -19,7 +19,7 @@ const Home = () => {
         <Box
           display='flex'
           borderRadius='9px'
-          boxShadow='md'
+          boxShadow='lg'
           p='8'
           _hover={{
             transition: 'transform .2s',
