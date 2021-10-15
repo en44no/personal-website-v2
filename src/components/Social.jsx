@@ -22,18 +22,7 @@ const Social = () => {
 
   return (
     <>
-      <Flex
-        alignSelf='flex-start'
-        position='absolute'
-        bottom='5'
-        borderRadius='9px'
-        boxShadow='lg'
-        p='3'
-        _hover={{
-          transition: 'transform .2s',
-          transform: 'scale(1.02)',
-        }}
-      >
+      <Flex alignSelf='flex-start' position='absolute' bottom='5' p='3'>
         <a
           href='https://github.com/en44no'
           target='_blank'

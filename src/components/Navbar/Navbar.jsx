@@ -8,17 +8,9 @@ import Language from './Language';
 const Navbar = () => {
   return (
     <>
-      <Box
-        position='fixed'
-        width='100%'
-        mt='1rem'
-        _hover={{
-          transition: 'transform .2s',
-          transform: 'scale(1.01)',
-        }}
-      >
+      <Box position='fixed' width='100%' mt='1rem'>
         <Container maxW='container.xl'>
-          <Flex borderRadius='9px' boxShadow='lg'>
+          <Flex>
             <Center>
               <NavbarName />
             </Center>

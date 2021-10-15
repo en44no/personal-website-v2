@@ -18,7 +18,7 @@ const Resume = () => {
         target='_blank'
         rel='noreferrer'
       >
-        <Button bg='#11BAE5' mt='3' boxShadow='lg'>
+        <Button bg='#11BAE5' mt='3'>
           {t('DownloadCV.1')}
         </Button>
       </a>

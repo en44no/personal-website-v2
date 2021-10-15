@@ -16,16 +16,7 @@ const Home = () => {
         width='100%'
         flexDirection='column'
       >
-        <Box
-          display='flex'
-          borderRadius='9px'
-          boxShadow='lg'
-          p='8'
-          _hover={{
-            transition: 'transform .2s',
-            transform: 'scale(1.01)',
-          }}
-        >
+        <Box display='flex' p='8'>
           <HomeText />
           <HomeImage />
         </Box>
