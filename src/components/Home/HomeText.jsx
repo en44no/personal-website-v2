@@ -1,7 +1,7 @@
 import React from 'react';
-import { Text, Box, Button } from '@chakra-ui/react';
-import CV from '../../assets/CV.pdf';
+import { Text, Box } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
+import Resume from './Resume';
 
 const HomeText = () => {
   const { t } = useTranslation();
@@ -23,16 +23,7 @@ const HomeText = () => {
         <Text fontSize='3xl' fontWeight='semibold'>
           {t('FrontEndDev.1')}
         </Text>
-        <a
-          download='Nahuel Márquez CV EN'
-          href={CV}
-          target='_blank'
-          rel='noreferrer'
-        >
-          <Button bg='#11BAE5' mt='3'>
-            {t('DownloadCV.1')}
-          </Button>
-        </a>
+        <Resume />
       </Box>
     </>
   );
