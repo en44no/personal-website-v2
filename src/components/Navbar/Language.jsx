@@ -1,7 +1,7 @@
 import { Button, IconButton } from '@chakra-ui/button';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { FaLanguage } from 'react-icons/fa';
+import { UilEnglishToChinese } from '@iconscout/react-unicons';
 
 const Language = () => {
   const { i18n } = useTranslation();
@@ -29,7 +29,7 @@ const Language = () => {
           }}
           _focus={{ boxShadow: 'base' }}
         >
-          <FaLanguage fontSize='1.5rem' />
+          <UilEnglishToChinese size='1.5rem' />
         </IconButton>
       </Button>
     </>
