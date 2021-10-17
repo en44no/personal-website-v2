@@ -4,9 +4,7 @@ import './index.css';
 import App from './App';
 import { ChakraProvider } from '@chakra-ui/react';
 import { ColorModeScript } from '@chakra-ui/color-mode';
-import Navbar from './components/Navbar/Navbar';
 import theme from './theme';
-import Home from './components/Home/Home';
 import './i18next';
 
 ReactDOM.render(
@@ -15,8 +13,6 @@ ReactDOM.render(
     <ChakraProvider theme={theme}>
       <Suspense fallback={<h1>.</h1>}>
         <App />
-        <Navbar />
-        <Home />
       </Suspense>
     </ChakraProvider>
   </React.StrictMode>,
