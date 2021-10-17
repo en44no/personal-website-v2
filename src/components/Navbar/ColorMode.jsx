@@ -1,7 +1,7 @@
 import React from 'react';
 import { useColorMode } from '@chakra-ui/color-mode';
 import { Button, IconButton } from '@chakra-ui/react';
-import { SunIcon, MoonIcon } from '@chakra-ui/icons';
+import { UilMoon, UilSun } from '@iconscout/react-unicons';
 
 const ColorMode = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -24,9 +24,9 @@ const ColorMode = () => {
           _focus={{ boxShadow: 'base' }}
         >
           {colorMode === 'light' ? (
-            <SunIcon color='#000' />
+            <UilSun color='#000' />
           ) : (
-            <MoonIcon color='#fff' />
+            <UilMoon color='#fff' />
           )}
         </IconButton>
       </Button>
