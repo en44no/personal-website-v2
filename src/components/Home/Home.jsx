@@ -3,8 +3,8 @@ import { Container, Box, IconButton } from '@chakra-ui/react';
 import Social from '../Social';
 import HomeText from './HomeText';
 import HomeImage from './HomeImage';
-import { FaAngleDoubleDown } from 'react-icons/fa';
 import GoTop from '../GoTop';
+import { UilMouseAlt } from '@iconscout/react-unicons';
 
 const Home = ({ isScrolling }) => {
   const goToSecondSection = () => {
@@ -37,7 +37,7 @@ const Home = ({ isScrolling }) => {
               goToSecondSection();
             }}
           >
-            <FaAngleDoubleDown fontSize='1.5rem' />
+            <UilMouseAlt size='1.8rem' />
           </IconButton>
         </Box>
         <Box position='absolute' top='90%' right='95' zIndex='100'>
