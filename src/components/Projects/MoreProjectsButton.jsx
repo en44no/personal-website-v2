@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@chakra-ui/react';
-import { FaGithub } from 'react-icons/fa';
+import { UilGithubAlt } from '@iconscout/react-unicons';
 
 const MoreProjectsButton = () => {
   return (
@@ -11,7 +11,7 @@ const MoreProjectsButton = () => {
         rel='noreferrer'
         title='GitHub Projects'
       >
-        <Button leftIcon={<FaGithub fontSize='1.2rem' />} bg='#11BAE5'>
+        <Button leftIcon={<UilGithubAlt size='1.4rem' />} bg='#11BAE5'>
           Ver más proyectos
         </Button>
       </a>
