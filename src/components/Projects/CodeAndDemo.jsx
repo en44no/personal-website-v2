@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, IconButton } from '@chakra-ui/react';
-import { FaCode, FaPlay } from 'react-icons/fa';
+import { UilPlay, UilBracketsCurly } from '@iconscout/react-unicons';
 
 const CodeAndDemo = (props) => {
   return (
@@ -14,7 +14,7 @@ const CodeAndDemo = (props) => {
             title='Code'
           >
             <IconButton h='2rem' px='2'>
-              <FaCode fontSize='1.3rem' />
+              <UilBracketsCurly fontSize='1.3rem' />
             </IconButton>
           </a>
           <a
@@ -24,7 +24,7 @@ const CodeAndDemo = (props) => {
             title='Demo'
           >
             <IconButton h='2rem' px='2'>
-              <FaPlay fontSize='1rem' />
+              <UilPlay />
             </IconButton>
           </a>
         </>
