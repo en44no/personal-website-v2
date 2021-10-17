@@ -12,6 +12,8 @@ const Technologies = (props) => {
             <a href={t.link} target='_blank' rel='noreferrer' title='Demo'>
               <Badge
                 borderRadius='full'
+                fontWeight='semibold'
+                fontSize='0.8rem'
                 mr='2'
                 px='2'
                 py='0.5'
