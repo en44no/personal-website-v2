@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaAngleDoubleUp } from 'react-icons/fa';
 import { IconButton, Container, Box } from '@chakra-ui/react';
+import { UilArrowUp } from '@iconscout/react-unicons';
 
 const GoTop = ({ isScrolling }) => {
   const goToTop = () => {
@@ -13,7 +13,7 @@ const GoTop = ({ isScrolling }) => {
           <Box onClick={() => goToTop()}>
             <Box bg='#11BAE5' borderRadius='9px'>
               <IconButton>
-                <FaAngleDoubleUp fontSize='1.5rem' />
+                <UilArrowUp size='1.8rem' />
               </IconButton>
             </Box>
           </Box>
