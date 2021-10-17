@@ -8,16 +8,15 @@ const HomeImage = () => {
       <Flex ml='5rem'>
         <Image
           src={me}
-          boxShadow='lg'
           alt='me, Nahuel Marquez'
-          borderRadius='5%'
+          borderRadius='9px'
           objectFit='fill'
           mt='-2'
           width='200px'
           height='280px'
           _hover={{
             transition: 'transform .2s',
-            transform: 'scale(1.01)',
+            transform: 'scale(1.02)',
           }}
         />
       </Flex>
