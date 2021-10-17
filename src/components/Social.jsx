@@ -14,7 +14,7 @@ const Social = () => {
       description: t('EmailCopiedClipboard.1'),
       status: 'info',
       duration: 4000,
-      position: 'bottom-right',
+      position: 'bottom',
       isClosable: true,
     });
     navigator.clipboard.writeText('nahuelmarquez12@gmail.com');
@@ -22,7 +22,7 @@ const Social = () => {
 
   return (
     <>
-      <Flex alignSelf='flex-start' position='absolute' bottom='5' p='3'>
+      <Flex>
         <a
           href='https://github.com/en44no'
           target='_blank'
