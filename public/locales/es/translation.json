@@ -25,5 +25,17 @@
   },
   "EmailCopiedClipboard": {
     "1": "Dirección de Gmail copiada a tu portapapeles."
+  },
+  "ToDoAppType": {
+    "1": "Gestión"
+  },
+  "ToDoAppTitle": {
+    "1": "Aplicación de tareas"
+  },
+  "MyProjects": {
+    "1": "Mis Proyectos"
+  },
+  "MyLastProjects": {
+    "1": "Estos son mis últimos proyectos"
   }
 }

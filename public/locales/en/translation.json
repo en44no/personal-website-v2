@@ -25,5 +25,17 @@
   },
   "EmailCopiedClipboard": {
     "1": "Gmail address copied to your clipboard."
+  },
+  "ToDoAppType": {
+    "1": "Management"
+  },
+  "ToDoAppTitle": {
+    "1": "Task application"
+  },
+  "MyProjects": {
+    "1": "My Projects"
+  },
+  "MyLastProjects": {
+    "1": "There are my latest projects"
   }
 }
