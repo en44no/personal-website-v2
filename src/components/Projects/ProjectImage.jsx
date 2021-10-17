@@ -6,8 +6,8 @@ const ProjectImage = (props) => {
     <>
       <Box
         display='flex'
-        w='500px'
-        h='250px'
+        w='475px'
+        h='225px'
         bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
         p='0.4%'
         borderRadius='9px'
@@ -23,8 +23,8 @@ const ProjectImage = (props) => {
         <Image
           src={props.appImage}
           alt={props.appTitle}
-          w='500px'
-          h='250px'
+          w='475px'
+          h='225px'
           borderRadius='9px'
           objectFit='cover'
         />
