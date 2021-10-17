@@ -4,15 +4,30 @@ import ColorMode from './ColorMode';
 import Links from './Links';
 import NavbarName from './NavbarName';
 import Language from './Language';
+import { useColorMode } from '@chakra-ui/color-mode';
 
-const Navbar = () => {
+const Navbar = ({ isScrolling }) => {
+  const { colorMode } = useColorMode();
+
+  const goToTop = () => {
+    document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
-      <Box position='fixed' width='100%' mt='1rem'>
+      <Box
+        position='fixed'
+        width='100%'
+        zIndex='100'
+        pt='4'
+        bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
+      >
         <Container maxW='container.xl'>
           <Flex>
             <Center>
-              <NavbarName />
+              <Box onClick={() => goToTop()}>
+                <NavbarName />
+              </Box>
             </Center>
             <Spacer />
             <Center>
@@ -20,10 +35,10 @@ const Navbar = () => {
                 <Links />
               </Box>
             </Center>
-            <Box pt='4' pl='4' mr='-2'>
+            <Box pt='2' pl='4' mr='-2'>
               <Language />
             </Box>
-            <Box p='4' pl='0' pr='0'>
+            <Box pt='2' pl='0'>
               <ColorMode />
             </Box>
           </Flex>
