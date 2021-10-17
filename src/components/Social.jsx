@@ -1,8 +1,12 @@
 import React from 'react';
 import { IconButton, Flex } from '@chakra-ui/react';
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { useToast } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
+import {
+  UilLinkedinAlt,
+  UilGithubAlt,
+  UilEnvelopeAdd,
+} from '@iconscout/react-unicons';
 
 const Social = () => {
   const notification = useToast();
@@ -29,12 +33,8 @@ const Social = () => {
           rel='noreferrer'
           title='GitHub'
         >
-          <IconButton
-            mr='1'
-            fontSize='1.5rem'
-            aria-label='RedirectToGitHubButton'
-          >
-            <FaGithub />
+          <IconButton mr='1' aria-label='RedirectToGitHubButton'>
+            <UilGithubAlt />
           </IconButton>
         </a>
         <a
@@ -43,21 +43,16 @@ const Social = () => {
           rel='noreferrer'
           title='Linkedin'
         >
-          <IconButton
-            mr='1'
-            fontSize='1.5rem'
-            aria-label='RedirectToLinkedinButton'
-          >
-            <FaLinkedin />
+          <IconButton mr='1' aria-label='RedirectToLinkedinButton'>
+            <UilLinkedinAlt size='1.7rem' />
           </IconButton>
         </a>
         <IconButton
           title='Gmail address'
-          fontSize='1.5rem'
           aria-label='GetMyEmailAddressButton'
           onClick={() => notificationAndCopyToClipboard()}
         >
-          <FaEnvelope />
+          <UilEnvelopeAdd size='1.7rem' />
         </IconButton>
       </Flex>
     </>
