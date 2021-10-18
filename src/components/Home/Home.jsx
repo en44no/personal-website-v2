@@ -11,6 +11,8 @@ const Home = ({ isScrolling }) => {
     <>
       <Container
         id='home'
+        data-aos='fade-down'
+        data-aos-duration='600'
         maxW='container.xl'
         display='flex'
         alignItems='center'
