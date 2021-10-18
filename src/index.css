@@ -1,3 +1,16 @@
 html {
   scroll-behavior: smooth;
 }
+
+.goTop {
+  animation: updown 0.3s;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
