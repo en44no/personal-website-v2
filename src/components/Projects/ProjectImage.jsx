@@ -15,7 +15,7 @@ const ProjectImage = (props) => {
         overflow='hidden'
         boxSizing='content-box'
         _hover={{
-          transition: 'transform .2s',
+          transition: 'transform 1s, all 0.2s ease-in-out',
           transform: 'scale(1.02)',
         }}
         mb='-2'
