@@ -4,6 +4,8 @@ import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import './index.css';
 import Projects from './components/Projects/Projects';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   const [scrollHeight, setScrollHeight] = useState(0);
@@ -14,6 +16,12 @@ function App() {
   };
 
   useEffect(() => {
+    Aos.init({
+      once: true,
+    });
+  });
+
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll);
   }, [scrollHeight]);
 
@@ -21,8 +29,8 @@ function App() {
     <>
       <Navbar isScrolling={scrollHeight} />
       <Home isScrolling={scrollHeight} />
-      {/* <About /> */}
       <Projects />
+      {/* <About /> */}
     </>
   );
 }
