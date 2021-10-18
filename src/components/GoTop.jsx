@@ -11,11 +11,9 @@ const GoTop = ({ isScrolling }) => {
       <Container maxW='container.xl' position='relative'>
         {isScrolling > 120 ? (
           <Box onClick={() => goToTop()}>
-            <Box bg='#11BAE5' borderRadius='9px'>
-              <IconButton>
-                <UilArrowUp size='1.8rem' />
-              </IconButton>
-            </Box>
+            <IconButton bg='#11BAE5'>
+              <UilArrowUp size='1.8rem' />
+            </IconButton>
           </Box>
         ) : null}
       </Container>
