@@ -5,7 +5,7 @@ import HomeText from './HomeText';
 import HomeImage from './HomeImage';
 import GoNextSection from '../GoNextSection';
 
-const Home = ({ isScrolling }) => {
+const Home = () => {
   return (
     <>
       <Container
