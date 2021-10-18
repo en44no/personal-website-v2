@@ -2,9 +2,13 @@ import { Box, Text } from '@chakra-ui/layout';
 import React from 'react';
 
 const NavbarName = () => {
+  const goToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <>
-      <Box p='4'>
+      <Box p='4' onClick={() => goToTop()}>
         <Text
           fontWeight='bold'
           bgGradient='linear(to-r, cyan.400, blue.500, purple.500)'
