@@ -3,6 +3,10 @@ import { Link, Box, Flex } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 
 const Links = () => {
+  const goTo = (section) => {
+    document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+  };
+
   const { t } = useTranslation();
   return (
     <>
@@ -13,7 +17,7 @@ const Links = () => {
             transform: 'scale(1.06)',
           }}
         >
-          <Link>{t('About.1')}</Link>
+          <Link onClick={() => goTo('about')}>{t('About.1')}</Link>
         </Box>
         <Box
           _hover={{
@@ -21,7 +25,7 @@ const Links = () => {
             transform: 'scale(1.06)',
           }}
         >
-          <Link>{t('Contact.1')}</Link>
+          <Link onClick={() => goTo('projects')}>{t('Projects.1')}</Link>
         </Box>
         <Box
           _hover={{
@@ -29,7 +33,7 @@ const Links = () => {
             transform: 'scale(1.06)',
           }}
         >
-          <Link>{t('Skills.1')}</Link>
+          <Link onClick={() => goTo('skills')}>{t('Skills.1')}</Link>
         </Box>
         <Box
           _hover={{
@@ -37,7 +41,7 @@ const Links = () => {
             transform: 'scale(1.06)',
           }}
         >
-          <Link>{t('Projects.1')}</Link>
+          <Link onClick={() => goTo('contact')}>{t('Contact.1')}</Link>
         </Box>
       </Flex>
     </>
