@@ -15,7 +15,7 @@ const HomeImage = () => {
           width='200px'
           height='280px'
           _hover={{
-            transition: 'transform .2s',
+            transition: 'transform 1s, all 0.2s ease-in-out',
             transform: 'scale(1.02)',
           }}
         />
