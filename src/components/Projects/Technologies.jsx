@@ -9,7 +9,12 @@ const Technologies = (props) => {
       <Box mr='0' mt='2' display='flex'>
         <>
           {techs.map((t) => (
-            <a href={t.link} target='_blank' rel='noreferrer' title='Demo'>
+            <a
+              href={t.link}
+              target='_blank'
+              rel='noreferrer'
+              title={`Link to ${t.name} page`}
+            >
               <Badge
                 borderRadius='full'
                 fontWeight='semibold'
@@ -18,6 +23,7 @@ const Technologies = (props) => {
                 px='2'
                 py='0.5'
                 mt='3'
+                color='#fff'
                 bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
                 _hover={{
                   transition: 'transform .2s',
