@@ -6,6 +6,7 @@ import './index.css';
 import Projects from './components/Projects/Projects';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import GoTop from './components/GoTop';
 
 function App() {
   const [scrollHeight, setScrollHeight] = useState(0);
@@ -17,7 +18,7 @@ function App() {
 
   useEffect(() => {
     Aos.init({
-      once: true,
+      mirror: true,
     });
   });
 
@@ -27,10 +28,13 @@ function App() {
 
   return (
     <>
-      <Navbar isScrolling={scrollHeight} />
-      <Home isScrolling={scrollHeight} />
-      <Projects />
-      {/* <About /> */}
+      <div data-aos='fade-down' data-aos-duration='600'>
+        <Navbar isScrolling={scrollHeight} />
+        <GoTop isScrolling={scrollHeight} />
+        <Home isScrolling={scrollHeight} />
+        <Projects />
+        {/* <About /> */}
+      </div>
     </>
   );
 }
