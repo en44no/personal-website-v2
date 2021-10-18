@@ -24,7 +24,7 @@ const theme = extendTheme({
           bg: 'transparent',
           bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)',
           transition: 'transform .2s',
-          transform: 'scale(1.09)',
+          transform: 'scale(1.06)',
         },
       },
       variants: {
