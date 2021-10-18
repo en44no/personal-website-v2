@@ -6,12 +6,8 @@ import NavbarName from './NavbarName';
 import Language from './Language';
 import { useColorMode } from '@chakra-ui/color-mode';
 
-const Navbar = ({ isScrolling }) => {
+const Navbar = () => {
   const { colorMode } = useColorMode();
-
-  const goToTop = () => {
-    document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <>
@@ -25,7 +21,7 @@ const Navbar = ({ isScrolling }) => {
         <Container maxW='container.xl'>
           <Flex>
             <Center>
-              <Box onClick={() => goToTop()}>
+              <Box>
                 <NavbarName />
               </Box>
             </Center>
