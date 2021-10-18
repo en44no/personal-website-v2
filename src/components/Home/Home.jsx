@@ -22,7 +22,7 @@ const Home = ({ isScrolling }) => {
         width='100%'
         flexDirection='column'
       >
-        <Box display='flex' p='8'>
+        <Box display='flex' p='8' data-aos='fade-down' data-aos-duration='600'>
           <HomeText />
           <HomeImage />
         </Box>
@@ -30,11 +30,6 @@ const Home = ({ isScrolling }) => {
           <Social />
         </Box>
         <GoNextSection section='projects' />
-        <Box position='absolute' top='90%' right='95' zIndex='100'>
-          <Box position='fixed'>
-            <GoTop isScrolling={isScrolling} />
-          </Box>
-        </Box>
       </Container>
     </>
   );
