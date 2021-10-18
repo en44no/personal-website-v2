@@ -3,7 +3,6 @@ import { Container, Box } from '@chakra-ui/react';
 import Social from '../Social';
 import HomeText from './HomeText';
 import HomeImage from './HomeImage';
-import GoTop from '../GoTop';
 import GoNextSection from '../GoNextSection';
 
 const Home = ({ isScrolling }) => {
