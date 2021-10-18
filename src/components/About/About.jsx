@@ -8,6 +8,8 @@ const About = () => {
     <>
       <Container
         id='about'
+        data-aos='fade-down'
+        data-aos-duration='600'
         maxW='container.xl'
         display='flex'
         position='relative'
