@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { IconButton, Container, Box } from '@chakra-ui/react';
 import { UilArrowUp } from '@iconscout/react-unicons';
 
-const GoTop = ({ isScrolling }) => {
+const GoTop = () => {
+  const [scrollHeight, setScrollHeight] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, [scrollHeight]);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollHeight(position);
+  };
+
   const goToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -10,7 +21,7 @@ const GoTop = ({ isScrolling }) => {
     <>
       <Container maxW='container.xl'>
         <Box display='block' float='right' mr='4.1rem'>
-          {isScrolling > 100 ? (
+          {scrollHeight > 100 ? (
             <IconButton
               className='goTop'
               onClick={() => goToTop()}
