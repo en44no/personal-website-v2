@@ -23,7 +23,7 @@ const theme = extendTheme({
         _hover: {
           bg: 'transparent',
           bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)',
-          transition: 'transform .2s',
+          transition: 'transform 0.2s, all 0.2s ease-in-out',
           transform: 'scale(1.06)',
         },
       },
@@ -32,6 +32,7 @@ const theme = extendTheme({
           bg: 'transparent',
           _hover: {
             bg: 'transparent',
+            transition: 'all 0.2s ease-in-out',
           },
           _active: { bg: 'transparent' },
         },
@@ -44,8 +45,9 @@ const theme = extendTheme({
         _hover: {
           bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
           bgClip: 'text',
-          transition: 'transform 1s',
-          transform: 'scale(1.09)',
+          transform: 'scale(1.06)',
+          transition: 'transform 1s, all 0.2s ease-in-out',
+          textDecoration: 'none',
         },
         _focus: { boxShadow: 'base' },
       },
