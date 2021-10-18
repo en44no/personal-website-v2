@@ -47,6 +47,7 @@ const theme = extendTheme({
           transition: 'transform 1s',
           transform: 'scale(1.09)',
         },
+        _focus: { boxShadow: 'base' },
       },
     },
   },
