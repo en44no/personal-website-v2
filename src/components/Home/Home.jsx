@@ -10,8 +10,6 @@ const Home = () => {
     <>
       <Container
         id='home'
-        data-aos='fade-down'
-        data-aos-duration='600'
         maxW='container.xl'
         display='flex'
         alignItems='center'
@@ -21,7 +19,7 @@ const Home = () => {
         width='100%'
         flexDirection='column'
       >
-        <Box display='flex' p='8' data-aos='fade-down' data-aos-duration='600'>
+        <Box display='flex' p='8'>
           <HomeText />
           <HomeImage />
         </Box>
