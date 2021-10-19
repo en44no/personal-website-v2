@@ -1,20 +1,8 @@
 import React from 'react';
-import { Container, Text, Grid } from '@chakra-ui/react';
-import {
-  SiChakraui,
-  SiReact,
-  SiJavascript,
-  SiHtml5,
-  SiCss3,
-  SiCsharp,
-  SiGit,
-  SiMongodb,
-  SiBootstrap,
-  SiExpress,
-} from 'react-icons/si';
-import { DiNodejs } from 'react-icons/di';
-import TechBox from './TechBox';
+import { Container, Text, Box } from '@chakra-ui/react';
 import GoNextSection from '../GoNextSection';
+import CurrentlySkills from './CurrentlySkills';
+import OtherSkills from './OtherSkills';
 
 const Skills = () => {
   return (
@@ -40,93 +28,12 @@ const Skills = () => {
         >
           My Skills
         </Text>
-        <Text position='absolute' top='20%' fontWeight='semibold' fontSize='lg'>
-          I am currently working with
-        </Text>
-        <Grid
-          templateColumns='repeat(5, 1fr)'
-          gap={6}
-          top='-15'
-          position='relative'
-        >
-          <TechBox
-            techIcon={SiChakraui}
-            techColor='#3FC7BF'
-            title='Chakra UI'
-            link='https://chakra-ui.com/'
-          />
-          <TechBox
-            techIcon={SiReact}
-            techColor='#61DAFB'
-            title='React'
-            link='https://es.reactjs.org/'
-          />
-          <TechBox
-            techIcon={SiJavascript}
-            techColor='#F7E018'
-            title='JavaScript'
-            link='https://developer.mozilla.org/es/docs/Web/JavaScript'
-          />
-          <TechBox
-            techIcon={SiHtml5}
-            techColor='#E54C21'
-            title='HTML 5'
-            link='https://developer.mozilla.org/es/docs/Glossary/HTML5'
-          />
-          <TechBox
-            techIcon={SiCss3}
-            techColor='#2965F1'
-            title='CSS'
-            link='https://developer.mozilla.org/es/docs/Web/CSS'
-          />
-        </Grid>
-
-        <Text position='absolute' top='55%' fontWeight='semibold' fontSize='lg'>
-          I have also worked with
-        </Text>
-        <Grid
-          templateColumns='repeat(6, 1fr)'
-          gap={6}
-          top='100'
-          position='relative'
-        >
-          <TechBox
-            techIcon={DiNodejs}
-            techColor='#6DA55F'
-            title='Node'
-            link='https://nodejs.org/es/'
-          />
-          <TechBox
-            techIcon={SiGit}
-            techColor='#F05033'
-            title='Git'
-            link='https://git-scm.com/'
-          />
-          <TechBox
-            techIcon={SiCsharp}
-            techColor='#953DAC'
-            title='CSharp'
-            link='https://docs.microsoft.com/en-us/dotnet/csharp/'
-          />
-          <TechBox
-            techIcon={SiMongodb}
-            techColor='#71B35E'
-            title='MongoDB'
-            link='https://www.mongodb.com/'
-          />
-          <TechBox
-            techIcon={SiBootstrap}
-            techColor='#8B13FD'
-            title='Bootstrap'
-            link='https://getbootstrap.com/'
-          />
-          <TechBox
-            techIcon={SiExpress}
-            techColor='grey'
-            title='Express'
-            link='https://expressjs.com/es/'
-          />
-        </Grid>
+        <Box w='70%' pb='2rem'>
+          <CurrentlySkills />
+        </Box>
+        <Box w='80%'>
+          <OtherSkills />
+        </Box>
         <GoNextSection section='home' />
       </Container>
     </>
