@@ -9,7 +9,7 @@ const ProjectImage = (props) => {
         w='475px'
         h='225px'
         bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
-        p='0.4%'
+        p='0.15rem'
         borderRadius='9px'
         mt='2'
         overflow='hidden'
