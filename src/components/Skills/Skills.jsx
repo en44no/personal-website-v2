@@ -3,8 +3,10 @@ import { Container, Text, Box } from '@chakra-ui/react';
 import GoNextSection from '../GoNextSection';
 import CurrentlySkills from './CurrentlySkills';
 import OtherSkills from './OtherSkills';
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Container
@@ -26,7 +28,7 @@ const Skills = () => {
           bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
           bgClip='text'
         >
-          My Skills
+          {t('MySkills.1')}
         </Text>
         <Box w='70%' pb='2rem'>
           <CurrentlySkills />

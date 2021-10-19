@@ -40,5 +40,14 @@
   },
   "AboutMe": {
     "1": "Sobre mí"
+  },
+  "MySkills": {
+    "1": "Mis habilidades"
+  },
+  "CurrentlySkills": {
+    "1": "Actualmente estoy trabajando con las siguientes tecnologías:"
+  },
+  "OtherSkills": {
+    "1": "También he utilizado y tengo conocimiento sobre estas:"
   }
 }

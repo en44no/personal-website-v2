@@ -36,9 +36,18 @@
     "1": "My Projects"
   },
   "MyLastProjects": {
-    "1": "There are my latest projects"
+    "1": "These are my latest projects"
   },
   "AboutMe": {
     "1": "About me"
+  },
+  "MySkills": {
+    "1": "My Skills"
+  },
+  "CurrentlySkills": {
+    "1": "I am currently working with the following technologies:"
+  },
+  "OtherSkills": {
+    "1": "I have also used and have knowledge about these:"
   }
 }

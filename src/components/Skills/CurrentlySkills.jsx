@@ -8,12 +8,14 @@ import {
   SiHtml5,
   SiCss3,
 } from 'react-icons/si';
+import { useTranslation } from 'react-i18next';
 
 const CurrentlySkills = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Text fontWeight='semibold' fontSize='lg' textAlign='center' pb='1.5rem'>
-        I am currently working with the following technologies
+        {t('CurrentlySkills.1')}
       </Text>
       <Grid
         templateColumns='repeat(5, 1fr)'

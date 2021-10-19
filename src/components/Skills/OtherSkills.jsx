@@ -9,12 +9,14 @@ import {
   SiBootstrap,
   SiExpress,
 } from 'react-icons/si';
+import { useTranslation } from 'react-i18next';
 
 const OtherSkills = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Text fontWeight='semibold' fontSize='lg' textAlign='center' pb='1.5rem'>
-        I also used and have knowledge of the following technologies
+        {t('OtherSkills.1')}
       </Text>
       <Grid
         templateColumns='repeat(6, 1fr)'
