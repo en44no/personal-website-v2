@@ -30,7 +30,7 @@ const Projects = () => {
         >
           {t('MyProjects.1')}
         </Text>
-        <Text position='absolute' top='18%' fontWeight='semibold' fontSize='lg'>
+        <Text position='absolute' top='20%' fontWeight='semibold' fontSize='lg'>
           {t('MyLastProjects.1')}
         </Text>
         <Box mt='-6'>
@@ -39,7 +39,7 @@ const Projects = () => {
         <Box position='absolute' top='78%'>
           <MoreProjectsButton />
         </Box>
-        <GoNextSection section='home' />
+        <GoNextSection section='skills' />
       </Container>
     </>
   );
