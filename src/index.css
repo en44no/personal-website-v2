@@ -14,3 +14,19 @@ html {
     transform: translateY(0%);
   }
 }
+
+.mouse-icon-animation {
+  animation-name: mouse-animation;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes mouse-animation {
+  0% {
+    top: 90%;
+  }
+  100% {
+    top: 91%;
+  }
+}
