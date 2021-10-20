@@ -28,7 +28,7 @@ const GoTop = () => {
               onClick={() => goToTop()}
               zIndex='100'
               bg='#11BAE5'
-              top='90%'
+              top={{ base: '85%', md: '90%', lg: '90%' }}
               position='fixed'
               cursor='pointer'
             >

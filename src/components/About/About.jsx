@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '@chakra-ui/react';
+import { Container, Box } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import SectionNextButton from '../Section/SectionNextButton';
 import SectionHeader from '../Section/SectionHeader';
@@ -24,7 +24,12 @@ const About = () => {
         <SectionHeader title={t('AboutMe.1')} />
         <SectionSubtitle subtitle={t('FrontEndDevJr.1')} />
         <Content />
-        <SectionNextButton section='projects' />
+        <Box
+          mr='2.5rem'
+          display={{ base: 'none', md: 'relative', lg: 'relative' }}
+        >
+          <SectionNextButton section='projects' />
+        </Box>
       </Container>
     </>
   );

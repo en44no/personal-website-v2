@@ -18,7 +18,11 @@ const CurrentlySkills = () => {
         {t('CurrentlySkills.1')}
       </Text>
       <Grid
-        templateColumns='repeat(5, 1fr)'
+        templateColumns={{
+          base: 'repeat(3, 1fr)',
+          md: 'repeat(5, 1fr)',
+          lg: 'repeat(5, 1fr)',
+        }}
         position='relative'
         placeItems='center'
       >

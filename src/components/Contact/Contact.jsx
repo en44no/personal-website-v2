@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '@chakra-ui/react';
+import { Container, Box } from '@chakra-ui/react';
 import SectionHeader from '../Section/SectionHeader';
 import SectionSubtitle from '../Section/SectionSubtitle';
 

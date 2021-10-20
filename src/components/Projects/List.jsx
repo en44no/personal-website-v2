@@ -7,8 +7,16 @@ const List = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Flex display='flex' justifyContent='center'>
-        <Box p='6'>
+      <Flex
+        display={{ base: 'block', md: 'flex', lg: 'flex' }}
+        justifyContent='center'
+      >
+        <Box
+          pl={{ base: '3', md: '6', lg: '6' }}
+          pt={{ base: '3', md: '6', lg: '6' }}
+          pr={{ base: '3', md: '6', lg: '6' }}
+          pb={{ base: '3', md: '6', lg: '6' }}
+        >
           <Layout
             appType={t('ToDoAppType.1')}
             appTitle={t('ToDoAppTitle.1')}
@@ -22,7 +30,12 @@ const List = () => {
           />
         </Box>
         <Spacer />
-        <Box p='6'>
+        <Box
+          pl={{ base: '3', md: '6', lg: '6' }}
+          pt={{ base: '3', md: '6', lg: '6' }}
+          pr={{ base: '3', md: '6', lg: '6' }}
+          pb={{ base: '8', md: '6', lg: '6' }}
+        >
           <Layout
             appType='Example'
             appTitle='Example'

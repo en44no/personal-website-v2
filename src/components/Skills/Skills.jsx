@@ -22,10 +22,15 @@ const Skills = () => {
         flexDirection='column'
       >
         <SectionHeader title={t('MySkills.1')} />
-        <Box w='70%' pb='2rem'>
+        <Box
+          w={{ base: '93%', md: '70%', lg: '70%' }}
+          pb={{ base: '4rem', md: '2rem', lg: '2rem' }}
+          position='relative'
+          top={{ base: '2rem', md: '0', lg: '0' }}
+        >
           <CurrentlySkills />
         </Box>
-        <Box w='80%'>
+        <Box w={{ base: '93%', md: '80%', lg: '80%' }}>
           <OtherSkills />
         </Box>
         <SectionNextButton section='contact' />

@@ -7,12 +7,16 @@ import Description from './Description';
 const Content = () => {
   return (
     <>
-      <Box w='90%'>
-        <Grid templateColumns='repeat(2, 1fr)' gap={6} display='flex'>
+      <Box w={{ base: '95%', md: '90%', lg: '90%' }} mt='10'>
+        <Grid
+          templateColumns='repeat(1, 1fr)'
+          gap={6}
+          display={{ base: 'block', md: 'flex', lg: 'flex' }}
+        >
           <Box alignSelf='center'>
             <Description />
           </Box>
-          <Box alignSelf='center'>
+          <Box alignSelf='center' mt={{ base: '4', md: '0', lg: '0' }}>
             <Addons />
           </Box>
         </Grid>

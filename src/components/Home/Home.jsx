@@ -23,7 +23,11 @@ const Home = () => {
           <HomeText />
           <HomeImage />
         </Box>
-        <Box alignSelf='flex-start' position='absolute' top='90%'>
+        <Box
+          alignSelf={{ base: 'flex', md: 'flex-start', lg: 'flex-start' }}
+          position={{ base: 'relative', md: 'absolute', lg: 'absolute' }}
+          top={{ base: '3%', md: '0', lg: '90%' }}
+        >
           <Social />
         </Box>
         <SectionNextButton section='about' />

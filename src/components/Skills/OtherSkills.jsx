@@ -19,8 +19,16 @@ const OtherSkills = () => {
         {t('OtherSkills.1')}
       </Text>
       <Grid
-        templateColumns='repeat(6, 1fr)'
-        gap={6}
+        templateColumns={{
+          base: 'repeat(3, 1fr)',
+          md: 'repeat(6, 1fr)',
+          lg: 'repeat(6, 1fr)',
+        }}
+        gap={{
+          base: '0',
+          md: '8',
+          lg: '8',
+        }}
         position='relative'
         placeItems='center'
       >

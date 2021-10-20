@@ -24,13 +24,21 @@ const Projects = () => {
       >
         <SectionHeader title={t('MyProjects.1')} />
         <SectionSubtitle subtitle={t('MyLastProjects.1')} />
-        <Box mt='-6'>
+        <Box>
           <List />
         </Box>
-        <Box position='absolute' top='78%'>
+        <Box
+          position={{ base: 'relative', md: 'relative', lg: 'relative' }}
+          top={{ base: '0', md: '7rem', lg: '7rem' }}
+        >
           <MoreProjectsButton />
         </Box>
-        <SectionNextButton section='skills' />
+        <Box
+          mr='2.5rem'
+          display={{ base: 'none', md: 'relative', lg: 'relative' }}
+        >
+          <SectionNextButton section='skills' />
+        </Box>
       </Container>
     </>
   );

@@ -5,7 +5,7 @@ const SectionHeader = (props) => {
   return (
     <>
       <Text
-        position='absolute'
+        position={{ base: 'flex', md: 'absolute', lg: 'absolute' }}
         top='13%'
         fontWeight='bold'
         fontSize='2xl'

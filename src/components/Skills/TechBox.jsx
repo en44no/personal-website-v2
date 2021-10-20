@@ -6,7 +6,11 @@ const TechBox = (props) => {
     <>
       <Box
         bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
-        w='9rem'
+        w={{
+          base: '6.5rem',
+          md: '9rem',
+          lg: '9rem',
+        }}
         p='0.15rem'
         borderRadius='9px'
         mt='2'
@@ -23,7 +27,17 @@ const TechBox = (props) => {
           rel='noreferrer'
           title={`Link to ${props.title} page`}
         >
-          <Box w='9rem' h='8rem' bg='white' p='4' borderRadius='9px'>
+          <Box
+            w={{
+              base: '6.5rem',
+              md: '9rem',
+              lg: '9rem',
+            }}
+            h='8rem'
+            bg='white'
+            p='4'
+            borderRadius='9px'
+          >
             <Box p='2' borderRadius='9px' textAlign='-webkit-center'>
               <props.techIcon
                 color={props.techColor}
@@ -34,6 +48,16 @@ const TechBox = (props) => {
             <Text
               fontWeight='semibold'
               textAlign='center'
+              fontSize={{
+                base: '15px',
+                md: '',
+                lg: '',
+              }}
+              mt={{
+                base: '0.5rem',
+                md: '',
+                lg: '',
+              }}
               mb='0'
               color={props.techColor}
             >
