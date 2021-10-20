@@ -30,3 +30,16 @@ html {
     top: 91%;
   }
 }
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #232a36;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #11bae5;
+  border-radius: 10px;
+}
