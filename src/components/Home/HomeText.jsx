@@ -1,9 +1,11 @@
 import React from 'react';
-import { Text, Box } from '@chakra-ui/react';
+import { Text, Box, Button } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
-import Resume from './Resume';
 
 const HomeText = () => {
+  const goTo = (section) => {
+    document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+  };
   const { t } = useTranslation();
   return (
     <>
@@ -23,7 +25,9 @@ const HomeText = () => {
         <Text fontSize='3xl' fontWeight='semibold'>
           {t('FrontEndDev.1')}
         </Text>
-        <Resume />
+        <Button bg='#11BAE5' mt='3' onClick={() => goTo('contact')}>
+          {t('ContactMe.1')}
+        </Button>
       </Box>
     </>
   );
