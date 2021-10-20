@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import List from './List';
 import MoreProjectsButton from './MoreProjectsButton';
 import GoNextSection from '../GoNextSection';
+import SectionHeader from '../SectionHeader';
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -20,16 +21,7 @@ const Projects = () => {
         width='100%'
         flexDirection='column'
       >
-        <Text
-          position='absolute'
-          top='13%'
-          fontWeight='bold'
-          fontSize='2xl'
-          bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
-          bgClip='text'
-        >
-          {t('MyProjects.1')}
-        </Text>
+        <SectionHeader title={t('MyProjects.1')} />
         <Text position='absolute' top='20%' fontWeight='semibold' fontSize='lg'>
           {t('MyLastProjects.1')}
         </Text>

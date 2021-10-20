@@ -8,6 +8,7 @@ import {
 import Resume from '../Home/Resume';
 import GoNextSection from '../GoNextSection';
 import Social from '../Social';
+import SectionHeader from '../SectionHeader';
 
 const About = () => {
   const { t } = useTranslation();
@@ -24,16 +25,7 @@ const About = () => {
         width='100%'
         flexDirection='column'
       >
-        <Text
-          position='absolute'
-          top='13%'
-          fontWeight='bold'
-          fontSize='2xl'
-          bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
-          bgClip='text'
-        >
-          {t('AboutMe.1')}
-        </Text>
+        <SectionHeader title={t('AboutMe.1')} />
         <Text position='absolute' top='20%' fontWeight='semibold' fontSize='lg'>
           {t('FrontEndDevJr.1')}
         </Text>

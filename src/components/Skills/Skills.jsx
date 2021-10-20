@@ -4,6 +4,7 @@ import GoNextSection from '../GoNextSection';
 import CurrentlySkills from './CurrentlySkills';
 import OtherSkills from './OtherSkills';
 import { useTranslation } from 'react-i18next';
+import SectionHeader from '../SectionHeader';
 
 const Skills = () => {
   const { t } = useTranslation();
@@ -20,16 +21,7 @@ const Skills = () => {
         width='100%'
         flexDirection='column'
       >
-        <Text
-          position='absolute'
-          top='13%'
-          fontWeight='bold'
-          fontSize='2xl'
-          bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
-          bgClip='text'
-        >
-          {t('MySkills.1')}
-        </Text>
+        <SectionHeader title={t('MySkills.1')} />
         <Box w='70%' pb='2rem'>
           <CurrentlySkills />
         </Box>

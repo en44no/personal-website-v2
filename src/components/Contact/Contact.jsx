@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Text, Box } from '@chakra-ui/react';
+import SectionHeader from '../SectionHeader';
 
 const Contact = () => {
   return (
@@ -15,16 +16,7 @@ const Contact = () => {
         width='100%'
         flexDirection='column'
       >
-        <Text
-          position='absolute'
-          top='13%'
-          fontWeight='bold'
-          fontSize='2xl'
-          bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
-          bgClip='text'
-        >
-          Contact
-        </Text>
+        <SectionHeader title='Contact' />
         <Text position='absolute' top='20%' fontWeight='semibold' fontSize='lg'>
           Estoy abierto a escuchar propuestas.
         </Text>
