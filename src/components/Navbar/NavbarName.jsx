@@ -8,7 +8,7 @@ const NavbarName = () => {
 
   return (
     <>
-      <Box p='4' onClick={() => goToTop()}>
+      <Box p='4'>
         <Text
           fontWeight='bold'
           bgGradient='linear(to-r, cyan.400, blue.500, purple.500)'
@@ -18,6 +18,7 @@ const NavbarName = () => {
             transform: 'scale(1.06)',
             ml: '0.5',
           }}
+          onClick={() => goToTop()}
           cursor='pointer'
         >
           Nahuel Márquez
