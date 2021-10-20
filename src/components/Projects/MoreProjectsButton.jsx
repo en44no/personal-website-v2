@@ -12,7 +12,11 @@ const MoreProjectsButton = () => {
         target='_blank'
         rel='noreferrer'
       >
-        <Button leftIcon={<UilGithubAlt size='1.4rem' />} bg='#11BAE5'>
+        <Button
+          aria-label='seeMoreProjectsButton'
+          leftIcon={<UilGithubAlt size='1.4rem' />}
+          bg='#11BAE5'
+        >
           {t('SeeMoreProjects.1')}
         </Button>
       </a>

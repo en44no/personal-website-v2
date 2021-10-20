@@ -18,7 +18,7 @@ const Resume = () => {
         target='_blank'
         rel='noreferrer'
       >
-        <Button bg='#11BAE5' mt='3' w='100%'>
+        <Button bg='#11BAE5' mt='3' w='100%' aria-label='downloadCVButton'>
           {t('DownloadCV.1')}
         </Button>
       </a>

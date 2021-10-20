@@ -25,7 +25,12 @@ const HomeText = () => {
         <Text fontSize='3xl' fontWeight='semibold'>
           {t('FrontEndDev.1')}
         </Text>
-        <Button bg='#11BAE5' mt='3' onClick={() => goTo('contact')}>
+        <Button
+          bg='#11BAE5'
+          mt='3'
+          aria-label='goToContactMeSection'
+          onClick={() => goTo('contact')}
+        >
           {t('ContactMe.1')}
         </Button>
       </Box>

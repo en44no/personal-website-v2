@@ -23,6 +23,7 @@ const GoTop = () => {
         <Box display='block' float='right' mr='4.1rem'>
           {scrollHeight > 100 ? (
             <IconButton
+              aria-label='goToTopButton'
               className='goTop'
               onClick={() => goToTop()}
               zIndex='100'

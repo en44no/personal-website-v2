@@ -12,6 +12,7 @@ const SectionNextButton = (props) => {
     <>
       <Box position='absolute' top='90%' className='mouse-icon-animation'>
         <IconButton
+          aria-label='goToNextSectionButton'
           onClick={() => {
             goToNextSection();
           }}

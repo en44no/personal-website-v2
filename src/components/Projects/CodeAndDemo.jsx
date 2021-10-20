@@ -13,7 +13,7 @@ const CodeAndDemo = (props) => {
             rel='noreferrer'
             title='Code'
           >
-            <IconButton h='2rem' px='2'>
+            <IconButton h='2rem' px='2' aria-label='SeeDemoButton'>
               <UilBracketsCurly fontSize='1.3rem' />
             </IconButton>
           </a>
@@ -23,7 +23,7 @@ const CodeAndDemo = (props) => {
             rel='noreferrer'
             title='Demo'
           >
-            <IconButton h='2rem' px='2'>
+            <IconButton h='2rem' px='2' aria-label='SeeAppButton'>
               <UilPlay />
             </IconButton>
           </a>
