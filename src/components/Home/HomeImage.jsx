@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flex, Image } from '@chakra-ui/react';
-import me from '../../assets/Nahuel_Marquez.jpeg';
+import me from '../../assets/Nahuel_Marquez.webp';
 
 const HomeImage = () => {
   return (
