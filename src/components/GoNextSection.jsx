@@ -10,7 +10,7 @@ const GoNextSection = (props) => {
   };
   return (
     <>
-      <Box position='absolute' top='90%'>
+      <Box position='absolute' top='90%' className='mouse-icon-animation'>
         <IconButton
           onClick={() => {
             goToNextSection();
