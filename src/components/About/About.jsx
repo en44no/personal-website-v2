@@ -38,7 +38,7 @@ const About = () => {
           {t('FrontEndDevJr.1')}
         </Text>
         <Box w='90%'>
-          <Grid templateColumns='repeat(2, 1fr)' gap={6}>
+          <Grid templateColumns='repeat(2, 1fr)' gap={6} display='flex'>
             <Box alignSelf='center'>
               <Text
                 fontWeight='semibold'
@@ -89,7 +89,7 @@ const About = () => {
               >
                 <Social />
               </Box>
-              <Box textAlign='center' px='9.5rem' ml='2'>
+              <Box ml='2' px='7rem'>
                 <Resume />
               </Box>
             </Box>
