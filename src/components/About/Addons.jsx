@@ -6,8 +6,10 @@ import {
 } from '@iconscout/react-unicons';
 import Social from '../Social';
 import Resume from './Resume';
+import { useTranslation } from 'react-i18next';
 
 const Addons = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Text
@@ -38,7 +40,7 @@ const Addons = () => {
         <span style={{ marginRight: '0.5rem', marginTop: '0.2rem' }}>
           <UilEnglishToChinese />
         </span>
-        Spanish - English
+        {t('Languages.1')}
       </Text>
       <Box display='flex' justifyContent='center' px='9.5rem' ml='2' mt='2'>
         <Social />
