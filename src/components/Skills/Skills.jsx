@@ -36,7 +36,7 @@ const Skills = () => {
         <Box w='80%'>
           <OtherSkills />
         </Box>
-        <GoNextSection section='home' />
+        <GoNextSection section='contact' />
       </Container>
     </>
   );
