@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Text, Box } from '@chakra-ui/react';
 import SectionHeader from '../SectionHeader';
+import SectionSubtitle from '../SectionSubtitle';
 
 const Contact = () => {
   return (
@@ -17,9 +18,7 @@ const Contact = () => {
         flexDirection='column'
       >
         <SectionHeader title='Contact' />
-        <Text position='absolute' top='20%' fontWeight='semibold' fontSize='lg'>
-          Estoy abierto a escuchar propuestas.
-        </Text>
+        <SectionSubtitle subtitle='....' />
       </Container>
     </>
   );

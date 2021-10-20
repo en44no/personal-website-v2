@@ -5,6 +5,7 @@ import List from './List';
 import MoreProjectsButton from './MoreProjectsButton';
 import GoNextSection from '../GoNextSection';
 import SectionHeader from '../SectionHeader';
+import SectionSubtitle from '../SectionSubtitle';
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -22,9 +23,7 @@ const Projects = () => {
         flexDirection='column'
       >
         <SectionHeader title={t('MyProjects.1')} />
-        <Text position='absolute' top='20%' fontWeight='semibold' fontSize='lg'>
-          {t('MyLastProjects.1')}
-        </Text>
+        <SectionSubtitle subtitle={t('MyLastProjects.1')} />
         <Box mt='-6'>
           <List />
         </Box>
