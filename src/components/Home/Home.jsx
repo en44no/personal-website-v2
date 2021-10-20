@@ -3,7 +3,7 @@ import { Container, Box } from '@chakra-ui/react';
 import Social from '../Social';
 import HomeText from './HomeText';
 import HomeImage from './HomeImage';
-import GoNextSection from '../GoNextSection';
+import SectionNextButton from '../Section/SectionNextButton';
 
 const Home = () => {
   return (
@@ -26,7 +26,7 @@ const Home = () => {
         <Box alignSelf='flex-start' position='absolute' top='90%'>
           <Social />
         </Box>
-        <GoNextSection section='about' />
+        <SectionNextButton section='about' />
       </Container>
     </>
   );

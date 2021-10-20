@@ -1,11 +1,11 @@
-import { Container, Text, Box } from '@chakra-ui/react';
+import { Container, Box } from '@chakra-ui/react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import List from './List';
 import MoreProjectsButton from './MoreProjectsButton';
-import GoNextSection from '../GoNextSection';
-import SectionHeader from '../SectionHeader';
-import SectionSubtitle from '../SectionSubtitle';
+import SectionNextButton from '../Section/SectionNextButton';
+import SectionHeader from '../Section/SectionHeader';
+import SectionSubtitle from '../Section/SectionSubtitle';
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -30,7 +30,7 @@ const Projects = () => {
         <Box position='absolute' top='78%'>
           <MoreProjectsButton />
         </Box>
-        <GoNextSection section='skills' />
+        <SectionNextButton section='skills' />
       </Container>
     </>
   );

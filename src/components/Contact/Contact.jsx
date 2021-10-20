@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Text, Box } from '@chakra-ui/react';
-import SectionHeader from '../SectionHeader';
-import SectionSubtitle from '../SectionSubtitle';
+import { Container } from '@chakra-ui/react';
+import SectionHeader from '../Section/SectionHeader';
+import SectionSubtitle from '../Section/SectionSubtitle';
 
 const Contact = () => {
   return (

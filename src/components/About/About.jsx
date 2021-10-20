@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
-import GoNextSection from '../GoNextSection';
-import SectionHeader from '../SectionHeader';
+import SectionNextButton from '../Section/SectionNextButton';
+import SectionHeader from '../Section/SectionHeader';
 import Content from './Content';
-import SectionSubtitle from '../SectionSubtitle';
+import SectionSubtitle from '../Section/SectionSubtitle';
 
 const About = () => {
   const { t } = useTranslation();
@@ -24,7 +24,7 @@ const About = () => {
         <SectionHeader title={t('AboutMe.1')} />
         <SectionSubtitle subtitle={t('FrontEndDevJr.1')} />
         <Content />
-        <GoNextSection section='projects' />
+        <SectionNextButton section='projects' />
       </Container>
     </>
   );

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container, Text, Box } from '@chakra-ui/react';
-import GoNextSection from '../GoNextSection';
+import { Container, Box } from '@chakra-ui/react';
+import SectionNextButton from '../Section/SectionNextButton';
 import CurrentlySkills from './CurrentlySkills';
 import OtherSkills from './OtherSkills';
 import { useTranslation } from 'react-i18next';
-import SectionHeader from '../SectionHeader';
+import SectionHeader from '../Section/SectionHeader';
 
 const Skills = () => {
   const { t } = useTranslation();
@@ -28,7 +28,7 @@ const Skills = () => {
         <Box w='80%'>
           <OtherSkills />
         </Box>
-        <GoNextSection section='contact' />
+        <SectionNextButton section='contact' />
       </Container>
     </>
   );

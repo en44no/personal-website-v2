@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, IconButton } from '@chakra-ui/react';
 import { UilMouseAlt } from '@iconscout/react-unicons';
 
-const GoNextSection = (props) => {
+const SectionNextButton = (props) => {
   const goToNextSection = () => {
     document
       .getElementById(props.section)
@@ -23,4 +23,4 @@ const GoNextSection = (props) => {
   );
 };
 
-export default GoNextSection;
+export default SectionNextButton;
