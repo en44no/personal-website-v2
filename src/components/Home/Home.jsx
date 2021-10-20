@@ -26,7 +26,7 @@ const Home = () => {
         <Box alignSelf='flex-start' position='absolute' top='90%'>
           <Social />
         </Box>
-        <GoNextSection section='projects' />
+        <GoNextSection section='about' />
       </Container>
     </>
   );
