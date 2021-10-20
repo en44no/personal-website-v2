@@ -5,7 +5,7 @@ import {
   UilEnglishToChinese,
 } from '@iconscout/react-unicons';
 import Social from '../Social';
-import Resume from '../Home/Resume';
+import Resume from './Resume';
 
 const Addons = () => {
   return (
