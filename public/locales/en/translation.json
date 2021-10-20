@@ -36,7 +36,7 @@
     "1": "My Projects"
   },
   "MyLastProjects": {
-    "1": "These are my latest projects"
+    "1": "These are my latest projects."
   },
   "AboutMe": {
     "1": "About me"
@@ -49,5 +49,14 @@
   },
   "OtherSkills": {
     "1": "I have also used and have knowledge about these:"
+  },
+  "ContactMe": {
+    "1": "Contact me"
+  },
+  "FrontEndDevJr": {
+    "1": "I'm a Front-end Developer Junior.\n "
+  },
+  "AboutMeText": {
+    "1": "Working on the final project of the Programmer Analyst career at ORT Uruguay (CEI). \n I really enjoy teamwork and I'm always willing to learn. \n I'm currently working on personal projects that allow me to gain experience and improve my skills. \n I'm looking for my first job as a Front-end developer."
   }
 }
