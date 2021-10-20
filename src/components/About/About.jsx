@@ -24,10 +24,7 @@ const About = () => {
         <SectionHeader title={t('AboutMe.1')} />
         <SectionSubtitle subtitle={t('FrontEndDevJr.1')} />
         <Content />
-        <Box
-          mr='2.5rem'
-          display={{ base: 'none', md: 'relative', lg: 'relative' }}
-        >
+        <Box mr='2.5rem' display={{ base: 'none', md: 'block', lg: 'block' }}>
           <SectionNextButton section='projects' />
         </Box>
       </Container>

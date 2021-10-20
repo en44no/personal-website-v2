@@ -33,10 +33,7 @@ const Projects = () => {
         >
           <MoreProjectsButton />
         </Box>
-        <Box
-          mr='2.5rem'
-          display={{ base: 'none', md: 'relative', lg: 'relative' }}
-        >
+        <Box mr='2.5rem' display={{ base: 'none', md: 'block', lg: 'block' }}>
           <SectionNextButton section='skills' />
         </Box>
       </Container>

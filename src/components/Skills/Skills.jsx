@@ -33,7 +33,9 @@ const Skills = () => {
         <Box w={{ base: '93%', md: '80%', lg: '80%' }}>
           <OtherSkills />
         </Box>
-        <SectionNextButton section='contact' />
+        <Box mr='2.5rem' display={{ base: 'none', md: 'block', lg: 'block' }}>
+          <SectionNextButton section='contact' />
+        </Box>
       </Container>
     </>
   );
