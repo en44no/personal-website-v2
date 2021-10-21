@@ -1,24 +1,14 @@
 import React from 'react';
-import { Container, Box } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import Social from '../Social';
 import HomeText from './HomeText';
 import HomeImage from './HomeImage';
-import SectionNextButton from '../Section/SectionNextButton';
+import SectionTemplate from '../Section/SectionTemplate';
 
 const Home = () => {
   return (
     <>
-      <Container
-        id='home'
-        maxW='container.xl'
-        display='flex'
-        alignItems='center'
-        justifyContent='center'
-        height='100vh'
-        position='relative'
-        width='100%'
-        flexDirection='column'
-      >
+      <SectionTemplate id='home' sectionNextButton='about'>
         <Box display='flex' p='8'>
           <HomeText />
           <HomeImage />
@@ -26,12 +16,11 @@ const Home = () => {
         <Box
           alignSelf={{ base: 'flex', md: 'flex-start', lg: 'flex-start' }}
           position={{ base: 'relative', md: 'absolute', lg: 'absolute' }}
-          top={{ base: '3%', md: '0', lg: '90%' }}
+          top={{ base: '3%', md: '0', lg: '93%' }}
         >
           <Social />
         </Box>
-        <SectionNextButton section='about' />
-      </Container>
+      </SectionTemplate>
     </>
   );
 };
