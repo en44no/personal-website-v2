@@ -1,25 +1,10 @@
 import React from 'react';
-import { Container, Box } from '@chakra-ui/react';
-import SectionHeader from '../Section/SectionHeader';
-import SectionSubtitle from '../Section/SectionSubtitle';
+import SectionTemplate from '../Section/SectionTemplate';
 
 const Contact = () => {
   return (
     <>
-      <Container
-        id='contact'
-        maxW='container.xl'
-        display='flex'
-        position='relative'
-        alignItems='center'
-        justifyContent='center'
-        height='100vh'
-        width='100%'
-        flexDirection='column'
-      >
-        <SectionHeader title='Contact' />
-        <SectionSubtitle subtitle='....' />
-      </Container>
+      <SectionTemplate title='Contact' id='contact'></SectionTemplate>
     </>
   );
 };
