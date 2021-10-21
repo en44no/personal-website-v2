@@ -1,27 +1,20 @@
 import React from 'react';
-import { Container, Box } from '@chakra-ui/react';
-import SectionNextButton from '../Section/SectionNextButton';
+import { Box } from '@chakra-ui/react';
 import CurrentlySkills from './CurrentlySkills';
 import OtherSkills from './OtherSkills';
 import { useTranslation } from 'react-i18next';
-import SectionHeader from '../Section/SectionHeader';
+
+import SectionTemplate from '../Section/SectionTemplate';
 
 const Skills = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Container
+      <SectionTemplate
         id='skills'
-        maxW='container.xl'
-        display='flex'
-        position='relative'
-        alignItems='center'
-        justifyContent='center'
-        height='100vh'
-        width='100%'
-        flexDirection='column'
+        title={t('MySkills.1')}
+        sectionNextButton='contact'
       >
-        <SectionHeader title={t('MySkills.1')} />
         <Box
           w={{ base: '93%', md: '70%', lg: '70%' }}
           pb={{ base: '4rem', md: '2rem', lg: '2rem' }}
@@ -33,10 +26,7 @@ const Skills = () => {
         <Box w={{ base: '93%', md: '80%', lg: '80%' }}>
           <OtherSkills />
         </Box>
-        <Box mr='2.5rem' display={{ base: 'none', md: 'block', lg: 'block' }}>
-          <SectionNextButton section='contact' />
-        </Box>
-      </Container>
+      </SectionTemplate>
     </>
   );
 };
