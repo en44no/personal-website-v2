@@ -5,8 +5,7 @@ const SectionHeader = (props) => {
   return (
     <>
       <Text
-        position={{ base: 'flex', md: 'absolute', lg: 'absolute' }}
-        top='13%'
+        position='relative'
         fontWeight='bold'
         fontSize='2xl'
         bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
