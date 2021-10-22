@@ -17,6 +17,7 @@ const Navbar = () => {
         zIndex='100'
         pt='4'
         bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
+        display={{ base: 'none', md: 'block', lg: 'block', xl: 'block' }}
       >
         <Container maxW='container.xl'>
           <Flex>
