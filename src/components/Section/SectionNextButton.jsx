@@ -10,7 +10,7 @@ const SectionNextButton = (props) => {
   };
   return (
     <>
-      <Box className='mouse-icon-animation'>
+      <Box className='mouse-icon-animation' position='relative'>
         <IconButton
           aria-label='goToNextSectionButton'
           onClick={() => {
