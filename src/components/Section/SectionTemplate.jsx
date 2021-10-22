@@ -11,7 +11,7 @@ const SectionTemplate = (props) => {
       <Container
         id={props.id}
         maxW='container.xl'
-        height='100vh'
+        height={{ base: 'auto', md: '100vh', lg: '100vh', xl: '100vh' }}
         width='100%'
         position='relative'
         display='flex'
@@ -46,7 +46,12 @@ const SectionTemplate = (props) => {
           </Box>
         ) : null}
         {props.sectionNextButton ? (
-          <Box textAlign='center' position='relative' bottom='2rem'>
+          <Box
+            textAlign='center'
+            position='relative'
+            bottom={{ base: '6rem', md: '2rem', lg: '2rem', xl: '2rem' }}
+            display={{ base: 'none', md: 'block', lg: 'block', xl: 'block' }}
+          >
             <SectionNextButton section={props.sectionNextButton} />
           </Box>
         ) : null}

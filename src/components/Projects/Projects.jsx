@@ -20,7 +20,7 @@ const Projects = () => {
         </Box>
         <Box
           position={{ base: 'relative', md: 'relative', lg: 'relative' }}
-          top={{ base: '0', md: '7rem', lg: '6rem' }}
+          top={{ base: '0', md: '7rem', lg: '2.5rem', xl: '5rem' }}
         >
           <MoreProjectsButton />
         </Box>

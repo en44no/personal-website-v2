@@ -13,7 +13,7 @@ const List = () => {
       >
         <Box
           pl={{ base: '3', md: '6', lg: '6' }}
-          pt={{ base: '3', md: '6', lg: '6' }}
+          pt={{ base: '7rem', md: '6', lg: '6' }}
           pr={{ base: '3', md: '6', lg: '6' }}
           pb={{ base: '3', md: '6', lg: '6' }}
         >

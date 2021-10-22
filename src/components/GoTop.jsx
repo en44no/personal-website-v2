@@ -20,7 +20,11 @@ const GoTop = () => {
   return (
     <>
       <Container maxW='container.xl'>
-        <Box display='block' float='right' mr='4.1rem'>
+        <Box
+          display='block'
+          float='right'
+          mr={{ base: '3rem', md: '4.1rem', lg: '4.1rem', xl: '4.1rem' }}
+        >
           {scrollHeight > 100 ? (
             <IconButton
               aria-label='goToTopButton'
@@ -28,7 +32,12 @@ const GoTop = () => {
               onClick={() => goToTop()}
               zIndex='100'
               bg='#11BAE5'
-              top={{ base: '85%', md: '90%', lg: '93%' }}
+              top={{
+                base: '85%',
+                md: '90%',
+                lg: '91%',
+                xl: '92.5%',
+              }}
               position='fixed'
               cursor='pointer'
             >
