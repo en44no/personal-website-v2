@@ -18,7 +18,7 @@ const Home = () => {
           display='flex'
           p='8'
           position='relative'
-          top={{ base: '0rem', md: '0', lg: '0', xl: '0' }}
+          top={{ base: '-2rem', md: '0', lg: '0', xl: '0' }}
         >
           <HomeText />
           <Box
