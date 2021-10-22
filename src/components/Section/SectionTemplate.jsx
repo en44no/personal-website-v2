@@ -11,7 +11,12 @@ const SectionTemplate = (props) => {
       <Container
         id={props.id}
         maxW='container.xl'
-        height={{ base: 'auto', md: '100vh', lg: '100vh', xl: '100vh' }}
+        height={{
+          base: props.sectionHome ? '100vh' : 'auto',
+          md: '100vh',
+          lg: '100vh',
+          xl: '100vh',
+        }}
         width='100%'
         position='relative'
         display='flex'
