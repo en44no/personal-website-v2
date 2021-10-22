@@ -17,6 +17,7 @@ const HomeText = () => {
           {t('HelloText.1')}
           <Text
             fontWeight='bold'
+            lineHeight='normal'
             bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
             bgClip='text'
             mt='-2'
