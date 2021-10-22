@@ -31,6 +31,7 @@ const OtherSkills = () => {
         }}
         position='relative'
         placeItems='center'
+        pb={{ base: '10rem', md: '0', lg: '0' }}
       >
         <TechBox
           techIcon={DiNodejs}

@@ -20,7 +20,7 @@ const Content = () => {
           <Box alignSelf='center'>
             <Description />
           </Box>
-          <Box alignSelf='center' mt={{ base: '0', md: '0', lg: '0' }}>
+          <Box alignSelf='center' mt={{ base: '1rem', md: '0', lg: '0' }}>
             <Addons />
           </Box>
         </Grid>
