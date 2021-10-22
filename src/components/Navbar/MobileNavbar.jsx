@@ -17,6 +17,7 @@ const MobileNavbar = () => {
         zIndex='100'
         bottom='0'
         left='0'
+        pb='2'
         bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
         display={{ base: 'block', md: 'none', lg: 'none', xl: 'none' }}
       >
