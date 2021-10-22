@@ -49,7 +49,7 @@ const TechBox = (props) => {
               fontWeight='semibold'
               textAlign='center'
               fontSize={{
-                base: '15px',
+                base: '13px',
                 md: '',
                 lg: '',
               }}
