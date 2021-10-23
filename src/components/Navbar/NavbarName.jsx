@@ -1,7 +1,7 @@
 import { Box, Text } from '@chakra-ui/layout';
 import React from 'react';
 
-const NavbarName = () => {
+const NavbarName = (props) => {
   const goToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -18,7 +18,7 @@ const NavbarName = () => {
             transform: 'scale(1.06)',
             ml: '0.5',
           }}
-          onClick={() => goToTop()}
+          onClick={props.goToTop ? () => goToTop() : null}
           cursor='pointer'
         >
           Nahuel Márquez
