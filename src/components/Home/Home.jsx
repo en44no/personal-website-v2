@@ -31,7 +31,7 @@ const Home = () => {
           alignSelf={{ base: 'flex', md: 'flex-start', lg: 'flex-start' }}
           position={{ base: 'relative', md: 'absolute', lg: 'absolute' }}
           top={{ base: '5rem', md: '0', lg: '91%', xl: '92.5%' }}
-          mb={{ base: '10rem', md: '0', lg: '0', xl: '0' }}
+          mb={{ base: '12rem', md: '0', lg: '0', xl: '0' }}
         >
           <Social />
         </Box>
