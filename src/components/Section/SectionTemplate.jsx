@@ -12,7 +12,13 @@ const SectionTemplate = (props) => {
         id={props.id}
         maxW='container.xl'
         height={{
-          base: props.sectionHome ? '70vh' : 'auto',
+          base: props.sectionHome ? '100vh' : 'auto',
+          md: '100vh',
+          lg: '100vh',
+          xl: '100vh',
+        }}
+        maxHeight={{
+          base: props.sectionHome ? '-webkit-fill-available' : 'auto',
           md: '100vh',
           lg: '100vh',
           xl: '100vh',
