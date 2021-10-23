@@ -44,10 +44,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-html {
-  height: 100vh;
-}
-
+html,
 body {
-  height: 100vh;
+  height: 100%;
 }
