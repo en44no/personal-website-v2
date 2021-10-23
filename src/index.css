@@ -43,3 +43,11 @@ body::-webkit-scrollbar-thumb {
   background: #11bae5;
   border-radius: 10px;
 }
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+}
