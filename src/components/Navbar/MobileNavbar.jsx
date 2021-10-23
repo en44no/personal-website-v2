@@ -32,7 +32,8 @@ const MobileNavbar = () => {
                 textAlign='center'
                 justifyContent='center'
                 display='flex'
-                h='2rem'
+                h='2.5rem'
+                alignItems='center'
                 fontSize='15px'
                 onClick={() => setShow(false)}
               >
