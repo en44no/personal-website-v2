@@ -51,7 +51,6 @@ const theme = extendTheme({
     },
     Link: {
       baseStyle: {
-        mr: '1rem',
         fontWeight: 'semibold',
         _hover: {
           bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
