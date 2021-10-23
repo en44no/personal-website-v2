@@ -12,6 +12,7 @@ const Links = () => {
     <>
       <Flex>
         <Box
+          mr='1rem'
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
@@ -20,6 +21,7 @@ const Links = () => {
           <Link onClick={() => goTo('about')}>{t('About.1')}</Link>
         </Box>
         <Box
+          mr='1rem'
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
@@ -28,6 +30,7 @@ const Links = () => {
           <Link onClick={() => goTo('projects')}>{t('Projects.1')}</Link>
         </Box>
         <Box
+          mr='1rem'
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
