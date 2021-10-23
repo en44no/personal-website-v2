@@ -31,6 +31,15 @@ html {
   }
 }
 
+@-webkit-keyframes mouse-animation {
+  0% {
+    top: -5%;
+  }
+  100% {
+    top: 15%;
+  }
+}
+
 body::-webkit-scrollbar {
   width: 8px;
 }
