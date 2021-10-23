@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, IconButton } from '@chakra-ui/react';
 import { UilMouseAlt } from '@iconscout/react-unicons';
+import { BsHandIndex } from 'react-icons/bs';
 
 const SectionNextButton = (props) => {
   const goToNextSection = () => {
@@ -17,7 +18,11 @@ const SectionNextButton = (props) => {
             goToNextSection();
           }}
         >
-          <UilMouseAlt size='1.8rem' />
+          {props.isFinger ? (
+            <BsHandIndex size='1.8rem' style={{ transform: 'scaleY(-1)' }} />
+          ) : (
+            <UilMouseAlt size='1.8rem' />
+          )}
         </IconButton>
       </Box>
     </>

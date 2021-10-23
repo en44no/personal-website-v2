@@ -54,7 +54,7 @@ const SectionTemplate = (props) => {
           <Box
             textAlign='center'
             position='relative'
-            bottom={{ base: '6rem', md: '2rem', lg: '2rem', xl: '2rem' }}
+            bottom={{ base: '5rem', md: '2rem', lg: '2rem', xl: '2rem' }}
             display={{ base: 'none', md: 'block', lg: 'block', xl: 'block' }}
           >
             <SectionNextButton section={props.sectionNextButton} />
