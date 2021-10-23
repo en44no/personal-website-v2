@@ -16,7 +16,7 @@ const Skills = () => {
         sectionNextButton='contact'
       >
         <Box
-          w={{ base: '96%', md: '70%', lg: '70%' }}
+          w={{ base: '100%', md: '70%', lg: '70%' }}
           pb={{ base: '0rem', md: '2rem', lg: '2rem' }}
           position='relative'
           top={{ base: '7rem', md: '0', lg: '0' }}
@@ -24,7 +24,7 @@ const Skills = () => {
           <CurrentlySkills />
         </Box>
         <Box
-          w={{ base: '96%', md: '80%', lg: '80%' }}
+          w={{ base: '100%', md: '80%', lg: '80%' }}
           position='relative'
           top={{ base: '10rem', md: '0', lg: '0' }}
         >

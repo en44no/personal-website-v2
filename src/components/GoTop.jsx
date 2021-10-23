@@ -33,7 +33,7 @@ const GoTop = () => {
               zIndex='100'
               bg='#11BAE5'
               top={{
-                base: '85%',
+                base: '80%',
                 md: '90%',
                 lg: '91%',
                 xl: '92.5%',

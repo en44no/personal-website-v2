@@ -18,7 +18,7 @@ const Home = () => {
           display='flex'
           p='8'
           position='relative'
-          top={{ base: '-6rem', md: '0', lg: '0', xl: '0' }}
+          top={{ base: '5rem', md: '0', lg: '0', xl: '0' }}
         >
           <HomeText />
           <Box
@@ -30,7 +30,8 @@ const Home = () => {
         <Box
           alignSelf={{ base: 'flex', md: 'flex-start', lg: 'flex-start' }}
           position={{ base: 'relative', md: 'absolute', lg: 'absolute' }}
-          top={{ base: '-4rem', md: '0', lg: '91%', xl: '92.5%' }}
+          top={{ base: '5rem', md: '0', lg: '91%', xl: '92.5%' }}
+          mb={{ base: '5rem', md: '0', lg: '0', xl: '0' }}
         >
           <Social />
         </Box>

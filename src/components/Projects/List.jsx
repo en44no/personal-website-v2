@@ -12,10 +12,10 @@ const List = () => {
         justifyContent='center'
       >
         <Box
-          pl={{ base: '3', md: '6', lg: '6' }}
+          pl={{ base: '2', md: '6', lg: '6' }}
           pt={{ base: '7rem', md: '6', lg: '6' }}
-          pr={{ base: '3', md: '6', lg: '6' }}
-          pb={{ base: '3', md: '6', lg: '6' }}
+          pr={{ base: '2', md: '6', lg: '6' }}
+          pb={{ base: '2', md: '6', lg: '6' }}
         >
           <Layout
             appType={t('ToDoAppType.1')}
@@ -31,9 +31,9 @@ const List = () => {
         </Box>
         <Spacer />
         <Box
-          pl={{ base: '3', md: '6', lg: '6' }}
+          pl={{ base: '2', md: '6', lg: '6' }}
           pt={{ base: '3', md: '6', lg: '6' }}
-          pr={{ base: '3', md: '6', lg: '6' }}
+          pr={{ base: '2', md: '6', lg: '6' }}
           pb={{ base: '8', md: '6', lg: '6' }}
         >
           <Layout
