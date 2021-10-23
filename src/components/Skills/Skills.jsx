@@ -19,7 +19,7 @@ const Skills = () => {
           w={{ base: '100%', md: '70%', lg: '70%' }}
           pb={{ base: '0rem', md: '2rem', lg: '2rem' }}
           position='relative'
-          top={{ base: '7rem', md: '0', lg: '0' }}
+          top={{ base: '6rem', md: '0', lg: '0' }}
         >
           <CurrentlySkills />
         </Box>
