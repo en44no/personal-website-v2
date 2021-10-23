@@ -1,13 +1,17 @@
 import React from 'react';
-import { Flex, Spacer, Box, Center } from '@chakra-ui/react';
+import { Flex, Spacer, Box, Center, Button, Container } from '@chakra-ui/react';
+import { ScaleFade } from '@chakra-ui/transition';
 import { UilApps } from '@iconscout/react-unicons';
 import { useColorMode } from '@chakra-ui/color-mode';
 import NavbarName from './NavbarName';
 import ColorMode from './ColorMode';
 import Language from './Language';
+import Links from './Links';
 
 const MobileNavbar = () => {
   const { colorMode } = useColorMode();
+  const [show, setShow] = React.useState(false);
+
   return (
     <>
       <Box
@@ -15,12 +19,26 @@ const MobileNavbar = () => {
         width='100%'
         height='auto'
         zIndex='100'
-        bottom='0'
+        bottom='-1'
         left='0'
-        pb='2'
+        pb='4'
         bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
         display={{ base: 'block', md: 'none', lg: 'none', xl: 'none' }}
       >
+        <Box display={show ? 'block' : 'none'}>
+          <ScaleFade direction='bottom' in={show}>
+            <Container>
+              <Box
+                h='2rem'
+                fontSize='14px'
+                ml='5'
+                onClick={() => setShow(false)}
+              >
+                <Links />
+              </Box>
+            </Container>
+          </ScaleFade>
+        </Box>
         <Flex>
           <Center>
             <Box>
@@ -35,8 +53,10 @@ const MobileNavbar = () => {
           <Box pt='2' pl='0' pr='0'>
             <ColorMode />
           </Box>
-          <Box pt='4' pr='4'>
-            <UilApps />
+          <Box pt='2' pr='2' ml='-3'>
+            <Button onClick={() => setShow(!show)}>
+              <UilApps />
+            </Button>
           </Box>
         </Flex>
       </Box>
