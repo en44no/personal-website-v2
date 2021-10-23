@@ -29,9 +29,11 @@ const MobileNavbar = () => {
           <ScaleFade direction='bottom' in={show}>
             <Container>
               <Box
+                textAlign='center'
+                justifyContent='center'
+                display='flex'
                 h='2rem'
-                fontSize='14px'
-                ml='5'
+                fontSize='13px'
                 onClick={() => setShow(false)}
               >
                 <Links />
@@ -53,7 +55,7 @@ const MobileNavbar = () => {
           <Box pt='2' pl='0' pr='0'>
             <ColorMode />
           </Box>
-          <Box pt='2' pr='2' ml='-3'>
+          <Box pt='2' pr='3' ml='-3'>
             <Button onClick={() => setShow(!show)}>
               <UilApps />
             </Button>
