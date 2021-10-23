@@ -16,6 +16,7 @@ html {
 }
 
 .mouse-icon-animation {
+  display: block;
   animation-name: mouse-animation;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
