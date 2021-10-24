@@ -16,7 +16,6 @@ const breakpoints = createBreakpoints({
 });
 
 const theme = extendTheme({
-  config,
   breakpoints,
   styles: {
     global: (props) => ({
@@ -29,8 +28,6 @@ const theme = extendTheme({
   components: {
     Button: {
       baseStyle: {
-        _focus: { boxShadow: 'base' },
-        _active: { bg: 'transparent' },
         _hover: {
           bg: 'transparent',
           bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)',
@@ -45,7 +42,6 @@ const theme = extendTheme({
             bg: 'transparent',
             transition: 'all 0.2s ease-in-out',
           },
-          _active: { bg: 'transparent' },
         },
       },
     },
@@ -59,7 +55,6 @@ const theme = extendTheme({
           transition: 'transform 1s, all 0.2s ease-in-out',
           textDecoration: 'none',
         },
-        _focus: { boxShadow: 'base' },
       },
     },
   },

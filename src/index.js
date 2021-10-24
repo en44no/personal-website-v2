@@ -6,6 +6,8 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { ColorModeScript } from '@chakra-ui/color-mode';
 import theme from './theme';
 import './i18next';
+import 'focus-visible/dist/focus-visible';
+
 import Loader from './components/Loader';
 
 ReactDOM.render(
