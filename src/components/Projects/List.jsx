@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Spacer, Box } from '@chakra-ui/react';
+import { Grid, GridItem } from '@chakra-ui/react';
 import Layout from './Layout';
 import { useTranslation } from 'react-i18next';
 
@@ -7,11 +7,15 @@ const List = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Flex
-        display={{ base: 'block', md: 'flex', lg: 'flex' }}
-        justifyContent='center'
+      <Grid
+        templateColumns={{
+          base: 'repeat(1, 1fr)',
+          md: 'repeat(2, 1fr)',
+          lg: 'repeat(2, 1fr)',
+        }}
+        position='relative'
       >
-        <Box
+        <GridItem
           pl={{ base: '2', md: '6', lg: '6' }}
           pt={{ base: '7rem', md: '6', lg: '6' }}
           pr={{ base: '2', md: '6', lg: '6' }}
@@ -28,9 +32,8 @@ const List = () => {
               { name: 'Chakra UI', link: 'https://chakra-ui.com/' },
             ]}
           />
-        </Box>
-        <Spacer />
-        <Box
+        </GridItem>
+        <GridItem
           pl={{ base: '2', md: '6', lg: '6' }}
           pt={{ base: '3', md: '6', lg: '6' }}
           pr={{ base: '2', md: '6', lg: '6' }}
@@ -47,8 +50,8 @@ const List = () => {
               { name: 'Example', link: 'Example' },
             ]}
           />
-        </Box>
-      </Flex>
+        </GridItem>
+      </Grid>
     </>
   );
 };
