@@ -21,7 +21,6 @@ const ColorMode = () => {
           _hover={{
             bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)',
           }}
-          _focus={{ boxShadow: 'base' }}
         >
           {colorMode === 'light' ? (
             <UilSun color='#000' />
