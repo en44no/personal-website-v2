@@ -6,12 +6,13 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { ColorModeScript } from '@chakra-ui/color-mode';
 import theme from './theme';
 import './i18next';
+import Loader from './components/Loader';
 
 ReactDOM.render(
   <React.StrictMode>
     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
     <ChakraProvider theme={theme}>
-      <Suspense fallback={<h1>.</h1>}>
+      <Suspense fallback={<Loader />}>
         <App />
       </Suspense>
     </ChakraProvider>
