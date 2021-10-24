@@ -2,8 +2,10 @@ import { Button, IconButton } from '@chakra-ui/button';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { UilEnglishToChinese } from '@iconscout/react-unicons';
+import { useColorMode } from '@chakra-ui/color-mode';
 
 const Language = () => {
+  const { colorMode } = useColorMode();
   const { i18n } = useTranslation();
 
   const handleClick = (lang) => {
@@ -27,9 +29,12 @@ const Language = () => {
           _hover={{
             bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)',
           }}
-          _focus={{ boxShadow: 'base' }}
         >
-          <UilEnglishToChinese size='1.5rem' />
+          {colorMode === 'dark' ? (
+            <UilEnglishToChinese size='1.5rem' color='white' />
+          ) : (
+            <UilEnglishToChinese size='1.5rem' color='dark' />
+          )}
         </IconButton>
       </Button>
     </>
