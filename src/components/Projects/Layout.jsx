@@ -14,7 +14,11 @@ const Layout = (props) => {
           codeLink={props.codeLink}
           demoLink={props.demoLink}
         />
-        <ProjectImage appImage={props.appImage} appTitle={props.appTitle} />
+        <ProjectImage
+          appImage={props.appImage}
+          appTitle={props.appTitle}
+          demoLink={props.demoLink}
+        />
         <Box display='flex'>
           <Technologies techs={props.techs} />
         </Box>
