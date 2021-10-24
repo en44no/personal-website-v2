@@ -26,7 +26,7 @@ const List = () => {
             appTitle={t('ToDoAppTitle.1')}
             codeLink='https://github.com/en44no/todo-app'
             demoLink='https://todo-app-en44no.vercel.app/'
-            appImage='https://i.imgur.com/xpy1bPD.png'
+            appImage='https://user-images.githubusercontent.com/57118285/138615565-0fcfc242-7bb2-4113-a07f-9e901d8c3826.png'
             techs={[
               { name: 'ReactJS', link: 'https://es.reactjs.org/' },
               { name: 'Chakra UI', link: 'https://chakra-ui.com/' },
