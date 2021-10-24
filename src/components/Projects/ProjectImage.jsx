@@ -20,15 +20,17 @@ const ProjectImage = (props) => {
         }}
         mb='-2'
       >
-        <Image
-          loading='lazy'
-          src={props.appImage}
-          alt={props.appTitle}
-          w='475px'
-          h='225px'
-          borderRadius='9px'
-          objectFit='cover'
-        />
+        <a href={props.demoLink} target='_blank' rel='noreferrer' title='Demo'>
+          <Image
+            loading='lazy'
+            src={props.appImage}
+            alt={props.appTitle}
+            w='475px'
+            h='225px'
+            borderRadius='9px'
+            objectFit='cover'
+          />
+        </a>
       </Box>
     </>
   );
