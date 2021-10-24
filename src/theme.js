@@ -42,6 +42,9 @@ const theme = extendTheme({
             bg: 'transparent',
             transition: 'all 0.2s ease-in-out',
           },
+          _active: {
+            bg: 'transparent',
+          },
         },
       },
     },
