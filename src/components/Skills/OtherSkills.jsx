@@ -19,7 +19,7 @@ const OtherSkills = () => {
         fontWeight='semibold'
         fontSize='lg'
         textAlign='center'
-        mt='-3rem'
+        mt={{ base: '-3rem', md: '0', lg: '0' }}
         pb='1.5rem'
       >
         {t('OtherSkills.1')}
