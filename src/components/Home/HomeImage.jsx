@@ -8,6 +8,7 @@ const HomeImage = () => {
       <Flex ml='5rem'>
         <Image
           loading='lazy'
+          boxShadow='md'
           src={me}
           alt='me, Nahuel Marquez'
           borderRadius='15px'

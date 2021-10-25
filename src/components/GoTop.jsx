@@ -27,6 +27,7 @@ const GoTop = () => {
         >
           {scrollHeight > 100 ? (
             <IconButton
+              boxShadow='md'
               aria-label='goToTopButton'
               className='goTop'
               onClick={() => goToTop()}

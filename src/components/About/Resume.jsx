@@ -21,6 +21,7 @@ const Resume = () => {
       >
         <Button
           bg='#11BAE5'
+          boxShadow='md'
           mt='3'
           aria-label='downloadCVButton'
           leftIcon={<UilFileDownloadAlt size='1.4rem' />}

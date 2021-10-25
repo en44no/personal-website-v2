@@ -16,6 +16,7 @@ const Technologies = (props) => {
               title={`Link to ${t.name} page`}
             >
               <Badge
+                boxShadow='md'
                 borderRadius='full'
                 fontWeight='semibold'
                 fontSize='0.8rem'
