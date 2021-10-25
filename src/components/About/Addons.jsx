@@ -42,11 +42,20 @@ const Addons = () => {
         </span>
         {t('Languages.1')}
       </Text>
+      <Text
+        fontWeight='bold'
+        fontSize='xl'
+        textAlign='center'
+        display='flex'
+        justifyContent='center'
+        mt='3'
+        bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
+        bgClip='text'
+      >
+        {t('ContactMeHere.1')}
+      </Text>
       <Box display='flex' justifyContent='center' px='9.5rem' ml='2' mt='2'>
         <Social />
-      </Box>
-      <Box px={{ base: '3.5rem', md: '7rem', lg: '7rem' }}>
-        <Resume />
       </Box>
     </>
   );
