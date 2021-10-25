@@ -12,7 +12,7 @@ const HomeImage = () => {
           alt='me, Nahuel Marquez'
           borderRadius='15px'
           objectFit='fill'
-          mt='-2'
+          mt='-3'
           width='200px'
           height='280px'
           _hover={{
