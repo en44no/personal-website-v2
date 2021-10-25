@@ -45,7 +45,7 @@ const Addons = () => {
       <Box display='flex' justifyContent='center' px='9.5rem' ml='2' mt='2'>
         <Social />
       </Box>
-      <Box ml='2' px={{ base: '3rem', md: '7rem', lg: '7rem' }}>
+      <Box px={{ base: '3rem', md: '7rem', lg: '7rem' }}>
         <Resume />
       </Box>
     </>
