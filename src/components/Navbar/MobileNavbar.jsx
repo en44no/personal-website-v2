@@ -34,7 +34,7 @@ const MobileNavbar = () => {
                 display='flex'
                 h='2.5rem'
                 alignItems='center'
-                fontSize='15px'
+                fontSize='16px'
                 onClick={() => setShow(false)}
               >
                 <Links />
