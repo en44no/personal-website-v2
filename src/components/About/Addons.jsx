@@ -42,7 +42,9 @@ const Addons = () => {
         {t('Languages.1')}
       </Text>
       <Text
-        color='red'
+        bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
+        bgClip='text'
+        position='relative'
         fontWeight='bold'
         fontSize='20px'
         textAlign='center'
