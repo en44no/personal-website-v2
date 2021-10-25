@@ -5,7 +5,6 @@ import {
   UilEnglishToChinese,
 } from '@iconscout/react-unicons';
 import Social from '../Social';
-import Resume from './Resume';
 import { useTranslation } from 'react-i18next';
 
 const Addons = () => {
