@@ -43,7 +43,7 @@ const Addons = () => {
       </Text>
       <Text
         fontWeight='bold'
-        fontSize='xl'
+        fontSize='20px'
         textAlign='center'
         display='flex'
         justifyContent='center'
