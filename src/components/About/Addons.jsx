@@ -42,14 +42,12 @@ const Addons = () => {
         {t('Languages.1')}
       </Text>
       <Text
+        position='relative'
         bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
         bgClip='text'
-        position='relative'
         fontWeight='bold'
-        fontSize='20px'
+        fontSize='xl'
         textAlign='center'
-        display='flex'
-        justifyContent='center'
         mt='3'
       >
         {t('ContactMeHere.1')}
