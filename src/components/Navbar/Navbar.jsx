@@ -23,7 +23,7 @@ const Navbar = () => {
           <Flex>
             <Center>
               <Box>
-                <NavbarName goToTop='true' />
+                <NavbarName goToTop='true' cursorPointer='true' />
               </Box>
             </Center>
             <Spacer />

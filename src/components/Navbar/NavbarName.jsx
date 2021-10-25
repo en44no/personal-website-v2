@@ -19,7 +19,7 @@ const NavbarName = (props) => {
             ml: '0.5',
           }}
           onClick={props.goToTop ? () => goToTop() : null}
-          cursor='pointer'
+          cursor={props.cursorPointer ? () => 'pointer' : null}
         >
           Nahuel Márquez
         </Text>
