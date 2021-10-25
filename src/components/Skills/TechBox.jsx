@@ -12,6 +12,7 @@ const TechBox = (props) => {
       >
         <Box
           boxShadow='md'
+          mb={{ base: '1rem', md: '0', lg: '0' }}
           w={{
             base: '6.5rem',
             md: '9rem',
