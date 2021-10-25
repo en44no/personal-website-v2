@@ -30,21 +30,12 @@ const Links = () => {
           <Link onClick={() => goTo('projects')}>{t('Projects.1')}</Link>
         </Box>
         <Box
-          mr='1rem'
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
           }}
         >
           <Link onClick={() => goTo('skills')}>{t('Skills.1')}</Link>
-        </Box>
-        <Box
-          _hover={{
-            transition: 'transform .2s',
-            transform: 'scale(1.06)',
-          }}
-        >
-          <Link onClick={() => goTo('contact')}>{t('Contact.1')}</Link>
         </Box>
       </Flex>
     </>

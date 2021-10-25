@@ -6,7 +6,6 @@ import './index.css';
 import Projects from './components/Projects/Projects';
 import GoTop from './components/GoTop';
 import Skills from './components/Skills/Skills';
-import Contact from './components/Contact/Contact';
 import MobileNavbar from './components/Navbar/MobileNavbar';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
       <About />
       <Projects />
       <Skills />
-      {/* <Contact /> */}
     </>
   );
 }
