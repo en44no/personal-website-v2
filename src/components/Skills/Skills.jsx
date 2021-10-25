@@ -10,11 +10,7 @@ const Skills = () => {
   const { t } = useTranslation();
   return (
     <>
-      <SectionTemplate
-        id='skills'
-        title={t('MySkills.1')}
-        sectionNextButton='contact'
-      >
+      <SectionTemplate id='skills' title={t('MySkills.1')}>
         <Box
           w={{ base: '100%', md: '70%', lg: '70%' }}
           pb={{ base: '0rem', md: '2rem', lg: '2rem' }}
