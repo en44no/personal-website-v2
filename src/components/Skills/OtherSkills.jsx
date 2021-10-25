@@ -15,7 +15,13 @@ const OtherSkills = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Text fontWeight='semibold' fontSize='lg' textAlign='center' pb='1.5rem'>
+      <Text
+        fontWeight='semibold'
+        fontSize='lg'
+        textAlign='center'
+        mt='-3rem'
+        pb='1.5rem'
+      >
         {t('OtherSkills.1')}
       </Text>
       <Grid
@@ -31,7 +37,7 @@ const OtherSkills = () => {
         }}
         position='relative'
         placeItems='center'
-        pb={{ base: '10rem', md: '0', lg: '0' }}
+        pb={{ base: '8rem', md: '0', lg: '0' }}
       >
         <TechBox
           techIcon={DiNodejs}
