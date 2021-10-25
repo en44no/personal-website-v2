@@ -10,17 +10,21 @@ import {
 
 const Social = () => {
   const notification = useToast();
+  const toastId = 'email-toast';
   const { t } = useTranslation();
 
   const notificationAndCopyToClipboard = () => {
-    notification({
-      title: t('EmailCopied.1'),
-      description: t('EmailCopiedClipboard.1'),
-      status: 'info',
-      duration: 4000,
-      position: 'bottom',
-      isClosable: true,
-    });
+    if (!notification.isActive(toastId)) {
+      notification({
+        id: toastId,
+        title: t('EmailCopied.1'),
+        description: t('EmailCopiedClipboard.1'),
+        status: 'info',
+        duration: 4000,
+        position: 'bottom',
+        isClosable: true,
+      });
+    }
     navigator.clipboard.writeText('nahuelmarquez12@gmail.com');
   };
 
