@@ -10,7 +10,7 @@ const HomeImage = () => {
           loading='lazy'
           src={me}
           alt='me, Nahuel Marquez'
-          borderRadius='9px'
+          borderRadius='15px'
           objectFit='fill'
           mt='-2'
           width='200px'
