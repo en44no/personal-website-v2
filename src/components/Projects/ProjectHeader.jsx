@@ -17,7 +17,7 @@ const Header = (props) => {
             {props.appType}
           </Box>
           <Flex>
-            <Box mt='1' fontWeight='semibold' as='h4' fontSize='xl'>
+            <Box mt='1' fontWeight='semibold' as='h4' fontSize='lg'>
               {props.appTitle}
             </Box>
             <Spacer />

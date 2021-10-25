@@ -13,7 +13,7 @@ const Addons = () => {
     <>
       <Text
         fontWeight='semibold'
-        fontSize='xl'
+        fontSize='lg'
         textAlign='center'
         justifyContent='center'
         display='flex'
@@ -30,7 +30,7 @@ const Addons = () => {
       </Text>
       <Text
         fontWeight='semibold'
-        fontSize='xl'
+        fontSize='lg'
         textAlign='center'
         display='flex'
         justifyContent='center'
@@ -46,7 +46,7 @@ const Addons = () => {
         bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
         bgClip='text'
         fontWeight='bold'
-        fontSize='xl'
+        fontSize='lg'
         textAlign='center'
         mt='3'
       >

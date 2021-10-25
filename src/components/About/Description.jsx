@@ -8,7 +8,7 @@ const Description = () => {
     <>
       <Text
         fontWeight='semibold'
-        fontSize='xl'
+        fontSize='lg'
         textAlign='center'
         style={{ whiteSpace: 'pre-line' }}
       >
