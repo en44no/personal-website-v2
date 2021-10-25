@@ -16,6 +16,7 @@ const breakpoints = createBreakpoints({
 });
 
 const theme = extendTheme({
+  config,
   breakpoints,
   styles: {
     global: (props) => ({
@@ -64,11 +65,3 @@ const theme = extendTheme({
 });
 
 export default theme;
-
-//HOW TO ADD VARIANTS
-//variants: {
-// 'social-button': {
-//   mr: '1',
-//   fontSize: '1.5rem',
-// },
-//The background of the Button varies depending on the variant used. So we need to override the bg / background property on the variant we are using. The default variant for Button is solid.
