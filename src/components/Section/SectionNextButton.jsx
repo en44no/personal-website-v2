@@ -14,7 +14,7 @@ const SectionNextButton = (props) => {
 
   const goToNextSectionMobile = () => {
     const el = document.getElementById(props.section);
-    const y = el.getBoundingClientRect().top + window.pageYOffset + 55;
+    const y = el.getBoundingClientRect().top + window.pageYOffset + 50;
     window.scrollTo({ top: y, behavior: 'smooth' });
   };
 
