@@ -19,7 +19,7 @@ const MobileNavbar = () => {
         width='100%'
         height='auto'
         zIndex='100'
-        bottom='-1'
+        bottom='0'
         left='0'
         pb='4'
         bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
