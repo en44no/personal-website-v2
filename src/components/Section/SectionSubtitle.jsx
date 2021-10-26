@@ -6,7 +6,7 @@ const SectionSubtitle = (props) => {
     <>
       <Text
         position='relative'
-        mt={{ base: '0', md: '0', lg: '0' }}
+        mt={{ sm: '0', md: '0', lg: '0' }}
         fontWeight='semibold'
         fontSize='xl'
       >

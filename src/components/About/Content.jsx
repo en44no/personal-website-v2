@@ -8,19 +8,19 @@ const Content = () => {
   return (
     <>
       <Box
-        w={{ base: '95%', md: '90%', lg: '90%' }}
-        mt={{ base: '0', md: '10', lg: '10' }}
+        w={{ sm: '95%', md: '90%', lg: '90%' }}
+        mt={{ sm: '0', md: '10', lg: '10' }}
       >
         <Grid
           templateColumns='repeat(1, 1fr)'
           gap={6}
-          display={{ base: 'block', md: 'flex', lg: 'flex' }}
-          mt={{ base: '7rem', md: '0', lg: '0' }}
+          display={{ sm: 'block', md: 'flex', lg: 'flex' }}
+          mt={{ sm: '7rem', md: '0', lg: '0' }}
         >
           <Box alignSelf='center'>
             <Description />
           </Box>
-          <Box alignSelf='center' mt={{ base: '1rem', md: '0', lg: '0' }}>
+          <Box alignSelf='center' mt={{ sm: '1rem', md: '0', lg: '0' }}>
             <Addons />
           </Box>
         </Grid>

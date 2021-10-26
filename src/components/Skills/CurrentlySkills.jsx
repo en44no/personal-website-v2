@@ -20,7 +20,7 @@ const CurrentlySkills = () => {
       </Text>
       <Grid
         templateColumns={{
-          base: 'repeat(3, 1fr)',
+          sm: 'repeat(3, 1fr)',
           md: 'repeat(6, 1fr)',
           lg: 'repeat(6, 1fr)',
         }}

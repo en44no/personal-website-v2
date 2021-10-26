@@ -12,7 +12,7 @@ const SectionTemplate = (props) => {
         id={props.id}
         maxW='container.xl'
         height={{
-          base: props.sectionHome ? '80vh' : 'auto',
+          sm: props.sectionHome ? '80vh' : 'auto',
           md: '100vh',
           lg: '100vh',
           xl: '100vh',
@@ -54,8 +54,8 @@ const SectionTemplate = (props) => {
           <Box
             textAlign='center'
             position='relative'
-            bottom={{ base: '5rem', md: '2rem', lg: '2rem', xl: '2rem' }}
-            display={{ base: 'none', md: 'block', lg: 'block', xl: 'block' }}
+            bottom={{ sm: '5rem', md: '2rem', lg: '2rem', xl: '2rem' }}
+            display={{ sm: 'none', md: 'block', lg: 'block', xl: 'block' }}
           >
             <SectionNextButton section={props.sectionNextButton} />
           </Box>

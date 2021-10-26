@@ -9,7 +9,7 @@ const HomeText = () => {
     <>
       <Box>
         <Text
-          fontSize={{ base: '4xl', md: '5xl', lg: '5xl' }}
+          fontSize={{ sm: '4xl', md: '5xl', lg: '5xl' }}
           fontWeight='semibold'
         >
           {t('HelloText.1')}
@@ -26,7 +26,7 @@ const HomeText = () => {
           </Text>
         </Text>
         <Text
-          fontSize={{ base: '2xl', md: '3xl', lg: '3xl' }}
+          fontSize={{ sm: '2xl', md: '3xl', lg: '3xl' }}
           fontWeight='semibold'
         >
           {t('FrontEndDev.1')}

@@ -9,17 +9,17 @@ const List = () => {
     <>
       <Grid
         templateColumns={{
-          base: 'repeat(1, 1fr)',
+          sm: 'repeat(1, 1fr)',
           md: 'repeat(2, 1fr)',
           lg: 'repeat(2, 1fr)',
         }}
         position='relative'
       >
         <GridItem
-          pl={{ base: '2', md: '6', lg: '6' }}
-          pt={{ base: '7rem', md: '6', lg: '6' }}
-          pr={{ base: '2', md: '6', lg: '6' }}
-          pb={{ base: '2', md: '6', lg: '6' }}
+          pl={{ sm: '2', md: '6', lg: '6' }}
+          pt={{ sm: '7rem', md: '6', lg: '6' }}
+          pr={{ sm: '2', md: '6', lg: '6' }}
+          pb={{ sm: '2', md: '6', lg: '6' }}
         >
           <Layout
             appType={t('ToDoAppType.1')}
@@ -34,10 +34,10 @@ const List = () => {
           />
         </GridItem>
         <GridItem
-          pl={{ base: '2', md: '6', lg: '6' }}
-          pt={{ base: '3', md: '6', lg: '6' }}
-          pr={{ base: '2', md: '6', lg: '6' }}
-          pb={{ base: '8', md: '6', lg: '6' }}
+          pl={{ sm: '2', md: '6', lg: '6' }}
+          pt={{ sm: '3', md: '6', lg: '6' }}
+          pr={{ sm: '2', md: '6', lg: '6' }}
+          pb={{ sm: '8', md: '6', lg: '6' }}
         >
           <Layout
             appType='Example'

@@ -19,19 +19,17 @@ const Home = () => {
           display='flex'
           p='8'
           position='relative'
-          top={{ base: '-3rem', md: '0', lg: '0', xl: '0' }}
+          top={{ sm: '-3rem', md: '0', lg: '0', xl: '0' }}
         >
           <HomeText />
-          <Box
-            display={{ base: 'none', md: 'block', lg: 'block', xl: 'block' }}
-          >
+          <Box display={{ sm: 'none', md: 'block', lg: 'block', xl: 'block' }}>
             <HomeImage />
           </Box>
         </Box>
         <Box
-          alignSelf={{ base: 'flex', md: 'flex-start', lg: 'flex-start' }}
-          position={{ base: 'relative', md: 'absolute', lg: 'absolute' }}
-          top={{ base: '-1rem', md: '0', lg: '91%', xl: '92.5%' }}
+          alignSelf={{ sm: 'flex', md: 'flex-start', lg: 'flex-start' }}
+          position={{ sm: 'relative', md: 'absolute', lg: 'absolute' }}
+          top={{ sm: '-1rem', md: '0', lg: '91%', xl: '92.5%' }}
           zIndex='1'
         >
           <Social />
@@ -40,8 +38,8 @@ const Home = () => {
         <Box
           textAlign='center'
           position='relative'
-          bottom={{ base: '-3rem', md: '2rem', lg: '2rem', xl: '2rem' }}
-          display={{ base: 'block', md: 'none', lg: 'none', xl: 'none' }}
+          bottom={{ sm: '-3rem', md: '2rem', lg: '2rem', xl: '2rem' }}
+          display={{ sm: 'block', md: 'none', lg: 'none', xl: 'none' }}
         >
           <SectionNextButton isFinger='true' section={'about'} />
         </Box>
