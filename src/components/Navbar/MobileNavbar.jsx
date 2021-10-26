@@ -25,7 +25,7 @@ const MobileNavbar = () => {
         bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
         display={{
           mobile: 'block',
-          tablet: 'none',
+          tablet: 'block',
           laptop: 'none',
           desktop: 'none',
         }}

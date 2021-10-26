@@ -40,7 +40,7 @@ const GoTop = () => {
               bg='#11BAE5'
               top={{
                 mobile: '82%',
-                tablet: '88%',
+                tablet: '79%',
                 laptop: '91%',
                 desktop: '90%',
                 largeDesktop: '92%',

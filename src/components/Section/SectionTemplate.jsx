@@ -56,7 +56,7 @@ const SectionTemplate = (props) => {
             position='relative'
             bottom={{
               mobile: '5rem',
-              tablet: '5rem',
+              tablet: null,
               laptop: '2rem',
               desktop: '2rem',
             }}
