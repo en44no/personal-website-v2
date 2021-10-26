@@ -7,6 +7,7 @@ import {
   SiJavascript,
   SiHtml5,
   SiCss3,
+  SiGit,
 } from 'react-icons/si';
 import { useTranslation } from 'react-i18next';
 
@@ -20,8 +21,8 @@ const CurrentlySkills = () => {
       <Grid
         templateColumns={{
           base: 'repeat(3, 1fr)',
-          md: 'repeat(5, 1fr)',
-          lg: 'repeat(5, 1fr)',
+          md: 'repeat(6, 1fr)',
+          lg: 'repeat(6, 1fr)',
         }}
         position='relative'
         placeItems='center'
@@ -56,6 +57,12 @@ const CurrentlySkills = () => {
           techColor='#2965F1'
           title='CSS'
           link='https://developer.mozilla.org/es/docs/Web/CSS'
+        />
+        <TechBox
+          techIcon={SiGit}
+          techColor='#F05033'
+          title='Git'
+          link='https://git-scm.com/'
         />
       </Grid>
     </>

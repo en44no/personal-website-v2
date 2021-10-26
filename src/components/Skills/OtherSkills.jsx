@@ -2,13 +2,7 @@ import React from 'react';
 import { DiNodejs } from 'react-icons/di';
 import TechBox from './TechBox';
 import { Text, Grid } from '@chakra-ui/react';
-import {
-  SiCsharp,
-  SiGit,
-  SiMongodb,
-  SiBootstrap,
-  SiExpress,
-} from 'react-icons/si';
+import { SiCsharp, SiMongodb, SiBootstrap, SiExpress } from 'react-icons/si';
 import { useTranslation } from 'react-i18next';
 
 const OtherSkills = () => {
@@ -27,8 +21,8 @@ const OtherSkills = () => {
       <Grid
         templateColumns={{
           base: 'repeat(3, 1fr)',
-          md: 'repeat(6, 1fr)',
-          lg: 'repeat(6, 1fr)',
+          md: 'repeat(5, 1fr)',
+          lg: 'repeat(5, 1fr)',
         }}
         gap={{
           base: '0',
@@ -44,12 +38,6 @@ const OtherSkills = () => {
           techColor='#6DA55F'
           title='Node'
           link='https://nodejs.org/es/'
-        />
-        <TechBox
-          techIcon={SiGit}
-          techColor='#F05033'
-          title='Git'
-          link='https://git-scm.com/'
         />
         <TechBox
           techIcon={SiCsharp}
