@@ -18,7 +18,7 @@ const Home = () => {
         <Box
           display='flex'
           p={{
-            mobile: null,
+            mobile: '2rem',
             tablet: '3.5rem',
             laptop: '8',
             desktop: '8',
@@ -26,7 +26,7 @@ const Home = () => {
           }}
           position='relative'
           top={{
-            mobile: '-3rem',
+            mobile: '-2rem',
             tablet: '-4rem',
             laptop: '0',
             desktop: '0',
