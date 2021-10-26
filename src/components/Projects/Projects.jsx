@@ -28,7 +28,8 @@ const Projects = () => {
             mobile: '-0.2rem',
             tablet: '3rem',
             laptop: '1rem',
-            desktop: '5rem',
+            desktop: '1.5rem',
+            largeDesktop: '4rem',
           }}
         >
           <MoreProjectsButton />

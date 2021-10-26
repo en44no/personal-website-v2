@@ -42,7 +42,8 @@ const GoTop = () => {
                 mobile: '82%',
                 tablet: '88%',
                 laptop: '91%',
-                desktop: '92.5%',
+                desktop: '90%',
+                largeDesktop: '92%',
               }}
               position='fixed'
               cursor='pointer'
