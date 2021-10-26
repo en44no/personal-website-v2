@@ -23,7 +23,7 @@ const GoTop = () => {
         <Box
           display='block'
           float='right'
-          mr={{ sm: '3rem', md: '4.1rem', lg: '4.1rem', xl: '4.1rem' }}
+          mr={{ sm: '3rem', md: '3rem', lg: '4.1rem', xl: '4.1rem' }}
         >
           {scrollHeight > 100 ? (
             <IconButton
@@ -35,7 +35,7 @@ const GoTop = () => {
               bg='#11BAE5'
               top={{
                 sm: '82%',
-                md: '90%',
+                md: '88%',
                 lg: '91%',
                 xl: '92.5%',
               }}

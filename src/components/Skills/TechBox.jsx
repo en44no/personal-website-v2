@@ -12,10 +12,10 @@ const TechBox = (props) => {
       >
         <Box
           boxShadow='md'
-          mb={{ sm: '1rem', md: '0', lg: '0' }}
+          mb={{ sm: '1rem', md: '1rem', lg: '0' }}
           w={{
             sm: '6.5rem',
-            md: '9rem',
+            md: '6.5rem',
             lg: '9rem',
           }}
           h='8rem'
@@ -39,12 +39,12 @@ const TechBox = (props) => {
             textAlign='center'
             fontSize={{
               sm: '13px',
-              md: '',
+              md: '13px',
               lg: '',
             }}
             mt={{
               sm: '0.5rem',
-              md: '',
+              md: '0.5rem',
               lg: '',
             }}
             mb='0'

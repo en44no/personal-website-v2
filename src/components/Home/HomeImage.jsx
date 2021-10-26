@@ -14,8 +14,9 @@ const HomeImage = () => {
           borderRadius='15px'
           objectFit='fill'
           mt='-3'
-          width='200px'
-          height='280px'
+          width={{ sm: '', md: '180px', lg: '200px' }}
+          minWidth={{ sm: '', md: '160px', lg: '' }}
+          height={{ sm: '', md: '220px', lg: '280px' }}
           _hover={{
             transition: 'transform 1s, all 0.2s ease-in-out',
             transform: 'scale(1.02)',

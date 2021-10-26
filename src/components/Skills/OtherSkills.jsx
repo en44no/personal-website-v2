@@ -13,7 +13,7 @@ const OtherSkills = () => {
         fontWeight='semibold'
         fontSize='lg'
         textAlign='center'
-        mt={{ sm: '-3rem', md: '0', lg: '0' }}
+        mt={{ sm: '-3rem', md: '-3rem', lg: '0' }}
         pb='1.5rem'
       >
         {t('OtherSkills.1')}
@@ -21,17 +21,17 @@ const OtherSkills = () => {
       <Grid
         templateColumns={{
           sm: 'repeat(3, 1fr)',
-          md: 'repeat(5, 1fr)',
+          md: 'repeat(4, 1fr)',
           lg: 'repeat(5, 1fr)',
         }}
         gap={{
           sm: '0',
-          md: '8',
+          md: '0',
           lg: '8',
         }}
         position='relative'
         placeItems='center'
-        pb={{ sm: '8rem', md: '0', lg: '0' }}
+        pb={{ sm: '8rem', md: '8rem', lg: '0' }}
       >
         <TechBox
           techIcon={DiNodejs}

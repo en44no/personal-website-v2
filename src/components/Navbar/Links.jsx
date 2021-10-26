@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from '@chakra-ui/react';
 
 const Links = () => {
-  const [isLargerThan1280] = useMediaQuery('(min-width: 1280px)');
+  const [isLargerThan481] = useMediaQuery('(min-width: 481px)');
   const goTo = (section) => {
     document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
   };
@@ -28,7 +28,7 @@ const Links = () => {
         >
           <Link
             onClick={() =>
-              isLargerThan1280 ? goTo('about') : goToMobile('about')
+              isLargerThan481 ? goTo('about') : goToMobile('about')
             }
           >
             {t('About.1')}
@@ -43,7 +43,7 @@ const Links = () => {
         >
           <Link
             onClick={() =>
-              isLargerThan1280 ? goTo('projects') : goToMobile('projects')
+              isLargerThan481 ? goTo('projects') : goToMobile('projects')
             }
           >
             {t('Projects.1')}
@@ -57,7 +57,7 @@ const Links = () => {
         >
           <Link
             onClick={() =>
-              isLargerThan1280 ? goTo('skills') : goToMobile('skills')
+              isLargerThan481 ? goTo('skills') : goToMobile('skills')
             }
           >
             {t('Skills.1')}

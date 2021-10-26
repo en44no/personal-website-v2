@@ -12,8 +12,8 @@ const ProjectImage = (props) => {
           mb='-2'
           src={props.appImage}
           alt={props.appTitle}
-          w='460px'
-          h='212px'
+          w={{ sm: '460px', md: '350px', lg: '460px' }}
+          h={{ sm: '212px', md: '160px', lg: '212px' }}
           borderRadius='9px'
           objectFit='cover'
           _hover={{

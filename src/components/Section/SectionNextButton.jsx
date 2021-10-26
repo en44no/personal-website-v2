@@ -5,7 +5,7 @@ import { BsHandIndex } from 'react-icons/bs';
 import { useMediaQuery } from '@chakra-ui/react';
 
 const SectionNextButton = (props) => {
-  const [isLargerThan1280] = useMediaQuery('(min-width: 1280px)');
+  const [isLargerThan481] = useMediaQuery('(min-width: 481px)');
   const goToNextSection = () => {
     document
       .getElementById(props.section)
@@ -24,7 +24,7 @@ const SectionNextButton = (props) => {
         <IconButton
           aria-label='goToNextSectionButton'
           onClick={() => {
-            isLargerThan1280 ? goToNextSection() : goToNextSectionMobile();
+            isLargerThan481 ? goToNextSection() : goToNextSectionMobile();
           }}
         >
           {props.isFinger ? (

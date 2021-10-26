@@ -27,9 +27,9 @@ const Home = () => {
           </Box>
         </Box>
         <Box
-          alignSelf={{ sm: 'flex', md: 'flex-start', lg: 'flex-start' }}
-          position={{ sm: 'relative', md: 'absolute', lg: 'absolute' }}
-          top={{ sm: '-1rem', md: '0', lg: '91%', xl: '92.5%' }}
+          alignSelf={{ sm: 'flex', md: 'flex', lg: 'flex-start' }}
+          position={{ sm: 'relative', md: 'relative', lg: 'absolute' }}
+          top={{ sm: '-1rem', md: '1rem', lg: '91%', xl: '92.5%' }}
           zIndex='1'
         >
           <Social />

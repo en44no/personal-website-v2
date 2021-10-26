@@ -16,10 +16,10 @@ const List = () => {
         position='relative'
       >
         <GridItem
-          pl={{ sm: '2', md: '6', lg: '6' }}
-          pt={{ sm: '7rem', md: '6', lg: '6' }}
-          pr={{ sm: '2', md: '6', lg: '6' }}
-          pb={{ sm: '2', md: '6', lg: '6' }}
+          pl={{ sm: '2', md: '2', lg: '6' }}
+          pt={{ sm: '7rem', md: '0', lg: '6' }}
+          pr={{ sm: '2', md: '2', lg: '6' }}
+          pb={{ sm: '2', md: '0', lg: '6' }}
         >
           <Layout
             appType={t('ToDoAppType.1')}
@@ -34,10 +34,10 @@ const List = () => {
           />
         </GridItem>
         <GridItem
-          pl={{ sm: '2', md: '6', lg: '6' }}
-          pt={{ sm: '3', md: '6', lg: '6' }}
-          pr={{ sm: '2', md: '6', lg: '6' }}
-          pb={{ sm: '8', md: '6', lg: '6' }}
+          pl={{ sm: '2', md: '2', lg: '6' }}
+          pt={{ sm: '3', md: '0', lg: '6' }}
+          pr={{ sm: '2', md: '2', lg: '6' }}
+          pb={{ sm: '8', md: '0', lg: '6' }}
         >
           <Layout
             appType='Example'
