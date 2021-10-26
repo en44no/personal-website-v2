@@ -12,7 +12,7 @@ const breakpoints = createBreakpoints({
   tablet: '30em', //768px, iPads, Tablets
   laptop: '48em', //1024px, Small screens, laptops
   desktop: '64em', //1200px, Desktops, large screens
-  largeDesktop: '96em', //1536px, Extra large screens, TV
+  largeDesktop: '100em', //1600px, Extra large screens, TV
 });
 
 const theme = extendTheme({
