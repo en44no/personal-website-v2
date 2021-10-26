@@ -12,7 +12,7 @@ const Skills = () => {
     <>
       <SectionTemplate id='skills' title={t('MySkills.1')}>
         <Box
-          w={{ base: '100%', md: '70%', lg: '70%' }}
+          w={{ base: '100%', md: '70%', lg: '87%' }}
           pb={{ base: '0rem', md: '2rem', lg: '2rem' }}
           position='relative'
           top={{ base: '6rem', md: '0', lg: '0' }}
@@ -20,7 +20,7 @@ const Skills = () => {
           <CurrentlySkills />
         </Box>
         <Box
-          w={{ base: '100%', md: '80%', lg: '80%' }}
+          w={{ base: '100%', md: '80%', lg: '70%' }}
           position='relative'
           top={{ base: '10rem', md: '0', lg: '0' }}
         >
