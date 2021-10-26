@@ -8,11 +8,11 @@ const config = {
 };
 
 const breakpoints = createBreakpoints({
-  sm: '0px',
-  md: '481px',
-  lg: '961px',
-  xl: '1799px',
-  '2xl': '2899px',
+  mobile: '0em', //480px, Mobile devices
+  tablet: '30em', //768px, iPads, Tablets
+  laptop: '48em', //1024px, Small screens, laptops
+  desktop: '64em', //1200px, Desktops, large screens
+  largeDesktop: '96em', //1536px, Extra large screens, TV
 });
 
 const theme = extendTheme({
