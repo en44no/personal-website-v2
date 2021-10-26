@@ -23,7 +23,12 @@ const MobileNavbar = () => {
         left='0'
         pb='4'
         bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
-        display={{ sm: 'block', md: 'none', lg: 'none', xl: 'none' }}
+        display={{
+          mobile: 'block',
+          tablet: 'none',
+          laptop: 'none',
+          desktop: 'none',
+        }}
       >
         <Box display={show ? 'block' : 'none'}>
           <ScaleFade direction='bottom' in={show}>

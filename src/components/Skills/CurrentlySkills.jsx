@@ -20,9 +20,9 @@ const CurrentlySkills = () => {
       </Text>
       <Grid
         templateColumns={{
-          sm: 'repeat(3, 1fr)',
-          md: 'repeat(4, 1fr)',
-          lg: 'repeat(6, 1fr)',
+          mobile: 'repeat(3, 1fr)',
+          tablet: 'repeat(4, 1fr)',
+          laptop: 'repeat(6, 1fr)',
         }}
         position='relative'
         placeItems='center'

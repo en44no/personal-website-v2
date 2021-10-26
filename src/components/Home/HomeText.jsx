@@ -9,7 +9,7 @@ const HomeText = () => {
     <>
       <Box>
         <Text
-          fontSize={{ sm: '4xl', md: '3xl', lg: '5xl' }}
+          fontSize={{ mobile: '4xl', tablet: '3xl', laptop: '5xl' }}
           fontWeight='semibold'
         >
           {t('HelloText.1')}
@@ -20,13 +20,13 @@ const HomeText = () => {
             bgGradient='linear(to-r, cyan.400, blue.500, purple.600)'
             bgClip='text'
             mt='-2'
-            fontSize={{ sm: '6xl', md: '6xl', lg: '6xl' }}
+            fontSize={{ mobile: '6xl', tablet: '6xl', laptop: '6xl' }}
           >
             Nahuel Márquez
           </Text>
         </Text>
         <Text
-          fontSize={{ sm: '2xl', md: 'xl', lg: '3xl' }}
+          fontSize={{ mobile: '2xl', tablet: 'xl', laptop: '3xl' }}
           fontWeight='semibold'
         >
           {t('FrontEndDev.1')}

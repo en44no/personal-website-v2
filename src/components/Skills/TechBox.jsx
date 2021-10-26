@@ -12,11 +12,11 @@ const TechBox = (props) => {
       >
         <Box
           boxShadow='md'
-          mb={{ sm: '1rem', md: '1rem', lg: '0' }}
+          mb={{ mobile: '1rem', tablet: '1rem', laptop: '0' }}
           w={{
-            sm: '6.5rem',
-            md: '6.5rem',
-            lg: '9rem',
+            mobile: '6.5rem',
+            tablet: '6.5rem',
+            laptop: '9rem',
           }}
           h='8rem'
           bg='white'
@@ -38,14 +38,14 @@ const TechBox = (props) => {
             fontWeight='semibold'
             textAlign='center'
             fontSize={{
-              sm: '13px',
-              md: '13px',
-              lg: '',
+              mobile: '13px',
+              tablet: '13px',
+              laptop: '',
             }}
             mt={{
-              sm: '0.5rem',
-              md: '0.5rem',
-              lg: '',
+              mobile: '0.5rem',
+              tablet: '0.5rem',
+              laptop: '',
             }}
             mb='0'
             color={props.techColor}

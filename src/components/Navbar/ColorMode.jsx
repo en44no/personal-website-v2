@@ -8,7 +8,6 @@ const ColorMode = () => {
   return (
     <>
       <Button
-        //boxShadow='sm'
         aria-label='toggleColorModeButton'
         mr='-3'
         w={'5%'}

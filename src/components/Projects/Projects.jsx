@@ -19,8 +19,17 @@ const Projects = () => {
           <List />
         </Box>
         <Box
-          position={{ sm: 'relative', md: 'relative', lg: 'relative' }}
-          top={{ sm: '-0.2rem', md: '3rem', lg: '1rem', xl: '5rem' }}
+          position={{
+            mobile: 'relative',
+            tablet: 'relative',
+            laptop: 'relative',
+          }}
+          top={{
+            mobile: '-0.2rem',
+            tablet: '3rem',
+            laptop: '1rem',
+            desktop: '5rem',
+          }}
         >
           <MoreProjectsButton />
         </Box>
