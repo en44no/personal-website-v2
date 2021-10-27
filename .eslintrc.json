@@ -20,6 +20,16 @@
   "rules": {
     "linebreak-style": 0,
     "react/prop-types": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
     "eslint no-useless-return": "off",
     "indent": [
       "error",
