@@ -15,17 +15,16 @@ const HomeImage = () => (
     >
       <Image
         loading="lazy"
-        boxShadow="md"
         src={me}
         alt="me, Nahuel Marquez"
-        borderRadius="15px"
+        borderRadius="9px"
         objectFit="fill"
         mt={{
           mobile: '',
           tablet: '2rem',
           laptop: '-3',
-          desktop: '-3',
-          largeDesktop: '-3',
+          desktop: '-5',
+          largeDesktop: '-5',
         }}
         width={{
           mobile: '',
