@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Link, Box, Flex, useMediaQuery,
+  Box, Flex, useMediaQuery,
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 
@@ -25,38 +25,51 @@ const Links = () => {
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
+            bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
+            bgClip: 'text',
+            cursor: 'pointer',
+            textDecoration: 'none',
           }}
+          fontWeight="semibold"
         >
-          <Link
-            onClick={() => (isLargerThan481 ? goTo('about') : goToMobile('about'))}
-          >
+          <Box onClick={() => (isLargerThan481 ? goTo('about') : goToMobile('about'))}>
             {t('About.1')}
-          </Link>
+          </Box>
         </Box>
         <Box
           mr="1rem"
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
+            bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
+            bgClip: 'text',
+            cursor: 'pointer',
+            textDecoration: 'none',
           }}
+          fontWeight="semibold"
         >
-          <Link
+          <Box
             onClick={() => (isLargerThan481 ? goTo('projects') : goToMobile('projects'))}
           >
             {t('Projects.1')}
-          </Link>
+          </Box>
         </Box>
         <Box
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
+            bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
+            bgClip: 'text',
+            cursor: 'pointer',
+            textDecoration: 'none',
           }}
+          fontWeight="semibold"
         >
-          <Link
+          <Box
             onClick={() => (isLargerThan481 ? goTo('skills') : goToMobile('skills'))}
           >
             {t('Skills.1')}
-          </Link>
+          </Box>
         </Box>
       </Flex>
     </>
