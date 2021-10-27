@@ -9,6 +9,7 @@ import TechBox from './TechBox';
 
 const OtherSkills = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <Text

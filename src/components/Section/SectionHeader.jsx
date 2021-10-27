@@ -3,6 +3,7 @@ import { Text } from '@chakra-ui/react';
 
 const SectionHeader = (props) => {
   const { title } = props;
+
   return (
     <>
       <Text

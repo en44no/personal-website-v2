@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 const MoreProjectsButton = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <a

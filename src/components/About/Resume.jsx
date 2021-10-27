@@ -7,6 +7,7 @@ import ResumeES from '../../assets/Resume_es.pdf';
 
 const Resume = () => {
   const { t, i18n } = useTranslation();
+
   return (
     <>
       <a

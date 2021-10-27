@@ -7,6 +7,7 @@ import SectionTemplate from '../Section/SectionTemplate';
 
 const Projects = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <SectionTemplate

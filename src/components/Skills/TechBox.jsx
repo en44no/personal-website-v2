@@ -3,6 +3,7 @@ import { Box, Text } from '@chakra-ui/react';
 
 const TechBox = (props) => {
   const { link, title, techColor } = props;
+
   return (
     <>
       <a

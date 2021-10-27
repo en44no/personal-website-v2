@@ -9,6 +9,7 @@ import Social from '../Social';
 
 const Addons = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <Text

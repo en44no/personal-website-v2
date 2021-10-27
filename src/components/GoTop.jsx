@@ -7,6 +7,7 @@ const GoTop = () => {
 
   const handleScroll = () => {
     const position = window.pageYOffset;
+
     setScrollHeight(position);
   };
 
@@ -17,6 +18,7 @@ const GoTop = () => {
   const goToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
   return (
     <>
       <Container maxW="container.xl">

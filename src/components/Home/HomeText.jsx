@@ -5,6 +5,7 @@ import Resume from '../About/Resume';
 
 const HomeText = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <Box>

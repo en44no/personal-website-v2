@@ -5,6 +5,7 @@ import SectionTemplate from '../Section/SectionTemplate';
 
 const About = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <SectionTemplate

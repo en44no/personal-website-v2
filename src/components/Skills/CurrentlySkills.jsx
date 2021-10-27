@@ -13,6 +13,7 @@ import TechBox from './TechBox';
 
 const CurrentlySkills = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <Text fontWeight="semibold" fontSize="lg" textAlign="center" pb="1.5rem">

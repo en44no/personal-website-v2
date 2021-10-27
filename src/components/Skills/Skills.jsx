@@ -8,6 +8,7 @@ import SectionTemplate from '../Section/SectionTemplate';
 
 const Skills = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <SectionTemplate id="skills" title={t('MySkills.1')}>

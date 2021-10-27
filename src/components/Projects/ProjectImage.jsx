@@ -3,6 +3,7 @@ import { Image } from '@chakra-ui/react';
 
 const ProjectImage = (props) => {
   const { demoLink, appTitle, appImage } = props;
+
   return (
     <>
       <a href={demoLink} target="_blank" rel="noreferrer" title="Demo">

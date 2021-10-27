@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const Description = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <Text

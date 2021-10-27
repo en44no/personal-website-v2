@@ -5,6 +5,7 @@ import Layout from './Layout';
 
 const List = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <Grid

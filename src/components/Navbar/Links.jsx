@@ -13,10 +13,12 @@ const Links = () => {
   const goToMobile = (section) => {
     const el = document.getElementById(section);
     const y = el.getBoundingClientRect().top + window.pageYOffset + 50;
+
     window.scrollTo({ top: y, behavior: 'smooth' });
   };
 
   const { t } = useTranslation();
+
   return (
     <>
       <Flex>

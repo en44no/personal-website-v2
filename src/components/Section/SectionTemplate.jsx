@@ -8,6 +8,7 @@ const SectionTemplate = (props) => {
   const {
     id, title, subtitle, sectionNextButton, children, sectionHome,
   } = props;
+
   return (
     <>
       <Container

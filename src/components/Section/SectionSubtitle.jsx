@@ -3,6 +3,7 @@ import { Text } from '@chakra-ui/react';
 
 const SectionSubtitle = (props) => {
   const { subtitle } = props;
+
   return (
     <>
       <Text

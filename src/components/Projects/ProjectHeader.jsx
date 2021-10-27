@@ -6,6 +6,7 @@ const Header = (props) => {
   const {
     appType, appTitle, codeLink, demoLink,
   } = props;
+
   return (
     <>
       <Box>

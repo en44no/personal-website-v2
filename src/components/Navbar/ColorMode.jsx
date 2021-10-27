@@ -5,6 +5,7 @@ import { UilMoon, UilSun } from '@iconscout/react-unicons';
 
 const ColorMode = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <>
       <Button

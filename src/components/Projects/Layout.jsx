@@ -8,6 +8,7 @@ const Layout = (props) => {
   const {
     appType, appTitle, appImage, codeLink, demoLink, techs,
   } = props;
+
   return (
     <>
       <Box>
