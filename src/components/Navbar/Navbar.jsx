@@ -1,10 +1,12 @@
 import React from 'react';
-import { Flex, Spacer, Box, Center, Container } from '@chakra-ui/react';
+import {
+  Flex, Spacer, Box, Center, Container,
+} from '@chakra-ui/react';
+import { useColorMode } from '@chakra-ui/color-mode';
 import ColorMode from './ColorMode';
 import Links from './Links';
 import NavbarName from './NavbarName';
 import Language from './Language';
-import { useColorMode } from '@chakra-ui/color-mode';
 
 const Navbar = () => {
   const { colorMode } = useColorMode();
@@ -12,10 +14,10 @@ const Navbar = () => {
   return (
     <>
       <Box
-        position='fixed'
-        width='100%'
-        zIndex='100'
-        pt='4'
+        position="fixed"
+        width="100%"
+        zIndex="100"
+        pt="4"
         bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
         display={{
           mobile: 'none',
@@ -24,11 +26,11 @@ const Navbar = () => {
           desktop: 'block',
         }}
       >
-        <Container maxW='container.xl'>
+        <Container maxW="container.xl">
           <Flex>
             <Center>
               <Box>
-                <NavbarName goToTop='true' cursorPointer='true' />
+                <NavbarName goToTop="true" cursorPointer="true" />
               </Box>
             </Center>
             <Spacer />
@@ -37,10 +39,10 @@ const Navbar = () => {
                 <Links />
               </Box>
             </Center>
-            <Box pt='2' pl='4' mr='-2'>
+            <Box pt="2" pl="4" mr="-2">
               <Language />
             </Box>
-            <Box pt='2' pl='0'>
+            <Box pt="2" pl="0">
               <ColorMode />
             </Box>
           </Flex>

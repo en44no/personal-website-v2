@@ -1,5 +1,7 @@
 import React from 'react';
-import { Flex, Spacer, Box, Center, Button, Container } from '@chakra-ui/react';
+import {
+  Flex, Spacer, Box, Center, Button, Container,
+} from '@chakra-ui/react';
 import { ScaleFade } from '@chakra-ui/transition';
 import { UilApps } from '@iconscout/react-unicons';
 import { useColorMode } from '@chakra-ui/color-mode';
@@ -15,13 +17,13 @@ const MobileNavbar = () => {
   return (
     <>
       <Box
-        position='fixed'
-        width='100%'
-        height='auto'
-        zIndex='100'
-        bottom='0'
-        left='0'
-        pb='4'
+        position="fixed"
+        width="100%"
+        height="auto"
+        zIndex="100"
+        bottom="0"
+        left="0"
+        pb="4"
         bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
         display={{
           mobile: 'block',
@@ -31,15 +33,15 @@ const MobileNavbar = () => {
         }}
       >
         <Box display={show ? 'block' : 'none'}>
-          <ScaleFade direction='bottom' in={show}>
+          <ScaleFade direction="bottom" in={show}>
             <Container>
               <Box
-                textAlign='center'
-                justifyContent='center'
-                display='flex'
-                h='2.5rem'
-                alignItems='center'
-                fontSize='16px'
+                textAlign="center"
+                justifyContent="center"
+                display="flex"
+                h="2.5rem"
+                alignItems="center"
+                fontSize="16px"
                 onClick={() => setShow(false)}
               >
                 <Links />
@@ -54,14 +56,14 @@ const MobileNavbar = () => {
             </Box>
           </Center>
           <Spacer />
-          <Center></Center>
-          <Box pt='2' mr='-2'>
+          <Center />
+          <Box pt="2" mr="-2">
             <Language />
           </Box>
-          <Box pt='2' pl='0' pr='0'>
+          <Box pt="2" pl="0" pr="0">
             <ColorMode />
           </Box>
-          <Box pt='2' pr='3' ml='-3'>
+          <Box pt="2" pr="3" ml="-3">
             <Button onClick={() => setShow(!show)}>
               <UilApps />
             </Button>

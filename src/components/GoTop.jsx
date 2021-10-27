@@ -5,24 +5,24 @@ import { UilArrowUp } from '@iconscout/react-unicons';
 const GoTop = () => {
   const [scrollHeight, setScrollHeight] = useState(0);
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-  }, [scrollHeight]);
-
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollHeight(position);
   };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, [scrollHeight]);
 
   const goToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
     <>
-      <Container maxW='container.xl'>
+      <Container maxW="container.xl">
         <Box
-          display='block'
-          float='right'
+          display="block"
+          float="right"
           mr={{
             mobile: '3rem',
             tablet: '3rem',
@@ -32,12 +32,12 @@ const GoTop = () => {
         >
           {scrollHeight > 100 ? (
             <IconButton
-              boxShadow='md'
-              aria-label='goToTopButton'
-              className='goTop'
+              boxShadow="md"
+              aria-label="goToTopButton"
+              className="goTop"
               onClick={() => goToTop()}
-              zIndex='100'
-              bg='#11BAE5'
+              zIndex="100"
+              bg="#11BAE5"
               top={{
                 mobile: '82%',
                 tablet: '79%',
@@ -45,10 +45,10 @@ const GoTop = () => {
                 desktop: '90%',
                 largeDesktop: '92%',
               }}
-              position='fixed'
-              cursor='pointer'
+              position="fixed"
+              cursor="pointer"
             >
-              <UilArrowUp size='1.8rem' />
+              <UilArrowUp size="1.8rem" />
             </IconButton>
           ) : null}
         </Box>

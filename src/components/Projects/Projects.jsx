@@ -10,10 +10,10 @@ const Projects = () => {
   return (
     <>
       <SectionTemplate
-        id='projects'
+        id="projects"
         title={t('MyProjects.1')}
         subtitle={t('MyLastProjects.1')}
-        sectionNextButton='skills'
+        sectionNextButton="skills"
       >
         <Box>
           <List />

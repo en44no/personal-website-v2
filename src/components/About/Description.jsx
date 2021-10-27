@@ -7,9 +7,9 @@ const Description = () => {
   return (
     <>
       <Text
-        fontWeight='semibold'
-        fontSize='lg'
-        textAlign='center'
+        fontWeight="semibold"
+        fontSize="lg"
+        textAlign="center"
         style={{ whiteSpace: 'pre-line' }}
       >
         {t('AboutMeText.1')}

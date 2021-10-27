@@ -1,6 +1,5 @@
 import { extendTheme } from '@chakra-ui/react';
-import { mode } from '@chakra-ui/theme-tools';
-import { createBreakpoints } from '@chakra-ui/theme-tools';
+import { mode, createBreakpoints } from '@chakra-ui/theme-tools';
 
 const config = {
   initialColorMode: 'dark',
@@ -8,11 +7,11 @@ const config = {
 };
 
 const breakpoints = createBreakpoints({
-  mobile: '0em', //480px, Mobile devices
-  tablet: '30em', //768px, iPads, Tablets
-  laptop: '48em', //1024px, Small screens, laptops
-  desktop: '64em', //1200px, Desktops, large screens
-  largeDesktop: '100em', //1600px, Extra large screens, TV
+  mobile: '0em', // 480px, Mobile devices
+  tablet: '30em', // 768px, iPads, Tablets
+  laptop: '48em', // 1024px, Small screens, laptops
+  desktop: '64em', // 1200px, Desktops, large screens
+  largeDesktop: '100em', // 1600px, Extra large screens, TV
 });
 
 const theme = extendTheme({

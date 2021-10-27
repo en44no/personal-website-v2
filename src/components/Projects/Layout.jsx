@@ -1,26 +1,29 @@
 import React from 'react';
+import { Box } from '@chakra-ui/react';
 import ProjectHeader from './ProjectHeader';
 import ProjectImage from './ProjectImage';
 import Technologies from './Technologies';
-import { Box } from '@chakra-ui/react';
 
 const Layout = (props) => {
+  const {
+    appType, appTitle, appImage, codeLink, demoLink, techs,
+  } = props;
   return (
     <>
       <Box>
         <ProjectHeader
-          appType={props.appType}
-          appTitle={props.appTitle}
-          codeLink={props.codeLink}
-          demoLink={props.demoLink}
+          appType={appType}
+          appTitle={appTitle}
+          codeLink={codeLink}
+          demoLink={demoLink}
         />
         <ProjectImage
-          appImage={props.appImage}
-          appTitle={props.appTitle}
-          demoLink={props.demoLink}
+          appImage={appImage}
+          appTitle={appTitle}
+          demoLink={demoLink}
         />
-        <Box display='flex'>
-          <Technologies techs={props.techs} />
+        <Box display="flex">
+          <Technologies techs={techs} />
         </Box>
       </Box>
     </>

@@ -8,23 +8,23 @@ const ColorMode = () => {
   return (
     <>
       <Button
-        aria-label='toggleColorModeButton'
-        mr='-3'
-        w={'5%'}
+        aria-label="toggleColorModeButton"
+        mr="-3"
+        w="5%"
         onClick={toggleColorMode}
       >
         <IconButton
-          aria-label='toggleColorModeButton_'
-          bg='transparent'
+          aria-label="toggleColorModeButton_"
+          bg="transparent"
           isRound
           _hover={{
             bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)',
           }}
         >
           {colorMode === 'light' ? (
-            <UilSun color='#000' />
+            <UilSun color="#000" />
           ) : (
-            <UilMoon color='#fff' />
+            <UilMoon color="#fff" />
           )}
         </IconButton>
       </Button>

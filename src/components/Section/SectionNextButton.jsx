@@ -1,10 +1,10 @@
 import React from 'react';
-import { Box, IconButton } from '@chakra-ui/react';
+import { Box, IconButton, useMediaQuery } from '@chakra-ui/react';
 import { UilMouseAlt } from '@iconscout/react-unicons';
 import { BsHandIndex } from 'react-icons/bs';
-import { useMediaQuery } from '@chakra-ui/react';
 
 const SectionNextButton = (props) => {
+  const { isFinger } = props;
   const [isLargerThan481] = useMediaQuery('(min-width: 481px)');
   const goToNextSection = () => {
     document
@@ -20,17 +20,15 @@ const SectionNextButton = (props) => {
 
   return (
     <>
-      <Box className='mouse-icon-animation' position='relative' display='block'>
+      <Box className="mouse-icon-animation" position="relative" display="block">
         <IconButton
-          aria-label='goToNextSectionButton'
-          onClick={() => {
-            isLargerThan481 ? goToNextSection() : goToNextSectionMobile();
-          }}
+          aria-label="goToNextSectionButton"
+          onClick={() => (isLargerThan481 ? goToNextSection() : goToNextSectionMobile())}
         >
-          {props.isFinger ? (
-            <BsHandIndex size='1.8rem' style={{ transform: 'scaleY(-1)' }} />
+          {isFinger ? (
+            <BsHandIndex size="1.8rem" style={{ transform: 'scaleY(-1)' }} />
           ) : (
-            <UilMouseAlt size='1.8rem' />
+            <UilMouseAlt size="1.8rem" />
           )}
         </IconButton>
       </Box>

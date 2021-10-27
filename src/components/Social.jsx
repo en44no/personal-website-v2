@@ -1,6 +1,6 @@
 import React from 'react';
-import { IconButton, Flex } from '@chakra-ui/react';
-import { useToast } from '@chakra-ui/react';
+import { IconButton, Flex, useToast } from '@chakra-ui/react';
+
 import { useTranslation } from 'react-i18next';
 import {
   UilLinkedinAlt,
@@ -33,41 +33,41 @@ const Social = () => {
     <>
       <Flex>
         <a
-          href='https://github.com/en44no'
-          target='_blank'
-          rel='noreferrer'
-          title='GitHub'
+          href="https://github.com/en44no"
+          target="_blank"
+          rel="noreferrer"
+          title="GitHub"
         >
-          <IconButton mr='1' aria-label='RedirectToGitHubButton'>
+          <IconButton mr="1" aria-label="RedirectToGitHubButton">
             <UilGithubAlt />
           </IconButton>
         </a>
         <a
-          href='https://www.linkedin.com/in/nahuelmarquez/'
-          target='_blank'
-          rel='noreferrer'
-          title='Linkedin'
+          href="https://www.linkedin.com/in/nahuelmarquez/"
+          target="_blank"
+          rel="noreferrer"
+          title="Linkedin"
         >
-          <IconButton mr='1' aria-label='RedirectToLinkedinButton'>
-            <UilLinkedinAlt size='1.7rem' />
+          <IconButton mr="1" aria-label="RedirectToLinkedinButton">
+            <UilLinkedinAlt size="1.7rem" />
           </IconButton>
         </a>
         <IconButton
-          mr='1'
-          title='Gmail address'
-          aria-label='GetMyEmailAddressButton'
+          mr="1"
+          title="Gmail address"
+          aria-label="GetMyEmailAddressButton"
           onClick={() => notificationAndCopyToClipboard()}
         >
-          <UilEnvelopeAdd size='1.7rem' />
+          <UilEnvelopeAdd size="1.7rem" />
         </IconButton>
         <a
-          href='https://api.whatsapp.com/send/?phone=59894018406&text=%C2%A1Hola!+Te+estoy+contactando+luego+de+ver+tu+p%C3%A1gina+web.'
-          target='_blank'
-          rel='noreferrer'
-          title='Whatsapp'
+          href="https://api.whatsapp.com/send/?phone=59894018406&text=%C2%A1Hola!+Te+estoy+contactando+luego+de+ver+tu+p%C3%A1gina+web."
+          target="_blank"
+          rel="noreferrer"
+          title="Whatsapp"
         >
-          <IconButton aria-label='RedirectToWhatsappButton'>
-            <UilWhatsapp size='1.7rem' />
+          <IconButton aria-label="RedirectToWhatsappButton">
+            <UilWhatsapp size="1.7rem" />
           </IconButton>
         </a>
       </Flex>

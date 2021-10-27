@@ -8,10 +8,10 @@ const About = () => {
   return (
     <>
       <SectionTemplate
-        id='about'
+        id="about"
         title={t('AboutMe.1')}
         subtitle={t('FrontEndDevJr.1')}
-        sectionNextButton='projects'
+        sectionNextButton="projects"
       >
         <Content />
       </SectionTemplate>

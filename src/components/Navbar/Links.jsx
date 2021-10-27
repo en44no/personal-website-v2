@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link, Box, Flex } from '@chakra-ui/react';
+import {
+  Link, Box, Flex, useMediaQuery,
+} from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
-import { useMediaQuery } from '@chakra-ui/react';
 
 const Links = () => {
   const [isLargerThan481] = useMediaQuery('(min-width: 481px)');
@@ -20,31 +21,27 @@ const Links = () => {
     <>
       <Flex>
         <Box
-          mr='1rem'
+          mr="1rem"
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
           }}
         >
           <Link
-            onClick={() =>
-              isLargerThan481 ? goTo('about') : goToMobile('about')
-            }
+            onClick={() => (isLargerThan481 ? goTo('about') : goToMobile('about'))}
           >
             {t('About.1')}
           </Link>
         </Box>
         <Box
-          mr='1rem'
+          mr="1rem"
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
           }}
         >
           <Link
-            onClick={() =>
-              isLargerThan481 ? goTo('projects') : goToMobile('projects')
-            }
+            onClick={() => (isLargerThan481 ? goTo('projects') : goToMobile('projects'))}
           >
             {t('Projects.1')}
           </Link>
@@ -56,9 +53,7 @@ const Links = () => {
           }}
         >
           <Link
-            onClick={() =>
-              isLargerThan481 ? goTo('skills') : goToMobile('skills')
-            }
+            onClick={() => (isLargerThan481 ? goTo('skills') : goToMobile('skills'))}
           >
             {t('Skills.1')}
           </Link>
