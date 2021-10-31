@@ -8,9 +8,16 @@ const HomeImage = () => (
       ml={{
         mobile: null,
         tablet: '0rem',
-        laptop: '5rem',
+        laptop: '4rem',
         desktop: '5rem',
         largeDesktop: '5rem',
+      }}
+      mr={{
+        mobile: null,
+        tablet: null,
+        laptop: '-7rem',
+        desktop: null,
+        largeDesktop: null,
       }}
     >
       <Image

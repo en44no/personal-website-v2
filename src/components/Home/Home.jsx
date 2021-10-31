@@ -19,7 +19,7 @@ const Home = () => (
         p={{
           mobile: '2rem',
           tablet: '3.5rem',
-          laptop: '8',
+          laptop: '3rem',
           desktop: '8',
           largeDesktop: '8',
         }}
