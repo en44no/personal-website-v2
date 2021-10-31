@@ -41,6 +41,7 @@
       "error",
       2
     ],
+    "no-tabs": "off",
     "padding-line-between-statements": [
       "warn",
       {
