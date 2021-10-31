@@ -1,6 +1,11 @@
 ## 📷 Screenshots
 
->- Coming Soon
+> ![image](https://user-images.githubusercontent.com/57118285/139592511-a7c6f6b9-b6d9-4014-9367-47a7e115ea49.png)
+> ![image](https://user-images.githubusercontent.com/57118285/139592488-f5345abe-7fde-4cba-82c6-e9040554bc21.png)
+> ![Screenshot 2021-10-31 132806](https://user-images.githubusercontent.com/57118285/139593356-8818fd76-f320-4b10-9f9b-c5893a9ae8cd.png)
+> ![Screenshot 2021-10-31 131616](https://user-images.githubusercontent.com/57118285/139593352-842515e7-7374-454f-bbd3-1b1ab45ae5b0.png)
+
+
 
 ## ⚙ Technologies
 
@@ -9,7 +14,8 @@
 
 ## 📝 Features
 
->- Coming Soon
+>- Dark mode
+>- Translate to English and Spanish
 
 
 ## 💻 Run Locally
