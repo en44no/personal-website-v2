@@ -13,6 +13,7 @@ const SectionTemplate = (props) => {
     <>
       <Container
         id={id}
+        w="100%"
         maxW="container.xl"
         height={{
           mobile: sectionHome ? '80vh' : 'auto',
@@ -20,7 +21,6 @@ const SectionTemplate = (props) => {
           laptop: '100vh',
           desktop: '100vh',
         }}
-        width="100%"
         position="relative"
         display="flex"
         flexDirection="column"
@@ -31,13 +31,14 @@ const SectionTemplate = (props) => {
             h="2rem"
             position="relative"
             top="6rem"
+            w="100%"
             mb="1rem"
           >
             <SectionHeader title={title} />
           </Box>
         ) : null}
         {subtitle ? (
-          <Box textAlign="center" h="2rem" position="relative" top="6rem">
+          <Box textAlign="center" h="2rem" position="relative" top="6rem" w="100%">
             <SectionSubtitle subtitle={subtitle} />
           </Box>
         ) : null}
@@ -57,6 +58,7 @@ const SectionTemplate = (props) => {
           <Box
             textAlign="center"
             position="relative"
+            w="100%"
             bottom={{
               mobile: '5rem',
               tablet: null,
