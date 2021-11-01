@@ -2,7 +2,9 @@ import React from 'react';
 import { Image } from '@chakra-ui/react';
 
 const ProjectImage = (props) => {
-  const { demoLink, appTitle, appImage } = props;
+  const {
+    demoLink, appTitle, appImage,
+  } = props;
 
   return (
     <>
@@ -18,6 +20,7 @@ const ProjectImage = (props) => {
           h={{ mobile: '212px', tablet: '160px', laptop: '212px' }}
           borderRadius="9px"
           objectFit="cover"
+          objectPosition="top"
           _hover={{
             transition: 'transform 1s, all 0.2s ease-in-out',
             transform: 'scale(1.02)',

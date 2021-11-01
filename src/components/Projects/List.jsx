@@ -41,14 +41,15 @@ const List = () => {
           pb={{ mobile: '8', tablet: '0', laptop: '6' }}
         >
           <Layout
-            appType="Example"
-            appTitle="Example"
-            codeLink="Example"
-            demoLink="Example"
-            appImage="https://us.123rf.com/450wm/roxanabalint/roxanabalint1308/roxanabalint130800213/21703166-ejemplo-grunge-sello-de-goma-ilustraci%C3%B3n-vectorial.jpg?ver=6"
+            appType="Information"
+            appTitle="List of Cryptos"
+            codeLink="https://github.com/en44no/list-cryptos"
+            demoLink="https://user-images.githubusercontent.com/57118285/139742834-a322f2a0-a26d-4b63-9dc3-eabe23559c97.jpeg"
+            appImage="https://user-images.githubusercontent.com/57118285/139742834-a322f2a0-a26d-4b63-9dc3-eabe23559c97.jpeg"
+            objectPosition="top"
             techs={[
-              { name: 'Example', link: 'Example' },
-              { name: 'Example', link: 'Example' },
+              { name: 'React Native', link: 'https://reactnative.dev/' },
+              { name: 'CoinGecko API', link: 'https://www.coingecko.com/es' },
             ]}
           />
         </GridItem>
