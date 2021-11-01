@@ -21,7 +21,9 @@ const Skills = () => {
           <CurrentlySkills />
         </Box>
         <Box
-          w={{ mobile: '100%', tablet: '90%', laptop: '100%' }}
+          w={{
+            mobile: '100%', tablet: '90%', laptop: '100%', desktop: '80%', largeDesktop: '80%',
+          }}
           position="relative"
           top={{ mobile: '10rem', tablet: '16rem', laptop: '0' }}
         >
