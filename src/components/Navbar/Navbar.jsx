@@ -40,10 +40,10 @@ const Navbar = () => {
                 <Links />
               </Box>
             </Center>
-            <Box as="button" pt="2" pl="4" mr="-2">
+            <Box as="button" pt="0" pl="4" mr="-2">
               <Language />
             </Box>
-            <Box as="button" pt="2" pl="0">
+            <Box as="button" pt="0" pl="0">
               <ColorMode />
             </Box>
           </Flex>
