@@ -8,6 +8,7 @@ const Description = () => {
   return (
     <>
       <Text
+        as="p"
         fontWeight="semibold"
         fontSize="lg"
         textAlign="center"

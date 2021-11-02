@@ -7,6 +7,7 @@ const SectionHeader = (props) => {
   return (
     <>
       <Text
+        as="h2"
         position="relative"
         fontWeight="bold"
         fontSize="2xl"

@@ -17,6 +17,7 @@ const List = () => {
         position="relative"
       >
         <GridItem
+          as="article"
           pl={{ mobile: '2', tablet: '2', laptop: '6' }}
           pt={{ mobile: '7rem', tablet: '0', laptop: '6' }}
           pr={{ mobile: '2', tablet: '2', laptop: '6' }}
@@ -35,6 +36,7 @@ const List = () => {
           />
         </GridItem>
         <GridItem
+          as="article"
           pl={{ mobile: '2', tablet: '2', laptop: '6' }}
           pt={{ mobile: '3', tablet: '0', laptop: '6' }}
           pr={{ mobile: '2', tablet: '2', laptop: '6' }}

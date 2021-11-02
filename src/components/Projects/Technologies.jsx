@@ -6,7 +6,7 @@ const Technologies = (props) => {
 
   return (
     <>
-      <Box mr="0" mt="2" display="flex">
+      <Box mr="0" mt="2" display="flex" as="section">
         <>
           {techs.map((t) => (
             <a
@@ -16,6 +16,7 @@ const Technologies = (props) => {
               title={`Link to ${t.name} page`}
             >
               <Badge
+                as="h5"
                 boxShadow="md"
                 borderRadius="full"
                 fontWeight="semibold"

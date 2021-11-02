@@ -14,14 +14,14 @@ const Header = (props) => {
           <Box
             mt="1"
             fontWeight="semibold"
-            as="h4"
+            as="h6"
             fontSize="sm"
             color="#11BAE5"
           >
             {appType}
           </Box>
           <Flex>
-            <Box mt="1" fontWeight="semibold" as="h4" fontSize="lg">
+            <Box mt="1" fontWeight="semibold" as="h5" fontSize="lg">
               {appTitle}
             </Box>
             <Spacer />

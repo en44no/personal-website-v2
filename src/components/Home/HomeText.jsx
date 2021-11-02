@@ -8,8 +8,9 @@ const HomeText = () => {
 
   return (
     <>
-      <Box>
+      <Box as="section">
         <Text
+          as="h2"
           fontSize={{ mobile: '4xl', tablet: '3xl', laptop: '5xl' }}
           fontWeight="semibold"
         >
@@ -27,6 +28,7 @@ const HomeText = () => {
           </Text>
         </Text>
         <Text
+          as="h3"
           fontSize={{ mobile: '2xl', tablet: 'xl', laptop: '3xl' }}
           fontWeight="semibold"
         >

@@ -7,6 +7,7 @@ const SectionSubtitle = (props) => {
   return (
     <>
       <Text
+        as="h3"
         position="relative"
         mt={{ mobile: '0', tablet: '0', laptop: '0' }}
         fontWeight="semibold"

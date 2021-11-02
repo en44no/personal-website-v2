@@ -12,6 +12,7 @@ const SectionTemplate = (props) => {
   return (
     <>
       <Container
+        as="section"
         id={id}
         w="100%"
         maxW="container.xl"
@@ -27,6 +28,7 @@ const SectionTemplate = (props) => {
       >
         {title ? (
           <Box
+            as="section"
             textAlign="center"
             h="2rem"
             position="relative"
@@ -38,7 +40,7 @@ const SectionTemplate = (props) => {
           </Box>
         ) : null}
         {subtitle ? (
-          <Box textAlign="center" h="2rem" position="relative" top="6rem" w="100%">
+          <Box as="section" textAlign="center" h="2rem" position="relative" top="6rem" w="100%">
             <SectionSubtitle subtitle={subtitle} />
           </Box>
         ) : null}
@@ -56,6 +58,7 @@ const SectionTemplate = (props) => {
         ) : null}
         {sectionNextButton ? (
           <Box
+            as="section"
             textAlign="center"
             position="relative"
             w="100%"

@@ -21,7 +21,7 @@ const SectionNextButton = (props) => {
 
   return (
     <>
-      <Box className="mouse-icon-animation" position="relative" display="block">
+      <Box as="section" className="mouse-icon-animation" position="relative" display="block">
         <IconButton
           aria-label="goToNextSectionButton"
           onClick={() => (isLargerThan481 ? goToNextSection() : goToNextSectionMobile())}

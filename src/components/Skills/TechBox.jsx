@@ -13,6 +13,7 @@ const TechBox = (props) => {
         title={`Link to ${title} page`}
       >
         <Box
+          as="article"
           boxShadow="md"
           mb={{ mobile: '1rem', tablet: '1rem', laptop: '0' }}
           w={{
@@ -37,6 +38,7 @@ const TechBox = (props) => {
             />
           </Box>
           <Text
+            as="h6"
             fontWeight="semibold"
             textAlign="center"
             fontSize={{

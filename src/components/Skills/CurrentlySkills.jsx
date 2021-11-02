@@ -16,7 +16,7 @@ const CurrentlySkills = () => {
 
   return (
     <>
-      <Text fontWeight="semibold" fontSize="lg" textAlign="center" pb="1.5rem">
+      <Text as="h3" fontWeight="semibold" fontSize="lg" textAlign="center" pb="1.5rem">
         {t('CurrentlySkills.1')}
       </Text>
       <Grid

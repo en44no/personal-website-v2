@@ -15,6 +15,7 @@ const Home = () => (
       nextButtonForHome="true"
     >
       <Box
+        as="header"
         display="flex"
         p={{
           mobile: '2rem',
@@ -34,6 +35,7 @@ const Home = () => (
       >
         <HomeText />
         <Box
+          as="section"
           display={{
             mobile: 'none',
             tablet: 'block',
@@ -46,6 +48,7 @@ const Home = () => (
         </Box>
       </Box>
       <Box
+        as="section"
         alignSelf={{
           mobile: 'flex',
           tablet: 'flex',
@@ -73,6 +76,7 @@ const Home = () => (
       </Box>
 
       <Box
+        as="section"
         textAlign="center"
         position="relative"
         bottom={{

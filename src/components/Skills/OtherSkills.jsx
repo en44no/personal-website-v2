@@ -13,6 +13,7 @@ const OtherSkills = () => {
   return (
     <>
       <Text
+        as="h3"
         fontWeight="semibold"
         fontSize="lg"
         textAlign="center"

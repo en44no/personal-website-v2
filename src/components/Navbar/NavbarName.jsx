@@ -11,6 +11,7 @@ const NavbarName = (props) => {
     <>
       <Box p="4">
         <Text
+          as="h4"
           fontWeight="bold"
           bgGradient="linear(to-r, cyan.400, blue.500, purple.500)"
           bgClip="text"

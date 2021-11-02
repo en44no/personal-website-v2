@@ -31,7 +31,7 @@ const Social = () => {
 
   return (
     <>
-      <Flex>
+      <Flex as="section">
         <a
           href="https://github.com/en44no"
           target="_blank"

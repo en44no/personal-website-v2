@@ -13,6 +13,7 @@ const Addons = () => {
   return (
     <>
       <Text
+        as="h3"
         fontWeight="semibold"
         fontSize="lg"
         textAlign="center"
@@ -30,6 +31,7 @@ const Addons = () => {
         Piriápolis, Uruguay
       </Text>
       <Text
+        as="h3"
         fontWeight="semibold"
         fontSize="lg"
         textAlign="center"
@@ -43,6 +45,7 @@ const Addons = () => {
         {t('Languages.1')}
       </Text>
       <Text
+        as="h3"
         position="relative"
         bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
         bgClip="text"

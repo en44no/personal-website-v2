@@ -14,6 +14,7 @@ const Navbar = () => {
   return (
     <>
       <Box
+        as="nav"
         position="fixed"
         width="100%"
         zIndex="100"
@@ -39,10 +40,10 @@ const Navbar = () => {
                 <Links />
               </Box>
             </Center>
-            <Box pt="2" pl="4" mr="-2">
+            <Box as="button" pt="2" pl="4" mr="-2">
               <Language />
             </Box>
-            <Box pt="2" pl="0">
+            <Box as="button" pt="2" pl="0">
               <ColorMode />
             </Box>
           </Flex>

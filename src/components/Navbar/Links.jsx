@@ -23,6 +23,7 @@ const Links = () => {
     <>
       <Flex>
         <Box
+          as="a"
           mr="1rem"
           _hover={{
             transition: 'transform .2s',
@@ -34,11 +35,12 @@ const Links = () => {
           }}
           fontWeight="semibold"
         >
-          <Box onClick={() => (isLargerThan481 ? goTo('about') : goToMobile('about'))}>
+          <Box as="a" onClick={() => (isLargerThan481 ? goTo('about') : goToMobile('about'))}>
             {t('About.1')}
           </Box>
         </Box>
         <Box
+          as="a"
           mr="1rem"
           _hover={{
             transition: 'transform .2s',
@@ -51,12 +53,14 @@ const Links = () => {
           fontWeight="semibold"
         >
           <Box
+            as="a"
             onClick={() => (isLargerThan481 ? goTo('projects') : goToMobile('projects'))}
           >
             {t('Projects.1')}
           </Box>
         </Box>
         <Box
+          as="a"
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
@@ -68,6 +72,7 @@ const Links = () => {
           fontWeight="semibold"
         >
           <Box
+            as="a"
             onClick={() => (isLargerThan481 ? goTo('skills') : goToMobile('skills'))}
           >
             {t('Skills.1')}
