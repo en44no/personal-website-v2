@@ -67,5 +67,11 @@
   },
   "ContactMeHere": {
     "1": "Contáctame aquí:"
+  },
+  "CryptoAppType": {
+    "1": "Información"
+  },
+  "CryptoAppTitle": {
+    "1": "Listado de criptomonedas"
   }
 }

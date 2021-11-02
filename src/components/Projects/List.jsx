@@ -41,8 +41,8 @@ const List = () => {
           pb={{ mobile: '8', tablet: '0', laptop: '6' }}
         >
           <Layout
-            appType="Information"
-            appTitle="List of Cryptos"
+            appType={t('CryptoAppType.1')}
+            appTitle={t('CryptoAppTitle.1')}
             codeLink="https://github.com/en44no/list-cryptos"
             demoLink="https://user-images.githubusercontent.com/57118285/139742834-a322f2a0-a26d-4b63-9dc3-eabe23559c97.jpeg"
             appImage="https://user-images.githubusercontent.com/57118285/139742834-a322f2a0-a26d-4b63-9dc3-eabe23559c97.jpeg"
