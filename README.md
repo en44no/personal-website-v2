@@ -23,7 +23,7 @@
 >Clone the project
 >
 >```bash
->  git clone https://github.com/en44no/todo-app.git
+>  git clone https://github.com/en44no/personal-website-v2.git
 >```
 >
 >Go to the project directory
