@@ -29,7 +29,7 @@ const GoTop = () => {
             mobile: '3rem',
             tablet: '3rem',
             laptop: '4.1rem',
-            desktop: '4.1rem',
+            desktop: '3.5rem',
             largeDesktop: '3.5rem',
           }}
         >
