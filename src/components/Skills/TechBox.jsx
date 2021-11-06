@@ -13,17 +13,32 @@ const TechBox = (props) => {
         title={`Link to ${title} page`}
       >
         <Box
+          margin={{
+            mobile: '1',
+            tablet: '5',
+            laptop: '5',
+            desktop: '5',
+            largeDesktop: '5',
+          }}
           as="article"
           boxShadow="md"
-          mb={{ mobile: '1rem', tablet: '1rem', laptop: '0' }}
+          mb={{ mobile: '0.5rem', tablet: '1rem', laptop: '0' }}
           w={{
             mobile: '6.5rem',
             tablet: '6.5rem',
             laptop: '9rem',
           }}
-          h="8rem"
+          h={{
+            mobile: '7rem',
+            tablet: '8rem',
+            laptop: '8rem',
+          }}
           bg="white"
-          p="4"
+          p={{
+            mobile: '2',
+            tablet: '4',
+            laptop: '4',
+          }}
           _hover={{
             transition: 'transform 1s, all 0.2s ease-in-out',
             transform: 'scale(1.03)',
