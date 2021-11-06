@@ -30,6 +30,7 @@ const GoTop = () => {
             tablet: '3rem',
             laptop: '4.1rem',
             desktop: '4.1rem',
+            largeDesktop: '3.5rem',
           }}
         >
           {scrollHeight > 100 ? (

@@ -38,7 +38,7 @@ const Social = () => {
           rel="noreferrer"
           title="GitHub"
         >
-          <IconButton mr="1" aria-label="RedirectToGitHubButton">
+          <IconButton mr="1" mt="-0.3" aria-label="RedirectToGitHubButton">
             <UilGithubAlt />
           </IconButton>
         </a>
@@ -48,7 +48,7 @@ const Social = () => {
           rel="noreferrer"
           title="Linkedin"
         >
-          <IconButton mr="1" aria-label="RedirectToLinkedinButton">
+          <IconButton mr="1" mt="-0.5" aria-label="RedirectToLinkedinButton">
             <UilLinkedinAlt size="1.7rem" />
           </IconButton>
         </a>
