@@ -16,7 +16,7 @@ const TechBox = (props) => {
           margin={{
             mobile: '1',
             tablet: '5',
-            laptop: '5',
+            laptop: '2',
             desktop: '5',
             largeDesktop: '5',
           }}
@@ -26,18 +26,24 @@ const TechBox = (props) => {
           w={{
             mobile: '6.5rem',
             tablet: '6.5rem',
-            laptop: '9rem',
+            laptop: '6.5rem',
+            desktop: '9rem',
+            largeDesktop: '9rem',
           }}
           h={{
             mobile: '7rem',
             tablet: '8rem',
-            laptop: '8rem',
+            laptop: '7rem',
+            desktop: '8rem',
+            largeDesktop: '8rem',
           }}
           bg="white"
           p={{
             mobile: '2',
             tablet: '4',
-            laptop: '4',
+            laptop: '2',
+            desktop: '4',
+            largeDesktop: '4',
           }}
           _hover={{
             transition: 'transform 1s, all 0.2s ease-in-out',

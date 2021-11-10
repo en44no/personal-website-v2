@@ -15,7 +15,7 @@ const Skills = () => {
         <Box
           pb={{ mobile: '0rem', tablet: '0rem', laptop: '2rem' }}
           position="relative"
-          top={{ mobile: '6rem', tablet: '11rem', laptop: '0' }}
+          top={{ mobile: '6rem', tablet: '11rem', laptop: '0rem' }}
         >
           <CurrentlySkills />
         </Box>
