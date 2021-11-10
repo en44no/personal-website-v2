@@ -24,7 +24,7 @@ const Technologies = (props) => {
                 mr="2"
                 px="2"
                 py="0.5"
-                mt="3"
+                mt="2"
                 color="#fff"
                 bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
                 _hover={{
