@@ -70,6 +70,13 @@ const Home = () => (
           desktop: '90%',
           largeDesktop: '92%',
         }}
+        ml={{
+          mobile: null,
+          tablet: null,
+          laptop: null,
+          desktop: '2',
+          largeDesktop: '2',
+        }}
         zIndex="1"
       >
         <Social />
