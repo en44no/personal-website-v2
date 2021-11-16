@@ -12,7 +12,6 @@ const Header = (props) => {
       <Box>
         <>
           <Box
-            mt="1"
             fontWeight="semibold"
             as="h6"
             fontSize="sm"

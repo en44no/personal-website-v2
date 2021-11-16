@@ -25,10 +25,11 @@ const Projects = () => {
               lg: 'repeat(2, 1fr)',
             }}
             position="relative"
-            mt={{ sm: '4rem' }}
+            mt={{ sm: '4rem', lg: '-0.5rem' }}
           >
             {ListProjects.map((project) => (
               <GridItem
+                key={project.appTitle}
                 as="article"
                 pl={{ sm: '2', md: '2', lg: '6' }}
                 pt={{ sm: '0', md: '0', lg: '6' }}
