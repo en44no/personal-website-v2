@@ -19,16 +19,16 @@ const Content = () => (
           sm: 'block', md: 'block', lg: 'block', xl: 'flex', xxl: 'flex',
         }}
         mt={{
-          sm: '7rem', md: '7rem', lg: '10', xl: '0', xxl: '0',
+          sm: '6rem', md: '0rem', lg: '0', xl: '0', xxl: '0',
         }}
       >
-        <Box ml={{ lg: '7rem' }} alignSelf="center">
+        <Box ml={{ xl: '7rem' }} alignSelf="center" mb={{ lg: '2rem' }}>
           <Description />
         </Box>
         <Box
           alignSelf="center"
           mt={{ sm: '1rem', md: '1rem', lg: '0' }}
-          w={{ lg: '50%' }}
+          w={{ xl: '50%' }}
         >
           <Addons />
         </Box>
