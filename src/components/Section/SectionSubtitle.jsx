@@ -9,7 +9,7 @@ const SectionSubtitle = (props) => {
       <Text
         as="h3"
         position="relative"
-        mt={{ mobile: '0', tablet: '0', laptop: '0' }}
+        mt={{ sm: '0', md: '0', lg: '0' }}
         fontWeight="semibold"
         fontSize="xl"
       >

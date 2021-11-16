@@ -26,11 +26,11 @@ const GoTop = () => {
           display="block"
           float="right"
           mr={{
-            mobile: '3rem',
-            tablet: '3rem',
-            laptop: '4.1rem',
-            desktop: '3.5rem',
-            largeDesktop: '3.5rem',
+            sm: '3rem',
+            md: '3rem',
+            lg: '4.1rem',
+            xl: '3.5rem',
+            xxl: '3.5rem',
           }}
         >
           {scrollHeight > 100 ? (
@@ -42,11 +42,11 @@ const GoTop = () => {
               zIndex="100"
               bg="#11BAE5"
               top={{
-                mobile: '82%',
-                tablet: '79%',
-                laptop: '91%',
-                desktop: '90%',
-                largeDesktop: '92%',
+                sm: '82%',
+                md: '79%',
+                lg: '91%',
+                xl: '90%',
+                xxl: '92%',
               }}
               position="fixed"
               cursor="pointer"

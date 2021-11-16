@@ -8,27 +8,27 @@ const Content = () => (
   <>
     <Box
       w={{
-        mobile: '95%', tablet: '95%', laptop: '100%', desktop: '100%', largeDesktop: '100%',
+        sm: '95%', md: '95%', lg: '100%', xl: '100%', xxl: '100%',
       }}
-      mt={{ mobile: '0', tablet: '0', laptop: '10' }}
+      mt={{ sm: '0', md: '0', lg: '10' }}
     >
       <Grid
         templateColumns="repeat(1, 1fr)"
         gap={6}
         display={{
-          mobile: 'block', tablet: 'block', laptop: 'block', desktop: 'flex', largeDesktop: 'flex',
+          sm: 'block', md: 'block', lg: 'block', xl: 'flex', xxl: 'flex',
         }}
         mt={{
-          mobile: '7rem', tablet: '7rem', laptop: '10', desktop: '0', largeDesktop: '0',
+          sm: '7rem', md: '7rem', lg: '10', xl: '0', xxl: '0',
         }}
       >
-        <Box ml={{ desktop: '7rem' }} alignSelf="center">
+        <Box ml={{ lg: '7rem' }} alignSelf="center">
           <Description />
         </Box>
         <Box
           alignSelf="center"
-          mt={{ mobile: '1rem', tablet: '1rem', laptop: '0' }}
-          w={{ desktop: '50%' }}
+          mt={{ sm: '1rem', md: '1rem', lg: '0' }}
+          w={{ lg: '50%' }}
         >
           <Addons />
         </Box>

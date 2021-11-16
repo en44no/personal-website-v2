@@ -7,11 +7,11 @@ const config = {
 };
 
 const breakpoints = createBreakpoints({
-  mobile: '0em', // 0px to 479px, Mobile devices
-  tablet: '30em', // 480px to 767px, iPads, Tablets
-  laptop: '48em', // 768px to 1023px, Small screens, laptops
-  desktop: '64em', // 1024px to 1599px, Desktops, large screens
-  largeDesktop: '100em', // 1600px to infinite, Extra large screens, TV
+  sm: '0em', // 0px to 479px, Mobile devices
+  md: '30em', // 480px to 767px, iPads, Tablets
+  lg: '48em', // 768px to 1023px, Small screens, laptops
+  xl: '64em', // 1024px to 1599px, Desktops, large screens
+  xxl: '100em', // 1600px to infinite, Extra large screens, TV
 });
 
 const theme = extendTheme({

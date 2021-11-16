@@ -21,10 +21,10 @@ const Navbar = () => {
         pt="4"
         bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
         display={{
-          mobile: 'none',
-          tablet: 'none',
-          laptop: 'block',
-          desktop: 'block',
+          sm: 'none',
+          md: 'none',
+          lg: 'block',
+          xl: 'block',
         }}
       >
         <Container maxW="container.xl">

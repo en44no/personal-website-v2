@@ -8,19 +8,19 @@ const GridSkills = (props) => {
 
   return (
     <Box mt={{
-      mobile: sectionText === 'CurrentlySkills.1' ? '2.5rem' : null, tablet: null, laptop: null, desktop: '-2', largeDesktop: null,
+      sm: sectionText === 'CurrentlySkills.1' ? '2.5rem' : null, md: null, lg: null, xl: '-2', xxl: null,
     }}
     >
       <Text
         as="h3"
         fontWeight="semibold"
-        fontSize={{ mobile: 'md', tablet: 'lg', laptop: 'lg' }}
+        fontSize={{ sm: 'md', md: 'lg', lg: 'lg' }}
         textAlign="center"
         mt={{
-          mobile: '-3rem', tablet: '-3rem', laptop: '0', desktop: '0', largeDesktop: '0',
+          sm: '-3rem', md: '-3rem', lg: '0', xl: '0', xxl: '0',
         }}
         mb={{
-          mobile: '0.5rem', tablet: null, laptop: null, desktop: '-1', largeDesktop: null,
+          sm: '0.5rem', md: null, lg: null, xl: '-1', xxl: null,
         }}
       >
         {t(sectionText)}
@@ -29,7 +29,7 @@ const GridSkills = (props) => {
         justifyContent="center"
         flexWrap="wrap"
         mb={{
-          mobile: sectionText === 'OtherSkills.1' ? '6rem' : null, tablet: null, laptop: null, desktop: '-7', largeDesktop: null,
+          sm: sectionText === 'OtherSkills.1' ? '6rem' : null, md: null, lg: null, xl: '-7', xxl: null,
         }}
       >
         {children}

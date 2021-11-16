@@ -6,18 +6,18 @@ const HomeImage = () => (
   <>
     <Flex
       ml={{
-        mobile: null,
-        tablet: '0rem',
-        laptop: '4rem',
-        desktop: '5rem',
-        largeDesktop: '5rem',
+        sm: null,
+        md: '0rem',
+        lg: '4rem',
+        xl: '5rem',
+        xxl: '5rem',
       }}
       mr={{
-        mobile: null,
-        tablet: null,
-        laptop: '-7rem',
-        desktop: null,
-        largeDesktop: null,
+        sm: null,
+        md: null,
+        lg: '-7rem',
+        xl: null,
+        xxl: null,
       }}
     >
       <Image
@@ -27,32 +27,32 @@ const HomeImage = () => (
         borderRadius="9px"
         objectFit="fill"
         mt={{
-          mobile: '',
-          tablet: '2rem',
-          laptop: '-3',
-          desktop: '-5',
-          largeDesktop: '-5',
+          sm: '',
+          md: '2rem',
+          lg: '-3',
+          xl: '-5',
+          xxl: '-5',
         }}
         width={{
-          mobile: '',
-          tablet: '160px',
-          laptop: '200px',
-          desktop: '',
-          largeDesktop: '',
+          sm: '',
+          md: '160px',
+          lg: '200px',
+          xl: '',
+          xxl: '',
         }}
         minWidth={{
-          mobile: '',
-          tablet: '160px',
-          laptop: '',
-          desktop: '',
-          largeDesktop: '',
+          sm: '',
+          md: '160px',
+          lg: '',
+          xl: '',
+          xxl: '',
         }}
         height={{
-          mobile: '',
-          tablet: '220px',
-          laptop: '280px',
-          desktop: '',
-          largeDesktop: '',
+          sm: '',
+          md: '220px',
+          lg: '280px',
+          xl: '',
+          xxl: '',
         }}
         _hover={{
           transition: 'transform 1s, all 0.2s ease-in-out',

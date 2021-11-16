@@ -27,10 +27,10 @@ const MobileNavbar = () => {
         pb="4"
         bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
         display={{
-          mobile: 'block',
-          tablet: 'block',
-          laptop: 'none',
-          desktop: 'none',
+          sm: 'block',
+          md: 'block',
+          lg: 'none',
+          xl: 'none',
         }}
       >
         <Box display={show ? 'block' : 'none'}>

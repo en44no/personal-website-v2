@@ -14,36 +14,36 @@ const TechBox = (props) => {
       >
         <Box
           margin={{
-            mobile: '1',
-            tablet: '5',
-            laptop: '2',
-            desktop: '3',
-            largeDesktop: '5',
+            sm: '1',
+            md: '5',
+            lg: '2',
+            xl: '3',
+            xxl: '5',
           }}
           as="article"
           boxShadow="md"
-          mb={{ mobile: '0.5rem', tablet: '1rem', laptop: '0' }}
+          mb={{ sm: '0.5rem', md: '1rem', lg: '0' }}
           w={{
-            mobile: '6.5rem',
-            tablet: '6.5rem',
-            laptop: '6.5rem',
-            desktop: '8rem',
-            largeDesktop: '9rem',
+            sm: '6.5rem',
+            md: '6.5rem',
+            lg: '6.5rem',
+            xl: '8rem',
+            xxl: '9rem',
           }}
           h={{
-            mobile: '7rem',
-            tablet: '8rem',
-            laptop: '7rem',
-            desktop: '7rem',
-            largeDesktop: '8rem',
+            sm: '7rem',
+            md: '8rem',
+            lg: '7rem',
+            xl: '7rem',
+            xxl: '8rem',
           }}
           bg="white"
           p={{
-            mobile: '2',
-            tablet: '4',
-            laptop: '2',
-            desktop: '2',
-            largeDesktop: '4',
+            sm: '2',
+            md: '4',
+            lg: '2',
+            xl: '2',
+            xxl: '4',
           }}
           _hover={{
             transition: 'transform 1s, all 0.2s ease-in-out',
@@ -63,14 +63,14 @@ const TechBox = (props) => {
             fontWeight="semibold"
             textAlign="center"
             fontSize={{
-              mobile: '13px',
-              tablet: '13px',
-              laptop: '',
+              sm: '13px',
+              md: '13px',
+              lg: '',
             }}
             mt={{
-              mobile: '0.5rem',
-              tablet: '0.5rem',
-              laptop: '',
+              sm: '0.5rem',
+              md: '0.5rem',
+              lg: '',
             }}
             mb="0"
             color={techColor}

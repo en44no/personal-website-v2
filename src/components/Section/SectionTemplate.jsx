@@ -17,10 +17,10 @@ const SectionTemplate = (props) => {
         w="100%"
         maxW="container.xl"
         height={{
-          mobile: sectionHome ? '80vh' : 'auto',
-          tablet: '100vh',
-          laptop: '100vh',
-          desktop: '100vh',
+          sm: sectionHome ? '80vh' : 'auto',
+          md: '100vh',
+          lg: '100vh',
+          xl: '100vh',
         }}
         position="relative"
         display="flex"
@@ -65,16 +65,16 @@ const SectionTemplate = (props) => {
             position="relative"
             w="100%"
             bottom={{
-              mobile: '5rem',
-              tablet: null,
-              laptop: '2rem',
-              desktop: '2rem',
+              sm: '5rem',
+              md: null,
+              lg: '2rem',
+              xl: '2rem',
             }}
             display={{
-              mobile: 'none',
-              tablet: 'none',
-              laptop: 'block',
-              desktop: 'block',
+              sm: 'none',
+              md: 'none',
+              lg: 'block',
+              xl: 'block',
             }}
           >
             <SectionNextButton section={sectionNextButton} />

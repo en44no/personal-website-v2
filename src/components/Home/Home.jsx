@@ -18,30 +18,30 @@ const Home = () => (
         as="header"
         display="flex"
         p={{
-          mobile: '2rem',
-          tablet: '3.5rem',
-          laptop: '3rem',
-          desktop: '8',
-          largeDesktop: '8',
+          sm: '2rem',
+          md: '3.5rem',
+          lg: '3rem',
+          xl: '8',
+          xxl: '8',
         }}
         position="relative"
         top={{
-          mobile: '-2rem',
-          tablet: '-4rem',
-          laptop: '0',
-          desktop: '0',
-          largeDesktop: '0',
+          sm: '-2rem',
+          md: '-4rem',
+          lg: '0',
+          xl: '0',
+          xxl: '0',
         }}
       >
         <HomeText />
         <Box
           as="section"
           display={{
-            mobile: 'none',
-            tablet: 'block',
-            laptop: 'block',
-            desktop: 'block',
-            largeDesktop: 'null',
+            sm: 'none',
+            md: 'block',
+            lg: 'block',
+            xl: 'block',
+            xxl: 'null',
           }}
         >
           <HomeImage />
@@ -50,32 +50,32 @@ const Home = () => (
       <Box
         as="section"
         alignSelf={{
-          mobile: 'flex',
-          tablet: 'flex',
-          laptop: 'flex-start',
-          desktop: '',
-          largeDesktop: '',
+          sm: 'flex',
+          md: 'flex',
+          lg: 'flex-start',
+          xl: '',
+          xxl: '',
         }}
         position={{
-          mobile: 'relative',
-          tablet: 'relative',
-          laptop: 'absolute',
-          desktop: '',
-          largeDesktop: '',
+          sm: 'relative',
+          md: 'relative',
+          lg: 'absolute',
+          xl: '',
+          xxl: '',
         }}
         top={{
-          mobile: '-1rem',
-          tablet: '-3rem',
-          laptop: '91%',
-          desktop: '90%',
-          largeDesktop: '92%',
+          sm: '-1rem',
+          md: '-3rem',
+          lg: '91%',
+          xl: '90%',
+          xxl: '92%',
         }}
         ml={{
-          mobile: null,
-          tablet: null,
-          laptop: null,
-          desktop: '2',
-          largeDesktop: '2',
+          sm: null,
+          md: null,
+          lg: null,
+          xl: '2',
+          xxl: '2',
         }}
         zIndex="1"
       >
@@ -87,18 +87,18 @@ const Home = () => (
         textAlign="center"
         position="relative"
         bottom={{
-          mobile: '-3rem',
-          tablet: '0rem',
-          laptop: '2rem',
-          desktop: '2rem',
-          largeDesktop: '',
+          sm: '-3rem',
+          md: '0rem',
+          lg: '2rem',
+          xl: '2rem',
+          xxl: '',
         }}
         display={{
-          mobile: 'block',
-          tablet: 'block',
-          laptop: 'none',
-          desktop: 'none',
-          largeDesktop: '',
+          sm: 'block',
+          md: 'block',
+          lg: 'none',
+          xl: 'none',
+          xxl: '',
         }}
       >
         <SectionNextButton isFinger="true" section="about" />
