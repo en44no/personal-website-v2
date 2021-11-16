@@ -1,7 +1,9 @@
-import { Box, Grid, GridItem } from '@chakra-ui/react';
 import React from 'react';
+import {
+  Box, Grid, GridItem, Button,
+} from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
-import MoreProjectsButton from './MoreProjectsButton';
+import { UilGithubAlt } from '@iconscout/react-unicons';
 import SectionTemplate from '../Section/SectionTemplate';
 import Layout from './Layout';
 import ListProjects from './listProjects.json';
@@ -50,19 +52,26 @@ const Projects = () => {
         </Box>
         <Box
           position={{
-            sm: 'relative',
-            md: 'relative',
-            lg: 'relative',
+            sm: 'relative', md: 'relative', lg: 'relative',
           }}
           top={{
-            sm: '1rem',
-            md: '3rem',
-            lg: '0rem',
-            xl: '0.5rem',
-            xxl: '1rem',
+            sm: '1rem', md: '3rem', lg: '0rem', xl: '0.5rem', xxl: '1rem',
           }}
         >
-          <MoreProjectsButton />
+          <a
+            href="https://github.com/en44no?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button
+              aria-label="seeMoreProjectsButton"
+              leftIcon={<UilGithubAlt size="1.4rem" />}
+              bg="#11BAE5"
+              boxShadow="md"
+            >
+              {t('SeeMoreProjects.1')}
+            </Button>
+          </a>
         </Box>
       </SectionTemplate>
     </>

@@ -1,6 +1,8 @@
-import { Box, Flex, Spacer } from '@chakra-ui/react';
 import React from 'react';
-import CodeAndDemo from './CodeAndDemo';
+import {
+  Box, Flex, Spacer, IconButton,
+} from '@chakra-ui/react';
+import { UilPlay, UilBracketsCurly } from '@iconscout/react-unicons';
 
 const Header = (props) => {
   const {
@@ -24,7 +26,30 @@ const Header = (props) => {
               {appTitle}
             </Box>
             <Spacer />
-            <CodeAndDemo codeLink={codeLink} demoLink={demoLink} />
+            <Box display="flex">
+              <>
+                <a
+                  href={codeLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Code"
+                >
+                  <IconButton h="2rem" px="2" aria-label="SeeDemoButton">
+                    <UilBracketsCurly fontSize="1.3rem" />
+                  </IconButton>
+                </a>
+                <a
+                  href={demoLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Demo"
+                >
+                  <IconButton h="2rem" px="2" aria-label="SeeAppButton">
+                    <UilPlay />
+                  </IconButton>
+                </a>
+              </>
+            </Box>
           </Flex>
         </>
       </Box>
