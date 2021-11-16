@@ -22,12 +22,13 @@ const Content = () => (
           mobile: '7rem', tablet: '7rem', laptop: '10', desktop: '0', largeDesktop: '0',
         }}
       >
-        <Box alignSelf="center">
+        <Box ml={{ desktop: '7rem' }} alignSelf="center">
           <Description />
         </Box>
         <Box
           alignSelf="center"
           mt={{ mobile: '1rem', tablet: '1rem', laptop: '0' }}
+          w={{ desktop: '50%' }}
         >
           <Addons />
         </Box>

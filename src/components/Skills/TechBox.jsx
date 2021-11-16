@@ -17,7 +17,7 @@ const TechBox = (props) => {
             mobile: '1',
             tablet: '5',
             laptop: '2',
-            desktop: '5',
+            desktop: '3',
             largeDesktop: '5',
           }}
           as="article"
@@ -27,14 +27,14 @@ const TechBox = (props) => {
             mobile: '6.5rem',
             tablet: '6.5rem',
             laptop: '6.5rem',
-            desktop: '9rem',
+            desktop: '8rem',
             largeDesktop: '9rem',
           }}
           h={{
             mobile: '7rem',
             tablet: '8rem',
             laptop: '7rem',
-            desktop: '8rem',
+            desktop: '7rem',
             largeDesktop: '8rem',
           }}
           bg="white"
@@ -42,7 +42,7 @@ const TechBox = (props) => {
             mobile: '2',
             tablet: '4',
             laptop: '2',
-            desktop: '4',
+            desktop: '2',
             largeDesktop: '4',
           }}
           _hover={{
