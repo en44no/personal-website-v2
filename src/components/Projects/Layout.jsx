@@ -1,10 +1,12 @@
 import React from 'react';
 import { Box } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 import ProjectHeader from './ProjectHeader';
 import ProjectImage from './ProjectImage';
 import Technologies from './Technologies';
 
 const Layout = (props) => {
+  const { t } = useTranslation();
   const {
     appType, appTitle, appImage, codeLink, demoLink, techs,
   } = props;
@@ -13,15 +15,15 @@ const Layout = (props) => {
     <>
       <Box>
         <ProjectHeader
-          appType={appType}
-          appTitle={appTitle}
-          codeLink={codeLink}
-          demoLink={demoLink}
+          appType={t(appType.toString())}
+          appTitle={t(appTitle.toString())}
+          codeLink={t(codeLink.toString())}
+          demoLink={t(demoLink.toString())}
         />
         <ProjectImage
-          appImage={appImage}
-          appTitle={appTitle}
-          demoLink={demoLink}
+          appImage={t(appImage.toString())}
+          appTitle={t(appTitle.toString())}
+          demoLink={t(demoLink.toString())}
         />
         <Box display="flex">
           <Technologies techs={techs} />

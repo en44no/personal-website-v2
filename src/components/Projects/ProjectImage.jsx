@@ -17,10 +17,10 @@ const ProjectImage = (props) => {
           src={appImage}
           alt={appTitle}
           w={{
-            mobile: '460px', tablet: '350px', laptop: '300px', desktop: '380px', largeDesktop: '460px',
+            sm: '460px', md: '350px', lg: '300px', xl: '380px', xxl: '410px',
           }}
           h={{
-            mobile: '212px', tablet: '160px', laptop: '160px', desktop: '180px', largeDesktop: '212px',
+            sm: '212px', md: '160px', lg: '160px', xl: '180px', xxl: '210px',
           }}
           borderRadius="9px"
           objectFit="cover"
