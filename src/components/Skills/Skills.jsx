@@ -15,13 +15,13 @@ const Skills = () => {
         <Box
           pb={{ sm: '0rem', md: '0rem', lg: '2rem' }}
           position="relative"
-          top={{ sm: '6rem', md: '11rem', lg: '0rem' }}
+          top={{ sm: '6rem', md: '4rem', lg: '0rem' }}
         >
           <CurrentlySkills />
         </Box>
         <Box
           position="relative"
-          top={{ sm: '10rem', md: '16rem', lg: '0' }}
+          top={{ sm: '10rem', md: '7rem', lg: '0' }}
         >
           <OtherSkills />
         </Box>

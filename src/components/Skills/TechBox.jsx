@@ -14,20 +14,20 @@ const TechBox = (props) => {
       >
         <Box
           margin={{
-            sm: '1', md: '5', lg: '2', xl: '3', xxl: '5',
+            sm: '1', md: '2', lg: '2', xl: '3', xxl: '5',
           }}
           as="article"
           boxShadow="md"
           mb={{ sm: '0.5rem', md: '1rem', lg: '0' }}
           w={{
-            sm: '6.5rem', md: '6.5rem', lg: '6.5rem', xl: '8rem', xxl: '9rem',
+            sm: '6.5rem', md: '6rem', lg: '6.5rem', xl: '8rem', xxl: '9rem',
           }}
           h={{
-            sm: '7rem', md: '8rem', lg: '7rem', xl: '7rem', xxl: '8rem',
+            sm: '7rem', md: '7rem', lg: '7rem', xl: '7rem', xxl: '8rem',
           }}
           bg="white"
           p={{
-            sm: '2', md: '4', lg: '2', xl: '2', xxl: '4',
+            sm: '2', md: '2', lg: '2', xl: '2', xxl: '4',
           }}
           _hover={{
             transition: 'transform 1s, all 0.2s ease-in-out',

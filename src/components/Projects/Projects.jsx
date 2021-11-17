@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Box, Grid, GridItem, Button,
+  Box, Flex, Button,
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import { UilGithubAlt } from '@iconscout/react-unicons';
@@ -20,23 +20,20 @@ const Projects = () => {
         sectionNextButton="skills"
       >
         <Box>
-          <Grid
-            templateColumns={{
-              sm: 'repeat(1, 1fr)',
-              md: 'repeat(2, 1fr)',
-              lg: 'repeat(2, 1fr)',
-            }}
+          <Flex
+            justifyContent="center"
+            flexWrap="wrap"
             position="relative"
             mt={{ sm: '4rem', lg: '-0.5rem' }}
           >
             {ListProjects.map((project) => (
-              <GridItem
+              <Box
                 key={project.appTitle}
                 as="article"
                 pl={{ sm: '2', md: '2', lg: '6' }}
                 pt={{ sm: '0', md: '0', lg: '6' }}
                 pr={{ sm: '2', md: '2', lg: '6' }}
-                pb={{ sm: '1rem', md: '0', lg: '6' }}
+                pb={{ sm: '1rem', md: '1rem', lg: '6' }}
               >
                 <Layout
                   appType={project.appType}
@@ -46,16 +43,16 @@ const Projects = () => {
                   appImage={project.appImage}
                   techs={project.techs}
                 />
-              </GridItem>
+              </Box>
             ))}
-          </Grid>
+          </Flex>
         </Box>
         <Box
           position={{
             sm: 'relative', md: 'relative', lg: 'relative',
           }}
           top={{
-            sm: '1rem', md: '3rem', lg: '0rem', xl: '0.5rem', xxl: '1rem',
+            sm: '1rem', md: '0.5rem', lg: '0rem', xl: '0.5rem', xxl: '1rem',
           }}
         >
           <a
