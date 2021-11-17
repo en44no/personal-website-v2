@@ -1,3 +1,7 @@
+## 🎥 Video
+> ![ezgif com-gif-maker](https://user-images.githubusercontent.com/57118285/142087924-e1ee0a55-0538-4b1a-96df-3ce93fbff92b.gif)
+
+ 
 ## 📷 Screenshots
 
 > ![image](https://user-images.githubusercontent.com/57118285/139592511-a7c6f6b9-b6d9-4014-9367-47a7e115ea49.png)
