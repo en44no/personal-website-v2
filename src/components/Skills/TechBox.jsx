@@ -14,13 +14,13 @@ const TechBox = (props) => {
       >
         <Box
           margin={{
-            sm: '1', md: '2', lg: '2', xl: '3', xxl: '5',
+            sm: '1', md: '2', lg: '2', xl: '3', xxl: '4',
           }}
           as="article"
           boxShadow="md"
           mb={{ sm: '0.5rem', md: '1rem', lg: '0' }}
           w={{
-            sm: '6.5rem', md: '6rem', lg: '6.5rem', xl: '8rem', xxl: '9rem',
+            sm: '6.5rem', md: '6rem', lg: '6.5rem', xl: '8rem', xxl: '8rem',
           }}
           h={{
             sm: '7rem', md: '7rem', lg: '7rem', xl: '7rem', xxl: '8rem',
