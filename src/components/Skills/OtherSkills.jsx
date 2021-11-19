@@ -1,6 +1,6 @@
 import React from 'react';
 import { DiNodejs } from 'react-icons/di'; import {
-  SiCsharp, SiMongodb, SiBootstrap, SiExpress,
+  SiCsharp, SiMongodb, SiBootstrap, SiExpress, SiReact,
 } from 'react-icons/si';
 import TechBox from './TechBox';
 import GridSkills from './GridSkills';
@@ -8,6 +8,12 @@ import GridSkills from './GridSkills';
 const OtherSkills = () => (
   <>
     <GridSkills sectionText="OtherSkills.1">
+      <TechBox
+        techIcon={SiReact}
+        techColor="#61DAFB"
+        title="React Native"
+        link="https://reactnative.dev/"
+      />
       <TechBox
         techIcon={DiNodejs}
         techColor="#6DA55F"
