@@ -6,6 +6,7 @@ import {
   SiHtml5,
   SiCss3,
   SiGit,
+  SiTailwindcss,
 } from 'react-icons/si';
 import TechBox from './TechBox';
 import GridSkills from './GridSkills';
@@ -26,6 +27,18 @@ const CurrentlySkills = () => (
         link="https://es.reactjs.org/"
       />
       <TechBox
+        techIcon={SiTailwindcss}
+        techColor="#06B6D4"
+        title="Tailwind"
+        link="https://tailwindcss.com/"
+      />
+      <TechBox
+        techIcon={SiGit}
+        techColor="#F05033"
+        title="Git"
+        link="https://git-scm.com/"
+      />
+      <TechBox
         techIcon={SiJavascript}
         techColor="#F7E018"
         title="JavaScript"
@@ -43,12 +56,6 @@ const CurrentlySkills = () => (
         techColor="#2965F1"
         title="CSS"
         link="https://developer.mozilla.org/es/docs/Web/CSS"
-      />
-      <TechBox
-        techIcon={SiGit}
-        techColor="#F05033"
-        title="Git"
-        link="https://git-scm.com/"
       />
     </GridSkills>
   </>
