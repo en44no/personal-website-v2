@@ -15,7 +15,7 @@ const Home = () => (
       nextButtonForHome="true"
     >
       <Box
-        as="header"
+        as="main"
         display="flex"
         p={{
           sm: '2rem', md: '3.5rem', lg: '3rem', xl: '8', xxl: '8',

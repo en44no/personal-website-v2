@@ -21,9 +21,9 @@ const Links = () => {
 
   return (
     <>
-      <Flex>
+      <Flex as="ul">
         <Box
-          as="a"
+          as="li"
           mr="1rem"
           _hover={{
             transition: 'transform .2s',
@@ -40,7 +40,7 @@ const Links = () => {
           </Box>
         </Box>
         <Box
-          as="a"
+          as="li"
           mr="1rem"
           _hover={{
             transition: 'transform .2s',
@@ -60,7 +60,7 @@ const Links = () => {
           </Box>
         </Box>
         <Box
-          as="a"
+          as="li"
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
