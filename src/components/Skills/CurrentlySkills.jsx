@@ -6,7 +6,8 @@ import {
   SiHtml5,
   SiCss3,
   SiGit,
-  SiTailwindcss,
+  SiMicrosoftsqlserver,
+  SiAngular,
 } from 'react-icons/si';
 import TechBox from './TechBox';
 import GridSkills from './GridSkills';
@@ -14,6 +15,12 @@ import GridSkills from './GridSkills';
 const CurrentlySkills = () => (
   <>
     <GridSkills sectionText="CurrentlySkills.1">
+      <TechBox
+        techIcon={SiAngular}
+        techColor="#d6002f"
+        title="Angular"
+        link="https://angular.io/"
+      />
       <TechBox
         techIcon={SiChakraui}
         techColor="#3FC7BF"
@@ -25,12 +32,6 @@ const CurrentlySkills = () => (
         techColor="#61DAFB"
         title="React"
         link="https://es.reactjs.org/"
-      />
-      <TechBox
-        techIcon={SiTailwindcss}
-        techColor="#06B6D4"
-        title="Tailwind"
-        link="https://tailwindcss.com/"
       />
       <TechBox
         techIcon={SiGit}
@@ -56,6 +57,12 @@ const CurrentlySkills = () => (
         techColor="#2965F1"
         title="CSS"
         link="https://developer.mozilla.org/es/docs/Web/CSS"
+      />
+      <TechBox
+        techIcon={SiMicrosoftsqlserver}
+        techColor="#de3029"
+        title="SQL Server"
+        link="https://www.microsoft.com/en-us/sql-server/sql-server-downloads"
       />
     </GridSkills>
   </>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { DiNodejs } from 'react-icons/di'; import {
   SiCsharp, SiMongodb, SiBootstrap, SiExpress, SiReact,
+  SiTailwindcss,
 } from 'react-icons/si';
 import TechBox from './TechBox';
 import GridSkills from './GridSkills';
@@ -43,6 +44,12 @@ const OtherSkills = () => (
         techColor="grey"
         title="Express"
         link="https://expressjs.com/es/"
+      />
+      <TechBox
+        techIcon={SiTailwindcss}
+        techColor="#06B6D4"
+        title="Tailwind"
+        link="https://tailwindcss.com/"
       />
     </GridSkills>
   </>
