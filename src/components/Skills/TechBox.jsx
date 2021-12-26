@@ -20,7 +20,7 @@ const TechBox = (props) => {
           boxShadow="md"
           mb={{ sm: '0.5rem', md: '1rem', lg: '0' }}
           w={{
-            sm: '6.5rem', md: '6rem', lg: '6.5rem', xl: '8rem', xxl: '8rem',
+            sm: '6rem', md: '6rem', lg: '6rem', xl: '6.5rem', xxl: '7rem',
           }}
           h={{
             sm: '7rem', md: '7rem', lg: '7rem', xl: '7rem', xxl: '8rem',
