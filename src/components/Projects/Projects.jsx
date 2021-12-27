@@ -62,6 +62,7 @@ const Projects = () => {
           >
             <Button
               aria-label="seeMoreProjectsButton"
+              color="#fff"
               leftIcon={<UilGithubAlt size="1.4rem" />}
               bg="#11BAE5"
               boxShadow="md"
