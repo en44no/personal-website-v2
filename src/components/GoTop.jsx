@@ -34,6 +34,7 @@ const GoTop = () => {
               boxShadow="md"
               aria-label="goToTopButton"
               className="goTop"
+              color="#fff"
               onClick={() => goToTop()}
               zIndex="100"
               bg="#11BAE5"
