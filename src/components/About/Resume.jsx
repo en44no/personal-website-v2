@@ -22,6 +22,7 @@ const Resume = () => {
       >
         <Button
           bg="#11BAE5"
+          color="#fff"
           boxShadow="md"
           mt="3"
           aria-label="downloadCVButton"
