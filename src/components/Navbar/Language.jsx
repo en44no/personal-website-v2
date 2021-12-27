@@ -17,6 +17,7 @@ const Language = () => {
       <Button
         aria-label="toggleLanguageButton"
         mr="-3"
+        ml="-3"
         w="5%"
         onClick={() => (i18n.language === 'en' ? handleClick('es') : handleClick('en'))}
       >
