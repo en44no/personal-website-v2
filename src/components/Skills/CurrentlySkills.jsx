@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  SiChakraui,
+  SiCsharp,
   SiReact,
   SiJavascript,
   SiHtml5,
@@ -22,10 +22,10 @@ const CurrentlySkills = () => (
         link="https://angular.io/"
       />
       <TechBox
-        techIcon={SiChakraui}
-        techColor="#3FC7BF"
-        title="Chakra UI"
-        link="https://chakra-ui.com/"
+        techIcon={SiCsharp}
+        techColor="#953DAC"
+        title="CSharp"
+        link="https://docs.microsoft.com/en-us/dotnet/csharp/"
       />
       <TechBox
         techIcon={SiReact}

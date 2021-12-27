@@ -1,7 +1,8 @@
 import React from 'react';
 import { DiNodejs } from 'react-icons/di'; import {
-  SiCsharp, SiMongodb, SiBootstrap, SiExpress, SiReact,
+  SiMongodb, SiBootstrap, SiExpress, SiReact,
   SiTailwindcss,
+  SiChakraui,
 } from 'react-icons/si';
 import TechBox from './TechBox';
 import GridSkills from './GridSkills';
@@ -20,12 +21,6 @@ const OtherSkills = () => (
         techColor="#6DA55F"
         title="Node"
         link="https://nodejs.org/es/"
-      />
-      <TechBox
-        techIcon={SiCsharp}
-        techColor="#953DAC"
-        title="CSharp"
-        link="https://docs.microsoft.com/en-us/dotnet/csharp/"
       />
       <TechBox
         techIcon={SiMongodb}
@@ -50,6 +45,12 @@ const OtherSkills = () => (
         techColor="#06B6D4"
         title="Tailwind"
         link="https://tailwindcss.com/"
+      />
+      <TechBox
+        techIcon={SiChakraui}
+        techColor="#3FC7BF"
+        title="Chakra UI"
+        link="https://chakra-ui.com/"
       />
     </GridSkills>
   </>
