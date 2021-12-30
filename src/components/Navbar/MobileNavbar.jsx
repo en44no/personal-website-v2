@@ -61,8 +61,8 @@ const MobileNavbar = () => {
           <Box as="button" pt="0" pl="0" pr="0" mr="-2">
             <ColorMode />
           </Box>
-          <Box as="button" pt="0" pr="3" ml="-1">
-            <Button onClick={() => setShow(!show)}>
+          <Box as="button" pt="0" mr="3" ml="2">
+            <Button padding="10px" onClick={() => setShow(!show)}>
               <UilApps />
             </Button>
           </Box>
