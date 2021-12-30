@@ -22,7 +22,7 @@ const Content = () => (
           sm: '6rem', md: '0rem', lg: '0', xl: '0', xxl: '0',
         }}
       >
-        <Box ml={{ xl: '7rem' }} alignSelf="center" mb={{ lg: '2rem' }}>
+        <Box ml={{ xl: '7rem' }} alignSelf="center">
           <Description />
         </Box>
         <Box
