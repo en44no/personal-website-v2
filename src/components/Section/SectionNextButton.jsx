@@ -26,11 +26,13 @@ const SectionNextButton = (props) => {
           aria-label="goToNextSectionButton"
           onClick={() => (isLargerThan481 ? goToNextSection() : goToNextSectionMobile())}
         >
-          {isFinger ? (
-            <BsHandIndex size="1.8rem" style={{ transform: 'scaleY(-1)' }} />
-          ) : (
-            <UilMouseAlt size="1.8rem" />
-          )}
+          {isFinger
+            ? (
+              <BsHandIndex size="1.8rem" style={{ transform: 'scaleY(-1)' }} />
+            )
+            : (
+              <UilMouseAlt size="1.8rem" />
+            )}
         </IconButton>
       </Box>
     </>

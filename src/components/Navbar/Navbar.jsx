@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Flex, Spacer, Box, Center, Container,
+  Flex, Spacer, Box, Center, Container
 } from '@chakra-ui/react';
 import { useColorMode } from '@chakra-ui/color-mode';
 import ColorMode from './ColorMode';
@@ -21,7 +21,7 @@ const Navbar = () => {
         pt="4"
         bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
         display={{
-          sm: 'none', md: 'none', lg: 'block', xl: 'block',
+          sm: 'none', md: 'none', lg: 'block', xl: 'block'
         }}
       >
         <Container maxW="container.xl">

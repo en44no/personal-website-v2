@@ -8,7 +8,7 @@ import Technologies from './Technologies';
 const Layout = (props) => {
   const { t } = useTranslation();
   const {
-    appType, appTitle, appImage, codeLink, demoLink, techs,
+    appType, appTitle, appImage, codeLink, demoLink, techs
   } = props;
 
   return (

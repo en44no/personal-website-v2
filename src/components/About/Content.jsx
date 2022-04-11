@@ -8,7 +8,7 @@ const Content = () => (
   <>
     <Box
       w={{
-        sm: '95%', md: '95%', lg: '100%', xl: '100%', xxl: '100%',
+        sm: '95%', md: '95%', lg: '100%', xl: '100%', xxl: '100%'
       }}
       mt={{ sm: '0', md: '0', lg: '10' }}
     >
@@ -16,10 +16,10 @@ const Content = () => (
         templateColumns="repeat(1, 1fr)"
         gap={6}
         display={{
-          sm: 'block', md: 'block', lg: 'block', xl: 'flex', xxl: 'flex',
+          sm: 'block', md: 'block', lg: 'block', xl: 'flex', xxl: 'flex'
         }}
         mt={{
-          sm: '6rem', md: '0rem', lg: '0', xl: '0', xxl: '0',
+          sm: '6rem', md: '0rem', lg: '0', xl: '0', xxl: '0'
         }}
       >
         <Box ml={{ xl: '7rem' }} alignSelf="center">

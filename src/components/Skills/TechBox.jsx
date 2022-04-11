@@ -14,24 +14,24 @@ const TechBox = (props) => {
       >
         <Box
           margin={{
-            sm: '1', md: '2', lg: '2', xl: '3', xxl: '4',
+            sm: '1', md: '2', lg: '2', xl: '3', xxl: '4'
           }}
           as="article"
           boxShadow="md"
           mb={{ sm: '0.5rem', md: '1rem', lg: '0' }}
           w={{
-            sm: '6rem', md: '6rem', lg: '6rem', xl: '6.5rem', xxl: '7rem',
+            sm: '6rem', md: '6rem', lg: '6rem', xl: '6.5rem', xxl: '7rem'
           }}
           h={{
-            sm: '7rem', md: '7rem', lg: '7rem', xl: '7rem', xxl: '8rem',
+            sm: '7rem', md: '7rem', lg: '7rem', xl: '7rem', xxl: '8rem'
           }}
           bg="white"
           p={{
-            sm: '2', md: '2', lg: '2', xl: '2', xxl: '4',
+            sm: '2', md: '2', lg: '2', xl: '2', xxl: '4'
           }}
           _hover={{
             transition: 'transform 1s, all 0.2s ease-in-out',
-            transform: 'scale(1.03)',
+            transform: 'scale(1.03)'
           }}
           borderRadius="9px"
         >
@@ -47,10 +47,10 @@ const TechBox = (props) => {
             fontWeight="semibold"
             textAlign="center"
             fontSize={{
-              sm: '13px', md: '13px', lg: null,
+              sm: '13px', md: '13px', lg: null
             }}
             mt={{
-              sm: '0.5rem', md: '0.5rem', lg: null,
+              sm: '0.5rem', md: '0.5rem', lg: null
             }}
             mb="0"
             color={techColor}

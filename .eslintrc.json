@@ -3,10 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb"
-  ],
+  "extends": ["plugin:react/recommended", "standard"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -14,33 +11,21 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react"
-  ],
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
+  "plugins": ["react"],
   "rules": {
-    "quotes": "error",
+    "quotes": [0],
+    "semi": [0],
     "linebreak-style": 0,
     "react/prop-types": "off",
     "import/no-extraneous-dependencies": "off",
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
     "eslint no-useless-return": "off",
-    "indent": [
-      "error",
-      2
-    ],
+    "indent": ["error", 2],
     "no-tabs": "off",
     "padding-line-between-statements": [
       "warn",
@@ -51,25 +36,13 @@
       },
       {
         "blankLine": "always",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
+        "prev": ["const", "let", "var"],
         "next": "*"
       },
       {
         "blankLine": "any",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
-        "next": [
-          "const",
-          "let",
-          "var"
-        ]
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
       }
     ]
   }

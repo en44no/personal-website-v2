@@ -19,5 +19,5 @@ ReactDOM.render(
       </Suspense>
     </ChakraProvider>
   </React.StrictMode>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );

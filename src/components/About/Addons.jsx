@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, Box } from '@chakra-ui/react';
 import {
   UilLocationPoint,
-  UilEnglishToChinese,
+  UilEnglishToChinese
 } from '@iconscout/react-unicons';
 import { useTranslation } from 'react-i18next';
 import Social from '../Social';
@@ -23,7 +23,7 @@ const Addons = () => {
         <span
           style={{
             marginRight: '0.5rem',
-            marginTop: '0.2rem',
+            marginTop: '0.2rem'
           }}
         >
           <UilLocationPoint />

@@ -10,6 +10,7 @@ const Technologies = (props) => {
         <>
           {techs.map((t) => (
             <a
+              key={t.link}
               href={t.link}
               target="_blank"
               rel="noreferrer"
@@ -29,7 +30,7 @@ const Technologies = (props) => {
                 bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
                 _hover={{
                   transition: 'transform .2s',
-                  transform: 'scale(1.06)',
+                  transform: 'scale(1.06)'
                 }}
                 cursor="pointer"
               >

@@ -10,7 +10,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
   debug: false,
   whitelist: Languages,
   load: 'currentOnly',
-  fallbackLng: 'es',
+  fallbackLng: 'es'
 });
 
 i18n.changeLanguage();

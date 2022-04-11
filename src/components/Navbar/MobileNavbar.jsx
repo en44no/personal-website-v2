@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Flex, Spacer, Box, Center, Button, Container,
+  Flex, Spacer, Box, Center, Button, Container
 } from '@chakra-ui/react';
 import { ScaleFade } from '@chakra-ui/transition';
 import { UilApps } from '@iconscout/react-unicons';
@@ -27,7 +27,7 @@ const MobileNavbar = () => {
         pb="4"
         bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
         display={{
-          sm: 'block', md: 'block', lg: 'none', xl: 'none',
+          sm: 'block', md: 'block', lg: 'none', xl: 'none'
         }}
       >
         <Box display={show ? 'block' : 'none'}>

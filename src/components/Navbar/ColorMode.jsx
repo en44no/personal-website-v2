@@ -19,14 +19,16 @@ const ColorMode = () => {
           bg="transparent"
           isRound
           _hover={{
-            bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)',
+            bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)'
           }}
         >
-          {colorMode === 'light' ? (
-            <UilSun color="#000" />
-          ) : (
-            <UilMoon color="#fff" />
-          )}
+          {colorMode === 'light'
+            ? (
+              <UilSun color="#000" />
+            )
+            : (
+              <UilMoon color="#fff" />
+            )}
         </IconButton>
       </Button>
     </>

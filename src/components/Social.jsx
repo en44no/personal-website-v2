@@ -1,32 +1,32 @@
-import React from 'react';
-import { IconButton, Flex, useToast } from '@chakra-ui/react';
+import React from "react";
+import { IconButton, Flex, useToast } from "@chakra-ui/react";
 
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import {
   UilLinkedinAlt,
   UilGithubAlt,
   UilEnvelopeAdd,
-  UilWhatsapp,
-} from '@iconscout/react-unicons';
+  UilWhatsapp
+} from "@iconscout/react-unicons";
 
 const Social = () => {
   const notification = useToast();
-  const toastId = 'email-toast';
+  const toastId = "email-toast";
   const { t } = useTranslation();
 
   const notificationAndCopyToClipboard = () => {
     if (!notification.isActive(toastId)) {
       notification({
         id: toastId,
-        title: t('EmailCopied.1'),
-        description: t('EmailCopiedClipboard.1'),
-        status: 'info',
+        title: t("EmailCopied.1"),
+        description: t("EmailCopiedClipboard.1"),
+        status: "info",
         duration: 4000,
-        position: 'bottom',
-        isClosable: true,
+        position: "bottom",
+        isClosable: true
       });
     }
-    navigator.clipboard.writeText('nahuelmarquez12@gmail.com');
+    navigator.clipboard.writeText("nahuelmarquez12@gmail.com");
   };
 
   return (

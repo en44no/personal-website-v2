@@ -2,7 +2,7 @@ import React from 'react';
 import { DiNodejs } from 'react-icons/di'; import {
   SiMongodb, SiBootstrap, SiExpress, SiReact,
   SiTailwindcss,
-  SiChakraui,
+  SiChakraui
 } from 'react-icons/si';
 import TechBox from './TechBox';
 import GridSkills from './GridSkills';

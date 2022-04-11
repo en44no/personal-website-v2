@@ -26,14 +26,16 @@ const Language = () => {
           bg="transparent"
           isRound
           _hover={{
-            bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)',
+            bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)'
           }}
         >
-          {colorMode === 'dark' ? (
-            <UilEnglishToChinese size="1.5rem" color="white" />
-          ) : (
-            <UilEnglishToChinese size="1.5rem" color="dark" />
-          )}
+          {colorMode === 'dark'
+            ? (
+              <UilEnglishToChinese size="1.5rem" color="white" />
+            )
+            : (
+              <UilEnglishToChinese size="1.5rem" color="dark" />
+            )}
         </IconButton>
       </Button>
     </>

@@ -18,7 +18,7 @@ const NavbarName = (props) => {
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
-            ml: '0.5',
+            ml: '0.5'
           }}
           onClick={goToTop ? () => goToTopFunction() : null}
           cursor={cursorPointer ? () => 'pointer' : null}

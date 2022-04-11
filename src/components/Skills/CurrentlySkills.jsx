@@ -7,7 +7,7 @@ import {
   SiCss3,
   SiGit,
   SiMicrosoftsqlserver,
-  SiAngular,
+  SiAngular
 } from 'react-icons/si';
 import TechBox from './TechBox';
 import GridSkills from './GridSkills';

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Box, Flex, useMediaQuery,
+  Box, Flex, useMediaQuery
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 
@@ -31,7 +31,7 @@ const Links = () => {
             bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
             bgClip: 'text',
             cursor: 'pointer',
-            textDecoration: 'none',
+            textDecoration: 'none'
           }}
           fontWeight="semibold"
         >
@@ -48,7 +48,7 @@ const Links = () => {
             bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
             bgClip: 'text',
             cursor: 'pointer',
-            textDecoration: 'none',
+            textDecoration: 'none'
           }}
           fontWeight="semibold"
         >
@@ -67,7 +67,7 @@ const Links = () => {
             bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
             bgClip: 'text',
             cursor: 'pointer',
-            textDecoration: 'none',
+            textDecoration: 'none'
           }}
           fontWeight="semibold"
         >

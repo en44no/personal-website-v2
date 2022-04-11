@@ -1,12 +1,12 @@
 import React from 'react';
 import {
-  Box, Flex, Spacer, IconButton,
+  Box, Flex, Spacer, IconButton
 } from '@chakra-ui/react';
 import { UilPlay, UilBracketsCurly } from '@iconscout/react-unicons';
 
 const Header = (props) => {
   const {
-    appType, appTitle, codeLink, demoLink,
+    appType, appTitle, codeLink, demoLink
   } = props;
 
   return (
