@@ -73,5 +73,11 @@
   },
   "CryptoAppTitle": {
     "1": "List of cryptocurrencies"
+  },
+  "Repos": {
+    "1": "Total Repos"
+  },
+  "Followers": {
+    "1": "Followers"
   }
 }
