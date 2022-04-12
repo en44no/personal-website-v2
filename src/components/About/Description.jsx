@@ -11,7 +11,7 @@ const Description = () => {
         as="p"
         fontWeight="semibold"
         fontSize="lg"
-        textAlign="center"
+        textAlign="left"
         style={{ whiteSpace: 'pre-line' }}
       >
         {t('AboutMeText.1')}

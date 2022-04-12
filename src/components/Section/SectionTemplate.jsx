@@ -54,8 +54,6 @@ const SectionTemplate = (props) => {
               flexDirection="column"
               height="100%"
               width="100%"
-              mt="3rem"
-              mb="2rem"
             >
               {children}
             </Box>

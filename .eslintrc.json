@@ -15,6 +15,7 @@
   "rules": {
     "quotes": [0],
     "semi": [0],
+    "no-unused-vars": [1, {"vars": "all", "args": "after-used"}],
     "linebreak-style": 0,
     "react/prop-types": "off",
     "import/no-extraneous-dependencies": "off",
