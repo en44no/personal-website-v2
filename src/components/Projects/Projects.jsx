@@ -37,6 +37,7 @@ const Projects = () => {
         id="projects"
         title={t("MyProjects.1")}
         sectionNextButton="skills"
+        marginBottomInTitle='3rem'
       >
         <Box>
           <Flex
