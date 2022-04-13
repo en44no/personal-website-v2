@@ -6,7 +6,13 @@ import SectionNextButton from './SectionNextButton';
 
 const SectionTemplate = (props) => {
   const {
-    id, title, subtitle, sectionNextButton, children, sectionHome
+    id,
+    title,
+    subtitle,
+    sectionNextButton,
+    children,
+    sectionHome,
+    marginBottomInTitle
   } = props;
 
   return (
@@ -32,7 +38,7 @@ const SectionTemplate = (props) => {
               position="relative"
               top="6rem"
               w="100%"
-              mb="1rem"
+              mb={marginBottomInTitle || '1rem'}
             >
               <SectionHeader title={title} />
             </Box>
