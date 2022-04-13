@@ -36,7 +36,6 @@ const Projects = () => {
       <SectionTemplate
         id="projects"
         title={t("MyProjects.1")}
-        subtitle={t("MyLastProjects.1")}
         sectionNextButton="skills"
       >
         <Box>

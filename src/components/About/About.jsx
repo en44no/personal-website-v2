@@ -11,7 +11,6 @@ const About = () => {
       <SectionTemplate
         id="about"
         title={t('AboutMe.1')}
-        subtitle={t('FrontEndDevJr.1')}
         sectionNextButton="projects"
       >
         <Content />
