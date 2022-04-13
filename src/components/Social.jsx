@@ -5,8 +5,7 @@ import { useTranslation } from "react-i18next";
 import {
   UilLinkedinAlt,
   UilGithubAlt,
-  UilEnvelopeAdd,
-  UilWhatsapp
+  UilEnvelopeAdd
 } from "@iconscout/react-unicons";
 
 const Social = () => {
