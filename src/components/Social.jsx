@@ -60,16 +60,6 @@ const Social = () => {
         >
           <UilEnvelopeAdd size="1.7rem" />
         </IconButton>
-        <a
-          href="https://api.whatsapp.com/send/?phone=59894018406&text=%C2%A1Hola!+Te+estoy+contactando+luego+de+ver+tu+p%C3%A1gina+web."
-          target="_blank"
-          rel="noreferrer"
-          title="Whatsapp"
-        >
-          <IconButton aria-label="RedirectToWhatsappButton">
-            <UilWhatsapp size="1.7rem" />
-          </IconButton>
-        </a>
       </Flex>
     </>
   );
