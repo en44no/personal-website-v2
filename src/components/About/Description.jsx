@@ -11,10 +11,11 @@ const Description = () => {
         as="p"
         fontWeight="semibold"
         fontSize="lg"
-        textAlign="left"
-        style={{ whiteSpace: 'pre-line' }}
+        textAlign={{ sm: "center", md: "center", lg: "center", xl: "left", xxl: "left" }}
+        mb={{ sm: "0", md: "0", lg: "2rem", xl: "0", xxl: "0" }}
+        style={{ whiteSpace: "pre-line" }}
       >
-        {t('AboutMeText.1')}
+        {t("AboutMeText.1")}
       </Text>
     </>
   );
