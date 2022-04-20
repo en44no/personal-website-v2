@@ -1,6 +1,6 @@
 import React from 'react';
 import { DiNodejs } from 'react-icons/di'; import {
-  SiMongodb, SiBootstrap, SiExpress, SiReact,
+  SiMongodb, SiExpress, SiReact,
   SiTailwindcss,
   SiChakraui
 } from 'react-icons/si';
@@ -27,12 +27,6 @@ const OtherSkills = () => (
         techColor="#71B35E"
         title="MongoDB"
         link="https://www.mongodb.com/"
-      />
-      <TechBox
-        techIcon={SiBootstrap}
-        techColor="#8B13FD"
-        title="Bootstrap"
-        link="https://getbootstrap.com/"
       />
       <TechBox
         techIcon={SiExpress}

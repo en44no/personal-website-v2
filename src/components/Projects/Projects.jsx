@@ -20,8 +20,12 @@ const Projects = () => {
       const response = await fetch(`https://api.github.com/users/en44no`);
       const data = await response.json();
 
-      setTotalFollowers(data.followers);
-      setTotalRepos(data.public_repos);
+      if (response.status === 403) {
+        console.log('Superado el limite de consultas a la API de GitHub');
+      } else {
+        setTotalFollowers(data.followers);
+        setTotalRepos(data.public_repos);
+      }
     } catch {
       console.log("Ocurrió un problema al conectarse con la API de Github");
     }
@@ -37,7 +41,7 @@ const Projects = () => {
         id="projects"
         title={t("MyProjects.1")}
         sectionNextButton="skills"
-        marginBottomInTitle='3rem'
+        marginBottomInTitle="3rem"
       >
         <Box>
           <Flex
@@ -61,6 +65,7 @@ const Projects = () => {
                   codeLink={project.codeLink}
                   demoLink={project.demoLink}
                   appImage={project.appImage}
+                  projectNameOnGitHub={project.projectNameOnGitHub}
                   techs={project.techs}
                 />
               </Box>
@@ -97,30 +102,32 @@ const Projects = () => {
             </Button>
           </a>
         </Box>
-        <HStack spacing="1.5rem" mt="1.5rem" mb="-1rem">
-          <Box display="flex" alignItems="center">
-            <Box textAlign="center" ml="0.5rem">
-              <HStack justifyContent="center" spacing="10px" display="flex">
-                <AiOutlineUser size="1.5rem" />
-                <Text fontWeight="500" fontSize="1.2rem">
-                  {totalFollowers}
-                </Text>
-              </HStack>
-              <Text>{t("Followers.1")}</Text>
+        {totalFollowers !== 0 && totalRepos !== 0 && (
+          <HStack spacing="1.5rem" mt="1.5rem" mb="-1rem">
+            <Box display="flex" alignItems="center">
+              <Box textAlign="center" ml="0.5rem">
+                <HStack justifyContent="center" spacing="10px" display="flex">
+                  <AiOutlineUser size="1.5rem" />
+                  <Text fontWeight="500" fontSize="1.2rem">
+                    {totalFollowers}
+                  </Text>
+                </HStack>
+                <Text>{t("Followers.1")}</Text>
+              </Box>
             </Box>
-          </Box>
-          <Box display="flex" alignItems="center">
-            <Box textAlign="center" ml="0.5rem">
-              <HStack justifyContent="center" spacing="10px" display="flex">
-                <BiGitRepoForked size="1.5rem" />
-                <Text fontWeight="500" fontSize="1.2rem">
-                  {totalRepos}
-                </Text>
-              </HStack>
-              <Text>{t("Repos.1")}</Text>
+            <Box display="flex" alignItems="center">
+              <Box textAlign="center">
+                <HStack justifyContent="center" spacing="10px" display="flex">
+                  <BiGitRepoForked size="1.5rem" />
+                  <Text fontWeight="500" fontSize="1.2rem">
+                    {totalRepos}
+                  </Text>
+                </HStack>
+                <Text>{t("Repos.1")}</Text>
+              </Box>
             </Box>
-          </Box>
-        </HStack>
+          </HStack>
+        )}
       </SectionTemplate>
     </>
   );
