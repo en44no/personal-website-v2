@@ -55,13 +55,13 @@ const MobileNavbar = () => {
           </Center>
           <Spacer />
           <Center />
-          <Box as="button" pt="0" mr="-4">
+          <Box pt="0" mr="-4">
             <Language />
           </Box>
-          <Box as="button" pt="0" pl="0" pr="0" mr="-2">
+          <Box pt="0" pl="0" pr="0" mr="-2">
             <ColorMode />
           </Box>
-          <Box as="button" pt="0" mr="3" ml="2">
+          <Box pt="0" mr="3" ml="2">
             <Button padding="10px" onClick={() => setShow(!show)}>
               <UilApps />
             </Button>

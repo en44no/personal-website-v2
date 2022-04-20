@@ -12,7 +12,7 @@ const Addons = () => {
 
   return (
     <>
-      <Text
+      <Box
         as="h3"
         fontWeight="semibold"
         fontSize="lg"
@@ -29,8 +29,8 @@ const Addons = () => {
           <UilLocationPoint />
         </span>
         Piriápolis, Uruguay
-      </Text>
-      <Text
+      </Box>
+      <Box
         as="h3"
         fontWeight="semibold"
         fontSize="lg"
@@ -43,7 +43,7 @@ const Addons = () => {
           <UilEnglishToChinese />
         </span>
         {t('Languages.1')}
-      </Text>
+      </Box>
       <Text
         as="h3"
         position="relative"

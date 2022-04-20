@@ -9,8 +9,7 @@ const HomeText = () => {
   return (
     <>
       <Box as="section">
-        <Text
-          as="h2"
+        <Box
           fontSize={{ sm: '4xl', md: '3xl', lg: '5xl' }}
           fontWeight="semibold"
         >
@@ -26,7 +25,7 @@ const HomeText = () => {
           >
             Nahuel Márquez
           </Text>
-        </Text>
+        </Box>
         <Text
           as="h3"
           fontSize={{ sm: '2xl', md: 'xl', lg: '3xl' }}

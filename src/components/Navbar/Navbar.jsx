@@ -19,9 +19,12 @@ const Navbar = () => {
         width="100%"
         zIndex="100"
         pt="4"
-        bg={colorMode === 'light' ? '#e3e3e3' : '#232a36'}
+        bg={colorMode === "light" ? "#e3e3e3" : "#232a36"}
         display={{
-          sm: 'none', md: 'none', lg: 'block', xl: 'block'
+          sm: "none",
+          md: "none",
+          lg: "block",
+          xl: "block"
         }}
       >
         <Container maxW="container.xl">
@@ -37,10 +40,10 @@ const Navbar = () => {
                 <Links />
               </Box>
             </Center>
-            <Box as="button" pt="0" pl="4" mr="-2">
+            <Box mt="0.5rem" pt="0" pl="4" mr="-2">
               <Language />
             </Box>
-            <Box as="button" pt="0" pl="0">
+            <Box mt="0.5rem" pt="0" pl="0">
               <ColorMode />
             </Box>
           </Flex>
