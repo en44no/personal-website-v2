@@ -2,8 +2,6 @@ import React from 'react';
 import { Button } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import { UilFileDownloadAlt } from '@iconscout/react-unicons';
-import ResumeEN from '../../assets/Resume_en.pdf';
-import ResumeES from '../../assets/Resume_es.pdf';
 
 const Resume = () => {
   const { t, i18n } = useTranslation();
@@ -12,11 +10,15 @@ const Resume = () => {
     <>
       <a
         download={
-          i18n.language === 'es'
-            ? 'NAHUEL MARQUEZ CV ES'
-            : 'NAHUEL MARQUEZ CV EN'
+          i18n.language === "es"
+            ? "NAHUEL MARQUEZ CV ES"
+            : "NAHUEL MARQUEZ CV EN"
         }
-        href={i18n.language === 'es' ? ResumeES : ResumeEN}
+        href={
+          i18n.language === "es"
+            ? "/CV_NahuelMarquez_ES.pdf"
+            : "/CV_NahuelMarquez_EN.pdf"
+        }
         target="_blank"
         rel="noreferrer"
       >
@@ -28,7 +30,7 @@ const Resume = () => {
           aria-label="downloadCVButton"
           leftIcon={<UilFileDownloadAlt size="1.4rem" />}
         >
-          {t('DownloadCV.1')}
+          {t("DownloadCV.1")}
         </Button>
       </a>
     </>
