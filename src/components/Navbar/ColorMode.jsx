@@ -9,7 +9,7 @@ const ColorMode = () => {
   return (
     <>
       <IconButton
-        ml='0.5rem'
+        ml="0.5rem"
         onClick={toggleColorMode}
         aria-label="toggleColorModeButton_"
         bg="transparent"
@@ -19,10 +19,10 @@ const ColorMode = () => {
       >
         {colorMode === "light"
           ? (
-            <UilSun color="#000" />
+            <UilMoon color="#000" />
           )
           : (
-            <UilMoon color="#fff" />
+            <UilSun color="#fff" />
           )}
       </IconButton>
     </>
