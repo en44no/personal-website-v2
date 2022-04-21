@@ -8,8 +8,8 @@ const Content = () => (
   <>
     <Box
       w={{
-        sm: "95%",
-        md: "95%",
+        sm: "auto",
+        md: "auto",
         lg: "100%",
         xl: "100%",
         xxl: "100%"
@@ -26,13 +26,13 @@ const Content = () => (
           xxl: "0"
         }}
       >
-        <Box mb='2rem' alignSelf="center">
+        <Box
+          mb={{ sm: null, md: "1rem", lg: "0", xl: "2rem", xxl: "2rem" }}
+          alignSelf="center"
+        >
           <Description />
         </Box>
-        <Box
-          alignSelf="center"
-          mt={{ sm: "1rem", md: "1rem", lg: "0" }}
-        >
+        <Box alignSelf="center" mt={{ sm: "1rem", md: "1rem", lg: "0" }}>
           <Addons />
         </Box>
       </Grid>
