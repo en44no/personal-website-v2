@@ -8,8 +8,8 @@ const Content = () => (
   <>
     <Box
       w={{
-        sm: "auto",
-        md: "auto",
+        sm: "100%",
+        md: "95%",
         lg: "100%",
         xl: "100%",
         xxl: "100%"
@@ -18,6 +18,7 @@ const Content = () => (
     >
       <Grid
         templateColumns="repeat(1, 1fr)"
+        display="block"
         mt={{
           sm: "6rem",
           md: "0rem",
@@ -27,7 +28,13 @@ const Content = () => (
         }}
       >
         <Box
-          mb={{ sm: null, md: "1rem", lg: "0", xl: "2rem", xxl: "2rem" }}
+          mb={{
+            sm: null,
+            md: null,
+            lg: null,
+            xl: "2rem",
+            xxl: "2rem"
+          }}
           alignSelf="center"
         >
           <Description />

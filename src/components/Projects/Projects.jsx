@@ -112,7 +112,9 @@ const Projects = () => {
                     {totalFollowers}
                   </Text>
                 </HStack>
-                <Text>{t("Followers.1")}</Text>
+                <Text fontWeight="500" fontSize="0.9rem">
+                  {t("Followers.1")}
+                </Text>
               </Box>
             </Box>
             <Box display="flex" alignItems="center">
@@ -123,7 +125,9 @@ const Projects = () => {
                     {totalRepos}
                   </Text>
                 </HStack>
-                <Text>{t("Repos.1")}</Text>
+                <Text fontWeight="500" fontSize="0.9rem">
+                  {t("Repos.1")}
+                </Text>
               </Box>
             </Box>
           </HStack>
