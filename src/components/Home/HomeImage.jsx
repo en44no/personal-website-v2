@@ -15,7 +15,6 @@ const HomeImage = () => (
       <figure>
         <Image
           as="img"
-          loading="lazy"
           src={me}
           alt="me, Nahuel Marquez"
           borderRadius="9px"
@@ -24,13 +23,13 @@ const HomeImage = () => (
             sm: null, md: '2rem', lg: '-3', xl: '-5', xxl: '-5'
           }}
           width={{
-            sm: null, md: '160px', lg: '200px', xl: null, xxl: null
+            sm: null, md: '160px', lg: '200px', xl: '200px', xxl: '200px'
           }}
           minWidth={{
-            sm: null, md: '160px', lg: null, xl: null, xxl: null
+            sm: null, md: '160px', lg: '160px', xl: '160px', xxl: '160px'
           }}
           height={{
-            sm: null, md: '220px', lg: '280px', xl: null, xxl: null
+            sm: null, md: '220px', lg: '280px', xl: '280px', xxl: '280px'
           }}
           _hover={{
             transition: 'transform 1s, all 0.2s ease-in-out',
