@@ -13,11 +13,11 @@ import Loader from './components/Loader';
 ReactDOM.render(
   <React.StrictMode>
     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-    <ChakraProvider theme={theme}>
-      <Suspense fallback={<Loader />}>
+    <Suspense fallback={<Loader />}>
+      <ChakraProvider theme={theme}>
         <App />
-      </Suspense>
-    </ChakraProvider>
+      </ChakraProvider>
+    </Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );
