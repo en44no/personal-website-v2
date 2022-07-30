@@ -18,20 +18,20 @@
     ]
   },
   {
-    "appType": "CryptoAppType.1",
-    "appTitle": "CryptoAppTitle.1",
-    "codeLink": "https://github.com/en44no/list-cryptos",
-    "demoLink": "https://user-images.githubusercontent.com/57118285/139742834-a322f2a0-a26d-4b63-9dc3-eabe23559c97.jpeg",
-    "appImage": "https://user-images.githubusercontent.com/57118285/139742834-a322f2a0-a26d-4b63-9dc3-eabe23559c97.jpeg",
-    "projectNameOnGitHub": "cryptos-app",
+    "appType": "TipCalculatorAppType.1",
+    "appTitle": "TipCalculatorAppTitle.1",
+    "codeLink": "https://github.com/en44no/tip-calculator",
+    "demoLink": "https://tip-calculator-en44no.vercel.app/",
+    "appImage": "https://user-images.githubusercontent.com/57118285/181866888-15889fcd-c35b-46d7-81c3-e4735e1182c8.png",
+    "projectNameOnGitHub": "tip-calculator",
     "techs": [
       {
-        "name": "React Native",
-        "link": "https://reactnative.dev/"
+        "name": "ReactJS",
+        "link": "https://es.reactjs.org/"
       },
       {
-        "name": "CoinGecko API",
-        "link": "https://www.coingecko.com/es"
+        "name": "Tailwind CSS",
+        "link": "https://tailwindcss.com/"
       }
     ]
   }

@@ -7,7 +7,8 @@ import {
   SiCss3,
   SiGit,
   SiMicrosoftsqlserver,
-  SiAngular
+  SiAngular,
+  SiTypescript
 } from 'react-icons/si';
 import TechBox from './TechBox';
 import GridSkills from './GridSkills';
@@ -22,11 +23,17 @@ const CurrentlySkills = () => (
         link="https://angular.io/"
       />
       <TechBox
+        techIcon={SiTypescript}
+        techColor="#2F74C0"
+        title="TypeScript"
+        link="https://www.typescriptlang.org/"
+      />
+      {/* <TechBox
         techIcon={SiCsharp}
         techColor="#953DAC"
         title="CSharp"
         link="https://docs.microsoft.com/en-us/dotnet/csharp/"
-      />
+      /> */}
       <TechBox
         techIcon={SiReact}
         techColor="#61DAFB"

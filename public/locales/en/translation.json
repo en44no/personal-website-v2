@@ -74,6 +74,12 @@
   "CryptoAppTitle": {
     "1": "List of cryptocurrencies"
   },
+  "TipCalculatorAppType": {
+    "1": "Management"
+  },
+  "TipCalculatorAppTitle": {
+    "1": "Calculate tip"
+  },
   "Repos": {
     "1": "Total Repos"
   },

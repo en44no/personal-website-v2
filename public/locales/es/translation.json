@@ -74,6 +74,12 @@
   "CryptoAppTitle": {
     "1": "Listado de criptomonedas"
   },
+  "TipCalculatorAppType": {
+    "1": "Gestión"
+  },
+  "TipCalculatorAppTitle": {
+    "1": "Calcular propina"
+  },
   "Repos": {
     "1": "Repositorios"
   },
