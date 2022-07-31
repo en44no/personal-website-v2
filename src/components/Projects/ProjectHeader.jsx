@@ -101,7 +101,7 @@ const Header = (props) => {
                 <Box mr='-0.2rem'>
                   <UilHistory size='1.2rem' />
                 </Box>
-                <Text fontWeight='500' fontSize='0.9rem'>{totalCommits}    {t("ChangesMade.1")}</Text>
+                <Text fontWeight='500' fontSize='0.9rem'>{totalCommits} {t("ChangesMaded.1")}</Text>
               </HStack>
             )}
           </HStack>
