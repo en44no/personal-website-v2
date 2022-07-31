@@ -7,11 +7,14 @@ import {
   UilBracketsCurly,
   UilHistory
 } from "@iconscout/react-unicons";
+import { useTranslation } from 'react-i18next';
 
 const Header = (props) => {
   const {
     appType, appTitle, codeLink, demoLink, projectNameOnGitHub
   } = props;
+
+  const { t } = useTranslation();
 
   const [totalCommits, setTotalCommits] = useState(0);
 
@@ -25,7 +28,7 @@ const Header = (props) => {
 
   const baseUrl = "https://api.github.com";
 
-  function httpGet (theUrl, returnHeaders) {
+  function httpGet(theUrl, returnHeaders) {
     const xmlHttp = new XMLHttpRequest();
 
     xmlHttp.open("GET", theUrl, false); // false for synchronous request
@@ -98,7 +101,7 @@ const Header = (props) => {
                 <Box mr='-0.2rem'>
                   <UilHistory size='1.2rem' />
                 </Box>
-                <Text fontWeight='500' fontSize='0.9rem'>{totalCommits} cambios realizados</Text>
+                <Text fontWeight='500' fontSize='0.9rem'>{totalCommits}    {t("ChangesMade.1")}</Text>
               </HStack>
             )}
           </HStack>
