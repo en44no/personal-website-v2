@@ -152,22 +152,18 @@ li {
   width: 100% !important;
 }
 
-.eWjCzc {
+.rec-arrow {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   outline: none !important;
+}
+
+.rec-arrow:enabled {
   color: #11bae5 !important;
 }
 
-.eAyARa {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-}
-
-.eWjCzc:hover {
-  background: #11bae5 !important;
+.rec-arrow:enabled:hover {
+  background: linear-gradient(90deg, #0BC5EA 0%, #3182CE 50%, #805AD5 100%) !important;
   color: white !important;
 }
