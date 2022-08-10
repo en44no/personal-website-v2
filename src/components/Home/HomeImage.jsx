@@ -18,7 +18,7 @@ const HomeImage = () => (
           src={me}
           alt="me, Nahuel Marquez"
           borderRadius="9px"
-          objectFit="fill"
+          objectFit="contain"
           mt={{
             sm: null, md: '2rem', lg: '-3', xl: '-5', xxl: '-5'
           }}
