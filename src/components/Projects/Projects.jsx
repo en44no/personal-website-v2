@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Box, Flex, Button, Text, HStack
+  Box, Flex, Button, Text, HStack, useToast
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import { UilGithubAlt } from '@iconscout/react-unicons';
@@ -9,9 +9,11 @@ import { AiOutlineUser } from "react-icons/ai";
 import SectionTemplate from '../Section/SectionTemplate';
 import Layout from './Layout';
 import ListProjects from './listProjects.json';
+import Carousel from 'react-elastic-carousel';
 
 const Projects = () => {
   const { t } = useTranslation();
+  const notification = useToast();
   const [totalFollowers, setTotalFollowers] = useState(0);
   const [totalRepos, setTotalRepos] = useState(0);
 
@@ -19,21 +21,38 @@ const Projects = () => {
     try {
       const response = await fetch(`https://api.github.com/users/en44no`);
       const data = await response.json();
-
       if (response.status === 403) {
-        console.log('Superado el limite de consultas a la API de GitHub');
+        notification({
+          id: 'github-error',
+          title: t('GitHubAPIQueryLimitExceeded.1'),
+          description: t('PleaseTryAgainLater.1'),
+          status: "error",
+          duration: 4000,
+          position: "bottom",
+          isClosable: true
+        });
       } else {
         setTotalFollowers(data.followers);
         setTotalRepos(data.public_repos);
       }
     } catch {
-      console.log("Ocurrió un problema al conectarse con la API de Github");
+      notification({
+        id: 'github-error',
+        title: t('ThereWasAProblemConnectingWithTheGithubAPI.1'),
+        description: t('PleaseTryAgainLater.1'),
+        status: "error",
+        duration: 4000,
+        position: "bottom",
+        isClosable: true
+      });
     }
   };
 
   useEffect(() => {
     getGithubUserInfo();
   }, []);
+
+  let carousel;
 
   return (
     <>
@@ -50,26 +69,28 @@ const Projects = () => {
             position="relative"
             mt={{ sm: "4rem", lg: "-0.5rem" }}
           >
-            {ListProjects.map((project) => (
-              <Box
-                key={project.appTitle}
-                as="article"
-                pl={{ sm: "2", md: "2", lg: "6" }}
-                pt={{ sm: "0", md: "0", lg: "6" }}
-                pr={{ sm: "2", md: "2", lg: "6" }}
-                pb={{ sm: "1rem", md: "1rem", lg: "6" }}
-              >
-                <Layout
-                  appType={project.appType}
-                  appTitle={project.appTitle}
-                  codeLink={project.codeLink}
-                  demoLink={project.demoLink}
-                  appImage={project.appImage}
-                  projectNameOnGitHub={project.projectNameOnGitHub}
-                  techs={project.techs}
-                />
-              </Box>
-            ))}
+            <Carousel enableMouseSwipe={false} breakPoints={[{ width: 0, itemsToShow: 1, itemsToScroll: 1, showArrows: false }, { width: 768, itemsToShow: 2, itemsToScroll: 2, itemPadding: [0, 0, 0, 0] }]} pagination={false} >
+              {ListProjects.map((project) => (
+                <Box
+                  key={project.appTitle}
+                  as="article"
+                  pl={{ sm: "2", md: "2", lg: "6" }}
+                  pt={{ sm: "0", md: "0", lg: "6" }}
+                  pr={{ sm: "2", md: "2", lg: "6" }}
+                  pb={{ sm: "1rem", md: "1rem", lg: "6" }}
+                >
+                  <Layout
+                    appType={project.appType}
+                    appTitle={project.appTitle}
+                    codeLink={project.codeLink}
+                    demoLink={project.demoLink}
+                    appImage={project.appImage}
+                    projectNameOnGitHub={project.projectNameOnGitHub}
+                    techs={project.techs}
+                  />
+                </Box>
+              ))}
+            </Carousel>
           </Flex>
         </Box>
         <Box

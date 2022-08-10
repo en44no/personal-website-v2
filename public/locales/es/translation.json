@@ -88,5 +88,17 @@
   },
   "ChangesMaded": {
     "1": "cambios realizados"
+  },
+  "GitHubAPIQueryLimitExceeded": {
+    "1": "Superado el limite de consultas a la API de GitHub"
+  },
+  "ThereWasAProblemConnectingWithTheGithubAPI": {
+    "1": "Ocurrió un problema al conectarse con la API de Github"
+  },
+  "PleaseTryAgainLater": {
+    "1": "Por favor, inténtalo de nuevo más tarde"
+  },
+  "Assistant": {
+    "1": "Asistente"
   }
 }

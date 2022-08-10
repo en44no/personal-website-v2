@@ -1,19 +1,19 @@
 [
   {
-    "appType": "ToDoAppType.1",
-    "appTitle": "ToDoAppTitle.1",
-    "codeLink": "https://github.com/en44no/todo-app",
-    "demoLink": "https://todo-app-en44no.vercel.app/",
-    "appImage": "https://user-images.githubusercontent.com/57118285/138615565-0fcfc242-7bb2-4113-a07f-9e901d8c3826.png",
-    "projectNameOnGitHub": "todo-app",
+    "appType": "Assistant.1",
+    "appTitle": "Whatsapp Helper",
+    "codeLink": "https://github.com/en44no/whatsapp-helper",
+    "demoLink": "https://sin-agendar-whatsapp.vercel.app/",
+    "appImage": "https://user-images.githubusercontent.com/57118285/183788897-0ba8adb6-afca-45bc-8f4b-5eeb386994a8.png",
+    "projectNameOnGitHub": "whatsapp-helper",
     "techs": [
       {
         "name": "ReactJS",
         "link": "https://es.reactjs.org/"
       },
       {
-        "name": "Chakra UI",
-        "link": "https://chakra-ui.com/"
+        "name": "PrimeReact",
+        "link": "https://www.primefaces.org/primereact/setup/"
       }
     ]
   },
@@ -32,6 +32,24 @@
       {
         "name": "Tailwind CSS",
         "link": "https://tailwindcss.com/"
+      }
+    ]
+  },
+  {
+    "appType": "ToDoAppType.1",
+    "appTitle": "ToDoAppTitle.1",
+    "codeLink": "https://github.com/en44no/todo-app",
+    "demoLink": "https://todo-app-en44no.vercel.app/",
+    "appImage": "https://user-images.githubusercontent.com/57118285/138615565-0fcfc242-7bb2-4113-a07f-9e901d8c3826.png",
+    "projectNameOnGitHub": "todo-app",
+    "techs": [
+      {
+        "name": "ReactJS",
+        "link": "https://es.reactjs.org/"
+      },
+      {
+        "name": "Chakra UI",
+        "link": "https://chakra-ui.com/"
       }
     ]
   }

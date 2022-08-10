@@ -8,12 +8,13 @@ const ProjectImage = (props) => {
 
   return (
     <>
-      <a href={demoLink} target="_blank" rel="noreferrer" title="Demo">
+      <a href={demoLink} draggable={false} target="_blank" rel="noreferrer" title="Demo">
         <figure>
           <Image
             as="img"
             loading="lazy"
             boxShadow="md"
+            draggable={false}
             mt="2"
             mb="-2"
             src={appImage}
