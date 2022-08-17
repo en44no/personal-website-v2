@@ -80,7 +80,7 @@ html {
 }
 
 .loader {
-
+  width: fit-content !important;
   color: #11bae5;
   font-size: 10px;
   text-indent: -9999em;
@@ -149,7 +149,7 @@ li {
 
 /* for carousel */
 .css-0 {
-  width: 100% !important;
+  width: 100%;
 }
 
 .rec-arrow {

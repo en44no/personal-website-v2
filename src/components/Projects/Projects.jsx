@@ -52,8 +52,6 @@ const Projects = () => {
     getGithubUserInfo();
   }, []);
 
-  let carousel;
-
   return (
     <>
       <SectionTemplate
@@ -68,6 +66,7 @@ const Projects = () => {
             flexWrap="wrap"
             position="relative"
             mt={{ sm: "4rem", lg: "-0.5rem" }}
+            width="100%"
           >
             <Carousel enableMouseSwipe={false} breakPoints={[{ width: 0, itemsToShow: 1, itemsToScroll: 1, showArrows: false }, { width: 768, itemsToShow: 2, itemsToScroll: 2, itemPadding: [0, 0, 0, 0] }]} pagination={false} >
               {ListProjects.map((project) => (
