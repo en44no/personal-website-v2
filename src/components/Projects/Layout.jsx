@@ -30,7 +30,7 @@ const Layout = (props) => {
         <Box display="flex" alignItems='center' justifyContent='space-between'>
           <Technologies techs={techs} />
           <Box display={{ sm: 'flex', md: 'none' }} alignItems='center' gap='2' mt='1rem' fontWeight='semibold'>
-            <Text >Desliza</Text>
+            <Text>{t('Slide.1')}</Text>
             <MdOutlineSwipe size='1.7rem' />
           </Box>
         </Box>

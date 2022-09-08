@@ -21,7 +21,7 @@ const HomeText = () => {
             bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
             bgClip="text"
             mt="-2"
-            fontSize={{ sm: '6xl', md: '6xl', lg: '6xl' }}
+            fontSize={{ sm: '5xl', md: '5xl', lg: '6xl' }}
           >
             Nahuel Márquez
           </Text>
