@@ -3,8 +3,8 @@
     "appType": "Assistant.1",
     "appTitle": "Whatsapp Helper",
     "codeLink": "https://github.com/en44no/whatsapp-helper",
-    "demoLink": "https://sin-agendar-whatsapp.vercel.app/",
-    "appImage": "https://user-images.githubusercontent.com/57118285/183788897-0ba8adb6-afca-45bc-8f4b-5eeb386994a8.png",
+    "demoLink": "https://sin-agendar.vercel.app/",
+    "appImage": "https://user-images.githubusercontent.com/57118285/185018441-9add33d3-3b84-4800-836d-0b923093fabb.png",
     "projectNameOnGitHub": "whatsapp-helper",
     "techs": [
       {
