@@ -30,6 +30,7 @@ const theme = extendTheme({
       baseStyle: {
         _hover: {
           bg: 'transparent',
+          color: '#fff',
           bgGradient: 'linear(to-r, cyan.400, blue.500, purple.500)',
           transition: 'transform 0.2s, all 0.2s ease-in-out',
           transform: 'scale(1.06)'
@@ -40,6 +41,7 @@ const theme = extendTheme({
           bg: 'transparent',
           _hover: {
             bg: 'transparent',
+            color: '#fff',
             transition: 'all 0.2s ease-in-out'
           },
           _active: {

@@ -14,15 +14,16 @@ const ColorMode = () => {
         aria-label="toggleColorModeButton_"
         bg="transparent"
         _hover={{
-          bgGradient: "linear(to-r, cyan.400, blue.500, purple.500)"
+          bgGradient: "linear(to-r, cyan.400, blue.500, purple.500)",
+          color: '#fff'
         }}
       >
         {colorMode === "light"
           ? (
-            <UilMoon color="#000" />
+            <UilMoon />
           )
           : (
-            <UilSun color="#fff" />
+            <UilSun />
           )}
       </IconButton>
     </>

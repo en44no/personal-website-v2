@@ -23,7 +23,7 @@ const HomeImage = () => (
             sm: null, md: '2rem', lg: '-3', xl: '-5', xxl: '-5'
           }}
           width={{
-            sm: null, md: '160px', lg: '200px', xl: '200px', xxl: '200px'
+            sm: null, md: '160px', lg: '200px', xl: '250px', xxl: '250px'
           }}
           minWidth={{
             sm: null, md: '160px', lg: '160px', xl: '160px', xxl: '160px'

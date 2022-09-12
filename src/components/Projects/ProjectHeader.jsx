@@ -17,6 +17,7 @@ const Header = (props) => {
   const { t } = useTranslation();
 
   const [totalCommits, setTotalCommits] = useState(0);
+  const [gitHubApiExceeded, setGitHubApiExceeded] = useState(false);
 
   const owner = "en44no";
   const repo = projectNameOnGitHub;
@@ -64,7 +65,9 @@ const Header = (props) => {
 
     if (req.status === 403) {
       console.log("Superado el limite de consultas a la API de GitHub");
+      setGitHubApiExceeded(true);
     } else {
+      setGitHubApiExceeded(false);
       let firstCommitHash = "";
 
       if (req.getResponseHeader("Link")) {
@@ -96,7 +99,7 @@ const Header = (props) => {
             <Text fontWeight="semibold" as="h6" fontSize="sm" color="#11BAE5">
               {appType}
             </Text>
-            {totalCommits !== 0 && (
+            {totalCommits !== 0 && !gitHubApiExceeded && (
               <HStack>
                 <Box mr='-0.2rem'>
                   <UilHistory size='1.2rem' />

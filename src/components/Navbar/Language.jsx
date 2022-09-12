@@ -21,10 +21,11 @@ const Language = () => {
         aria-label="toggleLanguageButton_"
         bg="transparent"
         _hover={{
-          bgGradient: "linear(to-r, cyan.400, blue.500, purple.500)"
+          bgGradient: "linear(to-r, cyan.400, blue.500, purple.500)",
+          color: '#fff'
         }}
       >
-        <UilEnglishToChinese size="1.5rem" color={colorMode === 'dark' ? 'white' : 'dark'} />
+        <UilEnglishToChinese size="1.5rem" />
       </IconButton>
     </>
   );

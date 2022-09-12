@@ -28,8 +28,7 @@ const Links = () => {
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
-            bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
-            bgClip: 'text',
+            color: '#3281ce',
             cursor: 'pointer',
             textDecoration: 'none'
           }}
@@ -45,8 +44,7 @@ const Links = () => {
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
-            bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
-            bgClip: 'text',
+            color: '#3281ce',
             cursor: 'pointer',
             textDecoration: 'none'
           }}
@@ -64,8 +62,7 @@ const Links = () => {
           _hover={{
             transition: 'transform .2s',
             transform: 'scale(1.06)',
-            bgGradient: 'linear(to-r, cyan.400, blue.500, purple.600)',
-            bgClip: 'text',
+            color: '#3281ce',
             cursor: 'pointer',
             textDecoration: 'none'
           }}
