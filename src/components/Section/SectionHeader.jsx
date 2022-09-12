@@ -10,7 +10,9 @@ const SectionHeader = (props) => {
         as="h2"
         position="relative"
         fontWeight="bold"
-        fontSize="4xl"
+        fontSize={{
+          sm: '2xl', md: '3xl', lg: '4xl', xl: '4xl', xxl: '4xl'
+        }}
         bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
         bgClip="text"
       >
